@@ -631,7 +631,7 @@ a:hover {
     position: absolute;
     inset: 78px 28px 28px;
     display: grid;
-    grid-template-columns: 0.8fr 1fr;
+    grid-template-columns: 1.12fr 0.88fr;
     gap: 20px;
     align-items: end;
 }
@@ -655,9 +655,11 @@ a:hover {
 
 .pop-title strong {
     display: block;
-    font-family: "Bagel Fat One", "Jua", ui-sans-serif, system-ui, sans-serif;
-    font-size: clamp(40px, 5vw, 66px);
-    line-height: 1;
+    font-family: "Jua", "Gowun Dodum", ui-sans-serif, system-ui, sans-serif;
+    font-size: clamp(34px, 3.4vw, 44px);
+    line-height: 1.1;
+    word-break: keep-all;
+    overflow-wrap: normal;
 }
 
 .pop-feed {
@@ -1196,7 +1198,7 @@ a:hover {
     }
 
     .pop-title strong {
-        font-size: 40px;
+        font-size: 36px;
     }
 
     .mini-thread-soft {
