@@ -156,7 +156,6 @@ export function renderHomePage({ threads }) {
         <header class="home-topbar">
             <a class="brand" href="/">yesir.</a>
             <nav class="home-nav" aria-label="Primary">
-                <a href="design-previews/">Design</a>
                 <a href="threads/${escapeHtml(thread.slug)}/">Threads</a>
             </nav>
         </header>
@@ -168,7 +167,23 @@ export function renderHomePage({ threads }) {
                 <p class="lede">지금은 링크, 웃긴 스레드, 작은 스크랩을<br>여기에 모아둡니다.</p>
             </div>
 
-            <img class="home-visual" src="assets/poor-fish.png" alt="작은 물고기와 동전 일러스트">
+            <div class="home-visual home-scrapbook" aria-label="yesir 스크랩북 미리보기">
+                <div class="scrapbook-bar">
+                    <span>yesir.</span>
+                    <span>saved / threads</span>
+                </div>
+                <span class="scrap-sticker scrap-sticker-pink">saved!</span>
+                <span class="scrap-sticker scrap-sticker-green">like sort</span>
+                <div class="scrap-note scrap-note-main">
+                    <small>Personal index</small>
+                    <strong>네님 전용<br>이것저것 모은 페이지</strong>
+                </div>
+                <div class="scrap-note scrap-note-feed">
+                    <b>Threads archive</b>
+                    <p>답글은 길어도 화면은 가볍게.</p>
+                    <span>${replyCount} replies</span>
+                </div>
+            </div>
         </section>
 
         <section class="index-section" aria-labelledby="saved-title">
@@ -182,11 +197,6 @@ export function renderHomePage({ threads }) {
                     <span class="card-type">Threads archive</span>
                     <strong>${escapeHtml(title)}</strong>
                     <span>도하(@${escapeHtml(thread.author.username)})의 물고기 말장난 스레드. 로그인 세션으로 불러온 답글 ${replyCount}개를 Threads 피드처럼 정리했습니다.</span>
-                </a>
-                <a class="index-card index-card-pop" href="design-previews/">
-                    <span class="card-type">Design preview</span>
-                    <strong>yesir 톤 3안</strong>
-                    <span>Pop Scrapbook, Cute OS, Zine Board 세 방향을 웹에서 바로 비교합니다.</span>
                 </a>
             </div>
         </section>

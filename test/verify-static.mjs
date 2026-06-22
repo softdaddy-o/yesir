@@ -21,8 +21,8 @@ function assertExists(path) {
 assertIncludes(homeHtml, '<title>yesir.softdaddy-o.com</title>', 'index.html');
 assertIncludes(homeHtml, '네님 전용', 'index.html');
 assertIncludes(homeHtml, 'threads/doha-poor-fish/', 'index.html');
-assertIncludes(homeHtml, 'design-previews/', 'index.html');
-assertIncludes(homeHtml, 'yesir 톤 3안', 'index.html');
+assertIncludes(homeHtml, 'home-scrapbook', 'index.html');
+assertIncludes(homeHtml, 'saved!', 'index.html');
 assertIncludes(homeHtml, '답글 405개', 'index.html');
 
 assertIncludes(previewHtml, '<title>yesir 디자인 프리뷰 - yesir.softdaddy-o.com</title>', 'design-previews/index.html');
