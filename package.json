@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node test/verify-static.mjs"
+    "build": "node scripts/build-site.mjs",
+    "test": "npm run build && node test/verify-static.mjs"
   }
 }

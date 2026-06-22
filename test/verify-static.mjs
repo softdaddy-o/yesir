@@ -1,65 +1,64 @@
 import { readFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 
-const checks = [
-    {
-        path: 'index.html',
-        includes: [
-            '<title>yesir.softdaddy-o.com</title>',
-            '네님 전용',
-            '이것저것 모은',
-            'threads/doha-poor-fish/',
-            '답글 405개'
-        ]
-    },
-    {
-        path: 'threads/doha-poor-fish/index.html',
-        includes: [
-            '<title>가난한 물고기 - yesir.softdaddy-o.com</title>',
-            'Threads archive',
-            '가난한 물고기를',
-            '푸어 라고 한다',
-            '로그인 세션으로 스크롤 캡쳐한 Threads 답글 405개',
-            '캡쳐</dt><dd>162장</dd>',
-            '살이 없는 물고기를',
-            '여기서 배운거 어디에',
-            'https://www.threads.com/@doha_txt/post/DZusRTzgQmh'
-        ]
-    },
-    {
-        path: 'CNAME',
-        trimmed: 'yesir.softdaddy-o.com'
-    },
-    {
-        path: '.nojekyll',
-        existsOnly: true
-    },
-    {
-        path: 'assets/poor-fish.png',
-        existsOnly: true
-    }
-];
+const threadHtml = await readFile('threads/doha-poor-fish/index.html', 'utf8');
+const homeHtml = await readFile('index.html', 'utf8');
+const packageJson = JSON.parse(await readFile('package.json', 'utf8'));
 
-for (const check of checks) {
-    if (!existsSync(check.path)) {
-        throw new Error(`${check.path} is missing`);
+function assertIncludes(content, expected, path) {
+    if (!content.includes(expected)) {
+        throw new Error(`${path} does not include ${JSON.stringify(expected)}`);
     }
+}
 
-    if (check.existsOnly) {
-        continue;
+function assertExists(path) {
+    if (!existsSync(path)) {
+        throw new Error(`${path} is missing`);
     }
+}
 
-    const content = await readFile(check.path, 'utf8');
+assertIncludes(homeHtml, '<title>yesir.softdaddy-o.com</title>', 'index.html');
+assertIncludes(homeHtml, '네님 전용', 'index.html');
+assertIncludes(homeHtml, 'threads/doha-poor-fish/', 'index.html');
+assertIncludes(homeHtml, '답글 405개', 'index.html');
 
-    if (check.trimmed !== undefined && content.trim() !== check.trimmed) {
-        throw new Error(`${check.path} trimmed content mismatch`);
-    }
+assertIncludes(threadHtml, '<title>가난한 물고기 - yesir.softdaddy-o.com</title>', 'threads/doha-poor-fish/index.html');
+assertIncludes(threadHtml, 'Threads archive', 'threads/doha-poor-fish/index.html');
+assertIncludes(threadHtml, '가난한 물고기를', 'threads/doha-poor-fish/index.html');
+assertIncludes(threadHtml, '푸어 라고 한다', 'threads/doha-poor-fish/index.html');
+assertIncludes(threadHtml, '로그인 세션으로 스크롤 캡쳐한 Threads 답글 405개', 'threads/doha-poor-fish/index.html');
+assertIncludes(threadHtml, '캡쳐</dt><dd>162장</dd>', 'threads/doha-poor-fish/index.html');
+assertIncludes(threadHtml, 'id="reply-405"', 'threads/doha-poor-fish/index.html');
+assertIncludes(threadHtml, 'data-thread-sort-toggle', 'threads/doha-poor-fish/index.html');
+assertIncludes(threadHtml, 'data-default-sort="likes"', 'threads/doha-poor-fish/index.html');
+assertIncludes(threadHtml, '좋아요순', 'threads/doha-poor-fish/index.html');
+assertIncludes(threadHtml, '원래순', 'threads/doha-poor-fish/index.html');
+assertIncludes(threadHtml, 'https://www.threads.com/@doha_txt/post/DZusRTzgQmh', 'threads/doha-poor-fish/index.html');
 
-    for (const expected of check.includes ?? []) {
-        if (!content.includes(expected)) {
-            throw new Error(`${check.path} does not include ${JSON.stringify(expected)}`);
-        }
-    }
+const firstReplyIndex = threadHtml.indexOf('id="reply-1"');
+const topLikedIndex = threadHtml.indexOf('minij0min');
+const previousChronologicalIndex = threadHtml.indexOf('john_and_peter__');
+if (!(firstReplyIndex !== -1 && topLikedIndex > firstReplyIndex && topLikedIndex < previousChronologicalIndex)) {
+    throw new Error('thread page default reply order is not like-count descending');
+}
+
+assertExists('src/thread-template.mjs');
+assertExists('scripts/build-site.mjs');
+assertExists('data/threads/doha-poor-fish.json');
+if (packageJson.scripts?.build !== 'node scripts/build-site.mjs') {
+    throw new Error('package.json build script must run the shared thread template builder');
+}
+
+for (const path of ['CNAME', '.nojekyll', 'assets/poor-fish.png']) {
+    assertExists(path);
+}
+
+if ((await readFile('CNAME', 'utf8')).trim() !== 'yesir.softdaddy-o.com') {
+    throw new Error('CNAME trimmed content mismatch');
+}
+
+if (/[\uFFFD\u5a9b\u6e72\uf9ce\uc9cc]/.test(homeHtml + threadHtml)) {
+    throw new Error('generated HTML contains likely mojibake');
 }
 
 console.log('static page checks passed');
