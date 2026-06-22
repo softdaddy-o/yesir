@@ -245,6 +245,42 @@ a:hover {
     display: grid;
 }
 
+.thread-summary {
+    padding: 16px 18px;
+    border-bottom: 1px solid var(--line);
+    background: #fbfaf8;
+}
+
+.thread-summary p {
+    margin: 0 0 12px;
+    color: #4f4b45;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.thread-summary dl {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    margin: 0;
+}
+
+.thread-summary div {
+    min-width: 0;
+}
+
+.thread-summary dt {
+    color: var(--muted);
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.thread-summary dd {
+    margin: 3px 0 0;
+    font-size: 15px;
+    font-weight: 800;
+}
+
 .thread-post {
     position: relative;
     display: grid;
@@ -313,6 +349,17 @@ a:hover {
     color: #555;
     font-size: 12px;
     font-weight: 700;
+}
+
+.post-number {
+    margin-left: auto;
+    color: #aaa;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.post-number:hover {
+    color: var(--accent);
 }
 
 .post-text {
@@ -467,6 +514,14 @@ a:hover {
         font-size: 13px;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+
+    .thread-summary {
+        padding: 14px 12px;
+    }
+
+    .thread-summary dl {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .post-text {

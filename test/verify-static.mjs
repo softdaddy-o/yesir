@@ -6,21 +6,23 @@ const checks = [
         path: 'index.html',
         includes: [
             '<title>yesir.softdaddy-o.com</title>',
-            '네님 전용 이것저것 모은 페이지',
-            'threads/doha-poor-fish/'
+            '네님 전용',
+            '이것저것 모은',
+            'threads/doha-poor-fish/',
+            '답글 405개'
         ]
     },
     {
         path: 'threads/doha-poor-fish/index.html',
         includes: [
             '<title>가난한 물고기 - yesir.softdaddy-o.com</title>',
-            'Threads 스타일로 정리한 공개 스레드',
+            'Threads archive',
             '가난한 물고기를',
             '푸어 라고 한다',
-            '햄버거처럼 생긴 물고기를 우린 벅어라고 한다.',
-            '심심한 물고기를',
-            '병든물고기를 병어라한다',
-            '잘한다 잘한다',
+            '로그인 세션으로 스크롤 캡쳐한 Threads 답글 405개',
+            '캡쳐</dt><dd>162장</dd>',
+            '살이 없는 물고기를',
+            '여기서 배운거 어디에',
             'https://www.threads.com/@doha_txt/post/DZusRTzgQmh'
         ]
     },
@@ -48,10 +50,6 @@ for (const check of checks) {
     }
 
     const content = await readFile(check.path, 'utf8');
-
-    if (check.exact !== undefined && content !== check.exact) {
-        throw new Error(`${check.path} content mismatch`);
-    }
 
     if (check.trimmed !== undefined && content.trim() !== check.trimmed) {
         throw new Error(`${check.path} trimmed content mismatch`);
