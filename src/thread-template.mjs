@@ -156,6 +156,7 @@ export function renderHomePage({ threads }) {
         <header class="home-topbar">
             <a class="brand" href="/">yesir.</a>
             <nav class="home-nav" aria-label="Primary">
+                <a href="design-previews/">Design</a>
                 <a href="threads/${escapeHtml(thread.slug)}/">Threads</a>
             </nav>
         </header>
@@ -181,6 +182,11 @@ export function renderHomePage({ threads }) {
                     <span class="card-type">Threads archive</span>
                     <strong>${escapeHtml(title)}</strong>
                     <span>도하(@${escapeHtml(thread.author.username)})의 물고기 말장난 스레드. 로그인 세션으로 불러온 답글 ${replyCount}개를 Threads 피드처럼 정리했습니다.</span>
+                </a>
+                <a class="index-card index-card-pop" href="design-previews/">
+                    <span class="card-type">Design preview</span>
+                    <strong>yesir 톤 3안</strong>
+                    <span>Pop Scrapbook, Cute OS, Zine Board 세 방향을 웹에서 바로 비교합니다.</span>
                 </a>
             </div>
         </section>

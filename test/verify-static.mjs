@@ -3,6 +3,7 @@ import { existsSync } from 'node:fs';
 
 const threadHtml = await readFile('threads/doha-poor-fish/index.html', 'utf8');
 const homeHtml = await readFile('index.html', 'utf8');
+const previewHtml = await readFile('design-previews/index.html', 'utf8');
 const packageJson = JSON.parse(await readFile('package.json', 'utf8'));
 
 function assertIncludes(content, expected, path) {
@@ -20,7 +21,15 @@ function assertExists(path) {
 assertIncludes(homeHtml, '<title>yesir.softdaddy-o.com</title>', 'index.html');
 assertIncludes(homeHtml, '네님 전용', 'index.html');
 assertIncludes(homeHtml, 'threads/doha-poor-fish/', 'index.html');
+assertIncludes(homeHtml, 'design-previews/', 'index.html');
+assertIncludes(homeHtml, 'yesir 톤 3안', 'index.html');
 assertIncludes(homeHtml, '답글 405개', 'index.html');
+
+assertIncludes(previewHtml, '<title>yesir 디자인 프리뷰 - yesir.softdaddy-o.com</title>', 'design-previews/index.html');
+assertIncludes(previewHtml, 'Pop Scrapbook', 'design-previews/index.html');
+assertIncludes(previewHtml, 'Cute OS', 'design-previews/index.html');
+assertIncludes(previewHtml, 'Zine Board', 'design-previews/index.html');
+assertIncludes(previewHtml, '../styles.css', 'design-previews/index.html');
 
 assertIncludes(threadHtml, '<title>가난한 물고기 - yesir.softdaddy-o.com</title>', 'threads/doha-poor-fish/index.html');
 assertIncludes(threadHtml, 'Threads archive', 'threads/doha-poor-fish/index.html');
@@ -52,6 +61,7 @@ if (packageJson.scripts?.build !== 'node scripts/build-site.mjs') {
 for (const path of ['CNAME', '.nojekyll', 'assets/poor-fish.png']) {
     assertExists(path);
 }
+assertExists('design-previews/index.html');
 
 if ((await readFile('CNAME', 'utf8')).trim() !== 'yesir.softdaddy-o.com') {
     throw new Error('CNAME trimmed content mismatch');
