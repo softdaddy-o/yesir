@@ -5,14 +5,14 @@ const checks = [
     {
         path: 'index.html',
         includes: [
-            '<title>yes.softdaddy-o.com</title>',
+            '<title>yesir.softdaddy-o.com</title>',
             'threads/doha-poor-fish/'
         ]
     },
     {
         path: 'threads/doha-poor-fish/index.html',
         includes: [
-            '<title>가난한 물고기 - yes.softdaddy-o.com</title>',
+            '<title>가난한 물고기 - yesir.softdaddy-o.com</title>',
             '가난한 물고기를',
             '푸어 라고 한다',
             'https://www.threads.com/@doha_txt/post/DZusRTzgQmh'
@@ -20,7 +20,7 @@ const checks = [
     },
     {
         path: 'CNAME',
-        exact: 'yes.softdaddy-o.com\n'
+        exact: 'yesir.softdaddy-o.com\n'
     },
     {
         path: '.nojekyll',

@@ -1,6 +1,6 @@
-# yes.softdaddy-o.com
+# yesir.softdaddy-o.com
 
-Static GitHub Pages site for `yes.softdaddy-o.com`.
+Static GitHub Pages site for `yesir.softdaddy-o.com`.
 
 ## Pages
 
