@@ -4,39 +4,47 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>yesir.softdaddy-o.com</title>
-    <meta name="description" content="짧은 링크와 작은 인터넷 조각을 모아두는 yesir.softdaddy-o.com 인덱스입니다.">
+    <meta name="description" content="네님 전용 이것저것 모은 페이지. 짧은 링크, 스레드, 실험 페이지를 한곳에 둡니다.">
     <link rel="canonical" href="https://yesir.softdaddy-o.com/">
     <meta property="og:title" content="yesir.softdaddy-o.com">
-    <meta property="og:description" content="작은 인터넷 조각을 볼 수 있게 보존하는 페이지.">
+    <meta property="og:description" content="네님 전용 이것저것 모은 페이지.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yesir.softdaddy-o.com/">
     <meta property="og:image" content="https://yesir.softdaddy-o.com/assets/poor-fish.png">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <main class="shell">
-        <header class="topbar">
+<body class="home-page">
+    <main class="home-shell">
+        <header class="home-topbar">
             <a class="brand" href="/">yesir.</a>
-            <nav class="nav" aria-label="Primary">
+            <nav class="home-nav" aria-label="Primary">
                 <a href="threads/doha-poor-fish/">Threads</a>
             </nav>
         </header>
 
-        <section class="hero" aria-labelledby="page-title">
+        <section class="home-hero" aria-labelledby="page-title">
             <div>
-                <p class="eyebrow">Index</p>
-                <h1 id="page-title">small things worth keeping visible</h1>
-                <p class="lede">링크 하나로 넘기기 아까운 짧은 포스트를, 다시 읽기 쉬운 정적 페이지로 둡니다.</p>
-
-                <div class="index-list" aria-label="Saved pages">
-                    <a class="item" href="threads/doha-poor-fish/">
-                        <strong>가난한 물고기</strong>
-                        <span>도하(@doha_txt)의 짧은 Threads 포스트를 보존한 페이지.</span>
-                    </a>
-                </div>
+                <p class="eyebrow">Personal index</p>
+                <h1 id="page-title"><span>네님 전용</span><span>이것저것 모은</span><span>페이지</span></h1>
+                <p class="lede">짧은 링크, 웃긴 스레드, 작은 실험을<br>여기 모아둡니다.</p>
             </div>
 
-            <img class="poster" src="assets/poor-fish.png" alt="빈 지갑 옆의 작은 물고기 일러스트">
+            <img class="home-visual" src="assets/poor-fish.png" alt="작은 물고기와 동전 일러스트">
+        </section>
+
+        <section class="index-section" aria-labelledby="saved-title">
+            <div class="section-heading">
+                <p class="eyebrow">Saved</p>
+                <h2 id="saved-title">지금 있는 것</h2>
+            </div>
+
+            <div class="index-list" aria-label="Saved pages">
+                <a class="index-card" href="threads/doha-poor-fish/">
+                    <span class="card-type">Threads scrape</span>
+                    <strong>가난한 물고기</strong>
+                    <span>도하(@doha_txt)의 공개 스레드와 답글을 Threads 스타일로 정리한 페이지.</span>
+                </a>
+            </div>
         </section>
     </main>
 </body>
