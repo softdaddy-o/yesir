@@ -272,7 +272,7 @@ export function renderCollectionPage({ category, categories }) {
             <a class="brand" href="../../">yesir.</a>
             <nav class="home-nav" aria-label="Primary">
                 <a href="../../#playground">놀이터</a>
-                <a href="../../threads/doha-poor-fish/">Threads</a>
+                <a href="../../play/funny/">웃긴 것</a>
             </nav>
         </header>
 
@@ -303,12 +303,16 @@ ${renderCategoryCards(categories.filter(other => other.slug !== category.slug), 
 
 export function renderThreadPage(thread) {
     const title = getThreadTitle(thread);
-    const sortedReplies = sortRepliesByLikes(thread.replies);
+    const replies = thread.replies || [];
+    const sortedReplies = sortRepliesByLikes(replies);
     const screenshotCount = thread.capture?.screenshotCount || 0;
     const generatedAt = thread.capture?.generatedAt || '';
-    const totalReplyCount = thread.replies.length;
+    const totalReplyCount = replies.length;
     const stats = thread.stats || {};
     const main = thread.main;
+    const authorUsername = thread.author?.username || main.username;
+    const description = thread.description || `@${authorUsername} Threads 스레드와 댓글 ${totalReplyCount}개를 yesir 아카이브로 정리한 페이지.`;
+    const captureNote = thread.capture?.note || `Threads가 일부 댓글을 접어두는 구간이 있어 화면 캡처는 바닥까지 내린 ${screenshotCount}장 기준, 텍스트 목록은 GraphQL 응답에서 로드된 댓글 ${totalReplyCount}개 기준입니다.`;
 
     return `<!doctype html>
 <html lang="ko">
@@ -316,7 +320,7 @@ export function renderThreadPage(thread) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${escapeHtml(title)} - yesir.softdaddy-o.com</title>
-    <meta name="description" content="도하(@${escapeHtml(thread.author.username)})의 Threads 물고기 말장난 스레드와 댓글 ${totalReplyCount}개를 정리한 페이지.">
+    <meta name="description" content="${escapeHtml(description)}">
     <link rel="canonical" href="https://yesir.softdaddy-o.com/threads/${escapeHtml(thread.slug)}/">
     <meta property="og:title" content="${escapeHtml(title)}">
     <meta property="og:description" content="${escapeHtml(main.text.replace(/\s+/g, ' ').trim())}">
@@ -370,7 +374,7 @@ ${sortedReplies.map((reply, index) => renderReply(reply, index, sortedReplies)).
             </div>
         </section>
 
-        <p class="scrape-note">Threads가 일부 댓글을 접어두는 구간이 있어 화면 캡처는 바닥까지 내린 ${screenshotCount}장 기준, 텍스트 목록은 GraphQL 응답에서 로드된 댓글 ${totalReplyCount}개 기준입니다.</p>
+        <p class="scrape-note">${escapeHtml(captureNote)}</p>
 ${renderSortToggle()}
     </main>
 ${renderSortScript()}
