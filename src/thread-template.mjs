@@ -311,8 +311,10 @@ export function renderThreadPage(thread) {
     const stats = thread.stats || {};
     const main = thread.main;
     const authorUsername = thread.author?.username || main.username;
-    const description = thread.description || `@${authorUsername} Threads 스레드와 댓글 ${totalReplyCount}개를 yesir 아카이브로 정리한 페이지.`;
+    const itemLabel = thread.capture?.itemLabel || '댓글';
+    const description = thread.description || `@${authorUsername} Threads 스레드와 ${itemLabel} ${totalReplyCount}개를 yesir 아카이브로 정리한 페이지.`;
     const captureNote = thread.capture?.note || `Threads가 일부 댓글을 접어두는 구간이 있어 화면 캡처는 바닥까지 내린 ${screenshotCount}장 기준, 텍스트 목록은 GraphQL 응답에서 로드된 댓글 ${totalReplyCount}개 기준입니다.`;
+    const summaryText = thread.capture?.summaryText || `로그인 세션으로 스크롤 캡처한 Threads ${itemLabel} ${totalReplyCount}개. 기본 정렬은 좋아요순입니다.`;
 
     return `<!doctype html>
 <html lang="ko">
@@ -342,10 +344,10 @@ export function renderThreadPage(thread) {
         </header>
 
         <section class="thread-summary" aria-label="Archive summary">
-            <p>로그인 세션으로 스크롤 캡처한 Threads 댓글 ${totalReplyCount}개. 기본 정렬은 좋아요순입니다.</p>
+            <p>${escapeHtml(summaryText)}</p>
             <dl>
                 <div><dt>캡처</dt><dd>${screenshotCount}장</dd></div>
-                <div><dt>본문</dt><dd>${totalReplyCount}개 댓글</dd></div>
+                <div><dt>본문</dt><dd>${totalReplyCount}개 ${escapeHtml(itemLabel)}</dd></div>
                 <div><dt>기준일</dt><dd>${escapeHtml(generatedAt)}</dd></div>
             </dl>
         </section>
