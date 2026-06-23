@@ -36,8 +36,8 @@ function assertMissing(path) {
 assertIncludes(homeHtml, '<title>네님 놀이터 - yesir.softdaddy-o.com</title>', 'index.html');
 assertIncludes(homeHtml, 'Naenim playground', 'index.html');
 assertIncludes(homeHtml, '네님</span><span>놀이터', 'index.html');
-assertIncludes(homeHtml, '문패는 놀이터<br>안쪽은 작은 쉼터', 'index.html');
-assertIncludes(homeHtml, '밖에서 주운 말과 마음에 남은 장면을', 'index.html');
+assertIncludes(homeHtml, '다시 볼 것들<br>주제별로 정리', 'index.html');
+assertIncludes(homeHtml, '필요할 때 다시 보려고 남겨둔 글과 캡처를', 'index.html');
 assertIncludes(homeHtml, 'play/mind/', 'index.html');
 assertIncludes(homeHtml, 'play/self-growth/', 'index.html');
 assertIncludes(homeHtml, 'play/funny/', 'index.html');
@@ -47,8 +47,11 @@ assertIncludes(homeHtml, '11 saved posts', 'index.html');
 assertNotIncludes(homeHtml, 'threads/doha-poor-fish/', 'index.html');
 assertNotIncludes(homeHtml, 'play/anxiety/', 'index.html');
 assertNotIncludes(homeHtml, 'play/psychology/', 'index.html');
+assertNotIncludes(homeHtml, '밖에서 주운 말', 'index.html');
+assertNotIncludes(homeHtml, '살짝 열기', 'index.html');
+assertNotIncludes(homeHtml, '웃음 서랍', 'index.html');
 
-assertIncludes(mindHtml, '<title>마음 쉼터 - 네님 놀이터 - yesir.softdaddy-o.com</title>', 'play/mind/index.html');
+assertIncludes(mindHtml, '<title>마음 - 네님 놀이터 - yesir.softdaddy-o.com</title>', 'play/mind/index.html');
 assertIncludes(mindHtml, '신경계를 불안하게 만드는 일상 습관', 'play/mind/index.html');
 assertIncludes(mindHtml, 'https://www.threads.com/@youngtech_01/post/DZPfJdrkXSB', 'play/mind/index.html');
 assertIncludes(mindHtml, 'AI로 나랑 잘 놀기', 'play/mind/index.html');
@@ -58,13 +61,13 @@ assertIncludes(mindHtml, '후킹 글쓰기 5가지 심리 장치', 'play/mind/in
 assertIncludes(mindHtml, 'https://www.threads.com/@sienna__ai/post/DX4edcwCY0X', 'play/mind/index.html');
 assertIncludes(mindHtml, '따뜻한 리더의 역설', 'play/mind/index.html');
 
-assertIncludes(selfGrowthHtml, '<title>작은 동력 - 네님 놀이터 - yesir.softdaddy-o.com</title>', 'play/self-growth/index.html');
+assertIncludes(selfGrowthHtml, '<title>자기계발 - 네님 놀이터 - yesir.softdaddy-o.com</title>', 'play/self-growth/index.html');
 assertIncludes(selfGrowthHtml, '행복을 목표로 삼지 말라', 'play/self-growth/index.html');
 assertIncludes(selfGrowthHtml, 'https://www.threads.com/@watch.point_re/post/DZNbtYqFH9i', 'play/self-growth/index.html');
 assertIncludes(selfGrowthHtml, '자율성이 오래 가는 자기조절을 만든다', 'play/self-growth/index.html');
 assertIncludes(selfGrowthHtml, '서민 중산층에 머무는 10가지 패턴', 'play/self-growth/index.html');
 
-assertIncludes(funnyHtml, '<title>웃음 서랍 - 네님 놀이터 - yesir.softdaddy-o.com</title>', 'play/funny/index.html');
+assertIncludes(funnyHtml, '<title>웃긴 것 - 네님 놀이터 - yesir.softdaddy-o.com</title>', 'play/funny/index.html');
 assertIncludes(funnyHtml, '가난한 물고기', 'play/funny/index.html');
 assertIncludes(funnyHtml, '../../threads/doha-poor-fish/', 'play/funny/index.html');
 assertIncludes(funnyHtml, '웃긴 닉네이', 'play/funny/index.html');
