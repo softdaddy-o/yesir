@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Gowun+Dodum&family=Jua&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Dongle:wght@400;700&family=Gowun+Dodum&family=Jua&display=swap");
 
 :root {
     --ink: #101010;
@@ -520,9 +520,10 @@ a:hover {
 
 .post-text {
     margin: 8px 0 0;
-    font-family: "Gowun Dodum", ui-sans-serif, system-ui, sans-serif;
-    font-size: 17px;
-    line-height: 1.58;
+    font-family: "Dongle", "Gowun Dodum", ui-sans-serif, system-ui, sans-serif;
+    font-size: 26px;
+    line-height: 1.06;
+    font-weight: 400;
     white-space: normal;
     word-break: normal;
     overflow-wrap: anywhere;
@@ -1289,7 +1290,7 @@ a:hover {
     }
 
     .post-text {
-        font-size: 16px;
+        font-size: 25px;
     }
 
     .post-text-large {
