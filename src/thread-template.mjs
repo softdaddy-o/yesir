@@ -172,9 +172,6 @@ function renderCollectionItem(item) {
 }
 
 export function renderHomePage({ threads, playground }) {
-    const thread = threads[0];
-    const title = getThreadTitle(thread);
-    const replyCount = thread.replies.length;
     const categories = playground?.categories || [];
     const stats = getPlaygroundStats(categories);
 
@@ -184,10 +181,10 @@ export function renderHomePage({ threads, playground }) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>네님 놀이터 - yesir.softdaddy-o.com</title>
-    <meta name="description" content="네님이 저장한 Threads 캡처와 마음 메모를 불안, 심리, 자기계발, 웃긴 것별로 모아두는 개인 놀이터.">
+    <meta name="description" content="밖에서 주운 말과 마음에 남은 장면을 조용히 접어 넣어두는 네님만의 작은 쉼터.">
     <link rel="canonical" href="https://yesir.softdaddy-o.com/">
     <meta property="og:title" content="네님 놀이터">
-    <meta property="og:description" content="불안, 심리, 자기계발, 웃긴 Threads 캡처를 모아두는 네님 전용 놀이터.">
+    <meta property="og:description" content="문패는 놀이터, 안쪽은 네님만 아는 작은 쉼터.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yesir.softdaddy-o.com/">
     <meta property="og:image" content="https://yesir.softdaddy-o.com/assets/poor-fish.png">
@@ -199,8 +196,8 @@ export function renderHomePage({ threads, playground }) {
         <header class="home-topbar">
             <a class="brand" href="/">yesir.</a>
             <nav class="home-nav" aria-label="Primary">
-                <a href="#playground">놀이터</a>
-                <a href="#threads">Threads</a>
+                <a href="#playground">방 보기</a>
+                <a href="play/funny/">웃음 서랍</a>
             </nav>
         </header>
 
@@ -208,10 +205,10 @@ export function renderHomePage({ threads, playground }) {
             <div>
                 <p class="eyebrow">Naenim playground</p>
                 <h1 id="page-title"><span>네님</span><span>놀이터</span></h1>
-                <p class="lede">불안한 생각, 심리 메모, 자기계발 꿀조각, 웃긴 스레드를<br>가볍게 던져두고 다시 꺼내보는 개인 놀이터입니다.</p>
+                <p class="lede">밖에서 주운 말과 마음에 남은 장면을<br>조용히 접어 넣어두는 작은 문 안쪽.</p>
                 <div class="hero-actions" aria-label="Playground quick links">
-                    <a href="#playground">저장함 보기</a>
-                    <a href="threads/${escapeHtml(thread.slug)}/">물고기 스레드</a>
+                    <a href="#playground">살짝 열기</a>
+                    <a href="play/funny/">웃음 서랍</a>
                 </div>
             </div>
 
@@ -220,15 +217,15 @@ export function renderHomePage({ threads, playground }) {
                     <span>yesir.</span>
                     <span>${stats.categoryCount} rooms / ${stats.itemCount} saves</span>
                 </div>
-                <span class="scrap-sticker scrap-sticker-pink">심리</span>
-                <span class="scrap-sticker scrap-sticker-green">웃긴 것</span>
+                <span class="scrap-sticker scrap-sticker-pink">쉼터</span>
+                <span class="scrap-sticker scrap-sticker-green">서랍</span>
                 <div class="scrap-note scrap-note-main">
-                    <small>Playground map</small>
-                    <strong>네님 놀이터<br>저장한 마음 조각들</strong>
+                    <small>Secret door</small>
+                    <strong>문패는 놀이터<br>안쪽은 작은 쉼터</strong>
                 </div>
                 <div class="scrap-note scrap-note-feed">
-                    <b>오늘의 방</b>
-                    <p>불안은 낮추고, 심리는 펼치고, 자기계발은 작게, 웃긴 건 크게.</p>
+                    <b>오늘은 여기까지</b>
+                    <p>시끄러운 건 바깥에 두고, 남은 말만 살짝 접어 둡니다.</p>
                     <span>${stats.itemCount} saved posts</span>
                 </div>
             </div>
@@ -237,26 +234,11 @@ export function renderHomePage({ threads, playground }) {
         <section class="index-section" id="playground" aria-labelledby="playground-title">
             <div class="section-heading">
                 <p class="eyebrow">Play rooms</p>
-                <h2 id="playground-title">어디로 들어갈까</h2>
+                <h2 id="playground-title">어느 문을 열까</h2>
             </div>
 
             <div class="index-list playground-grid" aria-label="Playground categories">
 ${renderCategoryCards(categories)}
-            </div>
-        </section>
-
-        <section class="index-section" id="threads" aria-labelledby="threads-title">
-            <div class="section-heading">
-                <p class="eyebrow">Threads archive</p>
-                <h2 id="threads-title">통째로 긁어온 것</h2>
-            </div>
-
-            <div class="index-list" aria-label="Saved thread pages">
-                <a class="index-card index-card-pop" href="threads/${escapeHtml(thread.slug)}/">
-                    <span class="card-type">Threads archive</span>
-                    <strong>${escapeHtml(title)}</strong>
-                    <span>도하(@${escapeHtml(thread.author.username)})의 물고기 말장난 스레드. 로그인 세션으로 캡처한 댓글 ${replyCount}개를 좋아요순/원래순으로 볼 수 있습니다.</span>
-                </a>
             </div>
         </section>
     </main>

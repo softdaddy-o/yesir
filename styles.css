@@ -382,7 +382,7 @@ a:hover {
 }
 
 .playground-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .playground-card {
@@ -405,6 +405,7 @@ a:hover {
     transform: rotate(12deg);
 }
 
+.playground-card-mind,
 .playground-card-anxiety {
     background:
         radial-gradient(circle at 88% 18%, rgba(255, 207, 77, 0.8), transparent 70px),

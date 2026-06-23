@@ -4,8 +4,7 @@ import { readFile } from 'node:fs/promises';
 const threadHtml = await readFile('threads/doha-poor-fish/index.html', 'utf8');
 const homeHtml = await readFile('index.html', 'utf8');
 const previewHtml = await readFile('design-previews/index.html', 'utf8');
-const anxietyHtml = await readFile('play/anxiety/index.html', 'utf8');
-const psychologyHtml = await readFile('play/psychology/index.html', 'utf8');
+const mindHtml = await readFile('play/mind/index.html', 'utf8');
 const selfGrowthHtml = await readFile('play/self-growth/index.html', 'utf8');
 const funnyHtml = await readFile('play/funny/index.html', 'utf8');
 const packageJson = JSON.parse(await readFile('package.json', 'utf8'));
@@ -16,43 +15,56 @@ function assertIncludes(content, expected, path) {
     }
 }
 
+function assertNotIncludes(content, unexpected, path) {
+    if (content.includes(unexpected)) {
+        throw new Error(`${path} unexpectedly includes ${JSON.stringify(unexpected)}`);
+    }
+}
+
 function assertExists(path) {
     if (!existsSync(path)) {
         throw new Error(`${path} is missing`);
     }
 }
 
+function assertMissing(path) {
+    if (existsSync(path)) {
+        throw new Error(`${path} should not exist`);
+    }
+}
+
 assertIncludes(homeHtml, '<title>네님 놀이터 - yesir.softdaddy-o.com</title>', 'index.html');
 assertIncludes(homeHtml, 'Naenim playground', 'index.html');
 assertIncludes(homeHtml, '네님</span><span>놀이터', 'index.html');
-assertIncludes(homeHtml, 'play/anxiety/', 'index.html');
-assertIncludes(homeHtml, 'play/psychology/', 'index.html');
+assertIncludes(homeHtml, '문패는 놀이터<br>안쪽은 작은 쉼터', 'index.html');
+assertIncludes(homeHtml, '밖에서 주운 말과 마음에 남은 장면을', 'index.html');
+assertIncludes(homeHtml, 'play/mind/', 'index.html');
 assertIncludes(homeHtml, 'play/self-growth/', 'index.html');
 assertIncludes(homeHtml, 'play/funny/', 'index.html');
-assertIncludes(homeHtml, 'threads/doha-poor-fish/', 'index.html');
 assertIncludes(homeHtml, 'home-scrapbook', 'index.html');
-assertIncludes(homeHtml, '불안은 낮추고, 심리는 펼치고, 자기계발은 작게, 웃긴 건 크게.', 'index.html');
+assertIncludes(homeHtml, '3 rooms / 11 saves', 'index.html');
 assertIncludes(homeHtml, '11 saved posts', 'index.html');
+assertNotIncludes(homeHtml, 'threads/doha-poor-fish/', 'index.html');
+assertNotIncludes(homeHtml, 'play/anxiety/', 'index.html');
+assertNotIncludes(homeHtml, 'play/psychology/', 'index.html');
 
-assertIncludes(anxietyHtml, '<title>불안 - 네님 놀이터 - yesir.softdaddy-o.com</title>', 'play/anxiety/index.html');
-assertIncludes(anxietyHtml, '신경계를 불안하게 만드는 일상 습관', 'play/anxiety/index.html');
-assertIncludes(anxietyHtml, 'https://www.threads.com/@youngtech_01/post/DZPfJdrkXSB', 'play/anxiety/index.html');
-assertIncludes(anxietyHtml, 'AI로 나랑 잘 놀기', 'play/anxiety/index.html');
-assertIncludes(anxietyHtml, '부모님 걱정', 'play/anxiety/index.html');
+assertIncludes(mindHtml, '<title>마음 쉼터 - 네님 놀이터 - yesir.softdaddy-o.com</title>', 'play/mind/index.html');
+assertIncludes(mindHtml, '신경계를 불안하게 만드는 일상 습관', 'play/mind/index.html');
+assertIncludes(mindHtml, 'https://www.threads.com/@youngtech_01/post/DZPfJdrkXSB', 'play/mind/index.html');
+assertIncludes(mindHtml, 'AI로 나랑 잘 놀기', 'play/mind/index.html');
+assertIncludes(mindHtml, '부모님 걱정', 'play/mind/index.html');
+assertIncludes(mindHtml, '불안을 자극하는 사람을 고르는 이유', 'play/mind/index.html');
+assertIncludes(mindHtml, '후킹 글쓰기 5가지 심리 장치', 'play/mind/index.html');
+assertIncludes(mindHtml, 'https://www.threads.com/@sienna__ai/post/DX4edcwCY0X', 'play/mind/index.html');
+assertIncludes(mindHtml, '따뜻한 리더의 역설', 'play/mind/index.html');
 
-assertIncludes(psychologyHtml, '<title>심리 - 네님 놀이터 - yesir.softdaddy-o.com</title>', 'play/psychology/index.html');
-assertIncludes(psychologyHtml, '불안을 자극하는 사람을 고르는 이유', 'play/psychology/index.html');
-assertIncludes(psychologyHtml, '후킹 글쓰기 5가지 심리 장치', 'play/psychology/index.html');
-assertIncludes(psychologyHtml, 'https://www.threads.com/@sienna__ai/post/DX4edcwCY0X', 'play/psychology/index.html');
-assertIncludes(psychologyHtml, '따뜻한 리더의 역설', 'play/psychology/index.html');
-
-assertIncludes(selfGrowthHtml, '<title>자기계발 - 네님 놀이터 - yesir.softdaddy-o.com</title>', 'play/self-growth/index.html');
+assertIncludes(selfGrowthHtml, '<title>작은 동력 - 네님 놀이터 - yesir.softdaddy-o.com</title>', 'play/self-growth/index.html');
 assertIncludes(selfGrowthHtml, '행복을 목표로 삼지 말라', 'play/self-growth/index.html');
 assertIncludes(selfGrowthHtml, 'https://www.threads.com/@watch.point_re/post/DZNbtYqFH9i', 'play/self-growth/index.html');
 assertIncludes(selfGrowthHtml, '자율성이 오래 가는 자기조절을 만든다', 'play/self-growth/index.html');
 assertIncludes(selfGrowthHtml, '서민 중산층에 머무는 10가지 패턴', 'play/self-growth/index.html');
 
-assertIncludes(funnyHtml, '<title>웃긴 것 - 네님 놀이터 - yesir.softdaddy-o.com</title>', 'play/funny/index.html');
+assertIncludes(funnyHtml, '<title>웃음 서랍 - 네님 놀이터 - yesir.softdaddy-o.com</title>', 'play/funny/index.html');
 assertIncludes(funnyHtml, '가난한 물고기', 'play/funny/index.html');
 assertIncludes(funnyHtml, '../../threads/doha-poor-fish/', 'play/funny/index.html');
 assertIncludes(funnyHtml, '웃긴 닉네이', 'play/funny/index.html');
@@ -97,19 +109,21 @@ for (const path of [
     '.nojekyll',
     'assets/poor-fish.png',
     'design-previews/index.html',
-    'play/anxiety/index.html',
-    'play/psychology/index.html',
+    'play/mind/index.html',
     'play/self-growth/index.html',
     'play/funny/index.html',
 ]) {
     assertExists(path);
 }
 
+assertMissing('play/anxiety/index.html');
+assertMissing('play/psychology/index.html');
+
 if ((await readFile('CNAME', 'utf8')).trim() !== 'yesir.softdaddy-o.com') {
     throw new Error('CNAME trimmed content mismatch');
 }
 
-if (/[\uFFFD\u5a9b\u6e72\uf9ce\uc9cc]/.test(homeHtml + anxietyHtml + psychologyHtml + selfGrowthHtml + funnyHtml + threadHtml)) {
+if (/[\uFFFD\u5a9b\u6e72\uf9ce\uc9cc]/.test(homeHtml + mindHtml + selfGrowthHtml + funnyHtml + threadHtml)) {
     throw new Error('generated HTML contains likely mojibake');
 }
 
