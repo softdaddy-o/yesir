@@ -1,0 +1,137 @@
+{
+  "updatedAt": "2026-06-23",
+  "categories": [
+    {
+      "slug": "anxiety",
+      "label": "불안",
+      "kicker": "마음 안전구역",
+      "description": "불안이 올라올 때 바로 해석하거나 해결하려 들지 않고, 신경계와 생활 습관 관점에서 다시 볼 수 있게 모아둔 방.",
+      "items": [
+        {
+          "title": "신경계를 불안하게 만드는 일상 습관",
+          "author": "@youngtech_01",
+          "sourceType": "Logseq verified",
+          "url": "https://www.threads.com/@youngtech_01/post/DZPfJdrkXSB",
+          "summary": "현대인의 불안을 실제 위험보다 신경계가 위협 모드로 학습되는 반복 습관의 문제로 보는 메모.",
+          "note": "Logseq: pages/신경계를 불안하게 만드는 일상 습관.md",
+          "tags": ["mental-health", "anxiety", "habits"]
+        },
+        {
+          "title": "AI로 나랑 잘 놀기",
+          "author": "@wrigglingshop",
+          "sourceType": "Logseq verified",
+          "url": "https://www.threads.com/@wrigglingshop/post/DWlnZF_D0KK",
+          "summary": "좋아하는 것과 그 이유를 적고 AI에게 활동 추천을 받는 자기 돌봄 루틴. 우울과 불안을 제거 대상이 아니라 신호로 다룬다.",
+          "note": "Logseq: AI-Assisted Self-Discovery for Mental Health Recovery",
+          "tags": ["self-care", "mental-health", "ai"]
+        },
+        {
+          "title": "부모님 걱정",
+          "author": "@rinalov10",
+          "sourceType": "Todoist capture",
+          "url": "https://www.threads.com/@rinalov10/post/DY_NGyukZkm",
+          "summary": "가족 걱정이 커질 때 다시 꺼내볼 캡처. 아직 전문 스크랩 전이라 원문 링크 중심으로 보관한다.",
+          "note": "Todoist: 부모님 걱정",
+          "tags": ["family", "worry", "saved"]
+        }
+      ]
+    },
+    {
+      "slug": "psychology",
+      "label": "심리",
+      "kicker": "마음 사용설명서",
+      "description": "관계, 선택, 설득, 후킹처럼 사람 마음이 움직이는 방식을 저장해둔 방.",
+      "items": [
+        {
+          "title": "불안을 자극하는 사람을 고르는 이유",
+          "author": "@gentleman.kr",
+          "sourceType": "Logseq source-todoist",
+          "url": "https://www.threads.com/@gentleman.kr/post/DRTTM74CCgE",
+          "summary": "익숙한 고통을 안전으로 착각하는 무의식 패턴을 관계 선택 문제로 설명한 심리 메모.",
+          "note": "Logseq: Choosing Anxiety-Triggering People Due to Unconscious Entanglement",
+          "tags": ["psychology", "relationships", "self-awareness"]
+        },
+        {
+          "title": "후킹 글쓰기 5가지 심리 장치",
+          "author": "@sienna__ai",
+          "sourceType": "Logseq verified",
+          "url": "https://www.threads.com/@sienna__ai/post/DX4edcwCY0X",
+          "summary": "같은 주제라도 반응 차이를 만드는 정체성 태그, 손실 프레이밍 같은 심리 장치를 정리한 글쓰기 메모.",
+          "note": "Logseq: 후킹 글쓰기 5가지 심리 장치.md",
+          "tags": ["copywriting", "psychology", "threads"]
+        },
+        {
+          "title": "따뜻한 리더의 역설",
+          "author": "@hosinsa101",
+          "sourceType": "Logseq verified",
+          "url": "https://www.threads.com/@hosinsa101/post/DYRfAejEpFT",
+          "summary": "좋은 의도가 항상 좋은 경험으로 전달되지는 않는다는 조직 심리 메모. 리더십과 심리적 안정감으로 연결된다.",
+          "note": "Logseq: 조용한 불화 - 따뜻한 리더의 역설.md",
+          "tags": ["leadership", "organization", "psychology"]
+        }
+      ]
+    },
+    {
+      "slug": "self-growth",
+      "label": "자기계발",
+      "kicker": "작게 다시 시작",
+      "description": "거창한 각오보다 다음 행동을 작게 만들고, 반복 가능한 삶의 규칙으로 바꿔주는 저장소.",
+      "items": [
+        {
+          "title": "행복을 목표로 삼지 말라",
+          "author": "@watch.point_re",
+          "sourceType": "Logseq verified",
+          "url": "https://www.threads.com/@watch.point_re/post/DZNbtYqFH9i",
+          "summary": "행복을 직접 목표로 삼을수록 불행해질 수 있다는 조던 피터슨식 역설을 목적과 책임의 문제로 정리한 메모.",
+          "note": "Logseq: 행복을 목표로 삼지 말라 - 조던 피터슨의 역설.md",
+          "tags": ["self-development", "philosophy", "purpose"]
+        },
+        {
+          "title": "자율성이 오래 가는 자기조절을 만든다",
+          "author": "@dream_grow_lee",
+          "sourceType": "Logseq verified",
+          "url": "https://www.threads.com/@dream_grow_lee/post/DX_0Ze4Ehvg",
+          "summary": "외부 강제보다 스스로 선택한 구조가 다이어트, 금연, 생산성 루틴을 오래 유지하게 만든다는 메모.",
+          "note": "Logseq: Autonomy Over Control Builds Intrinsic Self-Regulation",
+          "tags": ["habits", "autonomy", "self-regulation"]
+        },
+        {
+          "title": "서민 중산층에 머무는 10가지 패턴",
+          "author": "@yoonji_song",
+          "sourceType": "Logseq verified",
+          "url": "https://www.threads.com/@yoonji_song/post/DXlXaiLga8x",
+          "summary": "작은 안정에 머무르게 만드는 사고 습관을 부의 관점에서 정리한 자기계발 캡처.",
+          "note": "Logseq: 서민 중산층에 머무는 10가지 패턴",
+          "tags": ["wealth-mindset", "self-improvement", "patterns"]
+        }
+      ]
+    },
+    {
+      "slug": "funny",
+      "label": "웃긴 것",
+      "kicker": "실없는 저장함",
+      "description": "쓸모는 덜해도 기분 전환에는 확실한 스레드와 말장난을 모아둔 방.",
+      "items": [
+        {
+          "title": "가난한 물고기",
+          "author": "@doha_txt",
+          "sourceType": "yesir archive",
+          "url": "https://www.threads.com/@doha_txt/post/DZusRTzgQmh",
+          "internalUrl": "../../threads/doha-poor-fish/",
+          "summary": "댓글 405개를 좋아요순/원래순으로 볼 수 있게 만든 첫 전체 아카이브. 말장난 밀도가 높다.",
+          "note": "yesir: threads/doha-poor-fish",
+          "tags": ["pun", "archive", "threads"]
+        },
+        {
+          "title": "웃긴 닉네이",
+          "author": "@soon_bu.li",
+          "sourceType": "Todoist capture",
+          "url": "https://www.threads.com/@soon_bu.li/post/DZOO7rPkyVM",
+          "summary": "짧은 유머 캡처. Logseq에서는 전문 추출 대상은 아니지만 놀이터에는 딱 맞아서 보관한다.",
+          "note": "Todoist: 웃긴 닉네이",
+          "tags": ["short", "funny", "nickname"]
+        }
+      ]
+    }
+  ]
+}

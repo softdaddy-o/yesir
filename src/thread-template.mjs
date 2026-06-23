@@ -77,7 +77,7 @@ function renderReply(reply, index, sortedReplies) {
                         <span class="username">${escapeHtml(reply.username)}</span>
                         <span class="dot">&middot;</span>
                         <span>${escapeHtml(date)}</span>
-                        <a class="post-number" href="#reply-${likeRank}" aria-label="답글 ${likeRank}번">#${likeRank}</a>
+                        <a class="post-number" href="#reply-${likeRank}" aria-label="댓글 ${likeRank}번">#${likeRank}</a>
                     </div>
                     ${renderText(reply.text)}
                     <div class="post-actions">
@@ -89,7 +89,7 @@ function renderReply(reply, index, sortedReplies) {
 }
 
 function renderSortToggle() {
-    return `        <div class="sort-dock" data-thread-sort-toggle data-default-sort="likes" aria-label="답글 정렬">
+    return `        <div class="sort-dock" data-thread-sort-toggle data-default-sort="likes" aria-label="댓글 정렬">
             <button type="button" data-sort-button="likes" aria-pressed="true">좋아요순</button>
             <button type="button" data-sort-button="original" aria-pressed="false">원래순</button>
         </div>`;
@@ -131,24 +131,67 @@ function renderSortScript() {
     </script>`;
 }
 
-export function renderHomePage({ threads }) {
+function getPlaygroundStats(categories) {
+    return {
+        categoryCount: categories.length,
+        itemCount: categories.reduce((total, category) => total + category.items.length, 0),
+    };
+}
+
+function getPlaygroundHref(category, rootPrefix = '') {
+    return `${rootPrefix}play/${escapeHtml(category.slug)}/`;
+}
+
+function renderCategoryCards(categories, rootPrefix = '') {
+    return categories.map((category) => `                <a class="index-card playground-card playground-card-${escapeHtml(category.slug)}" href="${getPlaygroundHref(category, rootPrefix)}">
+                    <span class="card-type">${escapeHtml(category.kicker)}</span>
+                    <strong>${escapeHtml(category.label)}</strong>
+                    <span>${escapeHtml(category.description)}</span>
+                    <em>${category.items.length}개 저장됨</em>
+                </a>`).join('\n');
+}
+
+function renderCollectionItem(item) {
+    const href = item.internalUrl || item.url || THREADS_POST_URL_PREFIX;
+    const sourceLabel = item.internalUrl ? '아카이브 보기' : 'Threads 열기';
+    const tags = (item.tags || []).map(tag => `<span>${escapeHtml(tag)}</span>`).join('');
+
+    return `                <article class="collection-item">
+                    <div class="collection-item-top">
+                        <span class="source-pill">${escapeHtml(item.sourceType || 'saved')}</span>
+                        <span>${escapeHtml(item.author || '')}</span>
+                    </div>
+                    <h2>${escapeHtml(item.title)}</h2>
+                    <p>${escapeHtml(item.summary)}</p>
+                    <div class="tag-row">${tags}</div>
+                    <div class="collection-item-bottom">
+                        <span>${escapeHtml(item.note || '')}</span>
+                        <a href="${escapeHtml(href)}">${sourceLabel}</a>
+                    </div>
+                </article>`;
+}
+
+export function renderHomePage({ threads, playground }) {
     const thread = threads[0];
     const title = getThreadTitle(thread);
     const replyCount = thread.replies.length;
+    const categories = playground?.categories || [];
+    const stats = getPlaygroundStats(categories);
 
     return `<!doctype html>
 <html lang="ko">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>yesir.softdaddy-o.com</title>
-    <meta name="description" content="네님 전용 이것저것 모은 페이지. 지금은 Threads 스크랩과 작은 링크들을 정리합니다.">
+    <title>네님 놀이터 - yesir.softdaddy-o.com</title>
+    <meta name="description" content="네님이 저장한 Threads 캡처와 마음 메모를 불안, 심리, 자기계발, 웃긴 것별로 모아두는 개인 놀이터.">
     <link rel="canonical" href="https://yesir.softdaddy-o.com/">
-    <meta property="og:title" content="yesir.softdaddy-o.com">
-    <meta property="og:description" content="네님 전용 이것저것 모은 페이지.">
+    <meta property="og:title" content="네님 놀이터">
+    <meta property="og:description" content="불안, 심리, 자기계발, 웃긴 Threads 캡처를 모아두는 네님 전용 놀이터.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yesir.softdaddy-o.com/">
     <meta property="og:image" content="https://yesir.softdaddy-o.com/assets/poor-fish.png">
+    <link rel="icon" href="data:,">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="home-page">
@@ -156,48 +199,118 @@ export function renderHomePage({ threads }) {
         <header class="home-topbar">
             <a class="brand" href="/">yesir.</a>
             <nav class="home-nav" aria-label="Primary">
-                <a href="threads/${escapeHtml(thread.slug)}/">Threads</a>
+                <a href="#playground">놀이터</a>
+                <a href="#threads">Threads</a>
             </nav>
         </header>
 
-        <section class="home-hero" aria-labelledby="page-title">
+        <section class="home-hero playground-hero" aria-labelledby="page-title">
             <div>
-                <p class="eyebrow">Personal index</p>
-                <h1 id="page-title"><span>네님 전용</span><span>이것저것 모은</span><span>페이지</span></h1>
-                <p class="lede">지금은 링크, 웃긴 스레드, 작은 스크랩을<br>여기에 모아둡니다.</p>
+                <p class="eyebrow">Naenim playground</p>
+                <h1 id="page-title"><span>네님</span><span>놀이터</span></h1>
+                <p class="lede">불안한 생각, 심리 메모, 자기계발 꿀조각, 웃긴 스레드를<br>가볍게 던져두고 다시 꺼내보는 개인 놀이터입니다.</p>
+                <div class="hero-actions" aria-label="Playground quick links">
+                    <a href="#playground">저장함 보기</a>
+                    <a href="threads/${escapeHtml(thread.slug)}/">물고기 스레드</a>
+                </div>
             </div>
 
-            <div class="home-visual home-scrapbook" aria-label="yesir 스크랩북 미리보기">
+            <div class="home-visual home-scrapbook playground-visual" aria-label="네님 놀이터 미리보기">
                 <div class="scrapbook-bar">
                     <span>yesir.</span>
-                    <span>saved / threads</span>
+                    <span>${stats.categoryCount} rooms / ${stats.itemCount} saves</span>
                 </div>
-                <span class="scrap-sticker scrap-sticker-pink">saved!</span>
-                <span class="scrap-sticker scrap-sticker-green">like sort</span>
+                <span class="scrap-sticker scrap-sticker-pink">심리</span>
+                <span class="scrap-sticker scrap-sticker-green">웃긴 것</span>
                 <div class="scrap-note scrap-note-main">
-                    <small>Personal index</small>
-                    <strong>네님 전용<br>이것저것 모은 페이지</strong>
+                    <small>Playground map</small>
+                    <strong>네님 놀이터<br>저장한 마음 조각들</strong>
                 </div>
                 <div class="scrap-note scrap-note-feed">
-                    <b>Threads archive</b>
-                    <p>답글은 길어도 화면은 가볍게.</p>
-                    <span>${replyCount} replies</span>
+                    <b>오늘의 방</b>
+                    <p>불안은 낮추고, 심리는 펼치고, 자기계발은 작게, 웃긴 건 크게.</p>
+                    <span>${stats.itemCount} saved posts</span>
                 </div>
             </div>
         </section>
 
-        <section class="index-section" aria-labelledby="saved-title">
+        <section class="index-section" id="playground" aria-labelledby="playground-title">
             <div class="section-heading">
-                <p class="eyebrow">Saved</p>
-                <h2 id="saved-title">지금 있는 것</h2>
+                <p class="eyebrow">Play rooms</p>
+                <h2 id="playground-title">어디로 들어갈까</h2>
             </div>
 
-            <div class="index-list" aria-label="Saved pages">
-                <a class="index-card" href="threads/${escapeHtml(thread.slug)}/">
+            <div class="index-list playground-grid" aria-label="Playground categories">
+${renderCategoryCards(categories)}
+            </div>
+        </section>
+
+        <section class="index-section" id="threads" aria-labelledby="threads-title">
+            <div class="section-heading">
+                <p class="eyebrow">Threads archive</p>
+                <h2 id="threads-title">통째로 긁어온 것</h2>
+            </div>
+
+            <div class="index-list" aria-label="Saved thread pages">
+                <a class="index-card index-card-pop" href="threads/${escapeHtml(thread.slug)}/">
                     <span class="card-type">Threads archive</span>
                     <strong>${escapeHtml(title)}</strong>
-                    <span>도하(@${escapeHtml(thread.author.username)})의 물고기 말장난 스레드. 로그인 세션으로 불러온 답글 ${replyCount}개를 Threads 피드처럼 정리했습니다.</span>
+                    <span>도하(@${escapeHtml(thread.author.username)})의 물고기 말장난 스레드. 로그인 세션으로 캡처한 댓글 ${replyCount}개를 좋아요순/원래순으로 볼 수 있습니다.</span>
                 </a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+`;
+}
+
+export function renderCollectionPage({ category, categories }) {
+    const title = `${category.label} - 네님 놀이터`;
+
+    return `<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>${escapeHtml(title)} - yesir.softdaddy-o.com</title>
+    <meta name="description" content="${escapeHtml(category.description)}">
+    <link rel="canonical" href="https://yesir.softdaddy-o.com/play/${escapeHtml(category.slug)}/">
+    <meta property="og:title" content="${escapeHtml(title)}">
+    <meta property="og:description" content="${escapeHtml(category.description)}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yesir.softdaddy-o.com/play/${escapeHtml(category.slug)}/">
+    <meta property="og:image" content="https://yesir.softdaddy-o.com/assets/poor-fish.png">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="home-page collection-page">
+    <main class="home-shell collection-shell">
+        <header class="home-topbar">
+            <a class="brand" href="../../">yesir.</a>
+            <nav class="home-nav" aria-label="Primary">
+                <a href="../../#playground">놀이터</a>
+                <a href="../../threads/doha-poor-fish/">Threads</a>
+            </nav>
+        </header>
+
+        <section class="collection-hero" aria-labelledby="collection-title">
+            <p class="eyebrow">${escapeHtml(category.kicker)}</p>
+            <h1 id="collection-title">${escapeHtml(category.label)}</h1>
+            <p>${escapeHtml(category.description)}</p>
+        </section>
+
+        <section class="collection-board" aria-label="${escapeHtml(category.label)} 저장 목록">
+${category.items.map(renderCollectionItem).join('\n')}
+        </section>
+
+        <section class="index-section related-rooms" aria-labelledby="related-title">
+            <div class="section-heading">
+                <p class="eyebrow">Other rooms</p>
+                <h2 id="related-title">다른 방도 보기</h2>
+            </div>
+            <div class="index-list playground-grid">
+${renderCategoryCards(categories.filter(other => other.slug !== category.slug), '../../')}
             </div>
         </section>
     </main>
@@ -221,13 +334,14 @@ export function renderThreadPage(thread) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${escapeHtml(title)} - yesir.softdaddy-o.com</title>
-    <meta name="description" content="도하(@${escapeHtml(thread.author.username)})의 Threads 물고기 말장난 스레드와 답글 ${totalReplyCount}개를 정리한 페이지.">
+    <meta name="description" content="도하(@${escapeHtml(thread.author.username)})의 Threads 물고기 말장난 스레드와 댓글 ${totalReplyCount}개를 정리한 페이지.">
     <link rel="canonical" href="https://yesir.softdaddy-o.com/threads/${escapeHtml(thread.slug)}/">
     <meta property="og:title" content="${escapeHtml(title)}">
     <meta property="og:description" content="${escapeHtml(main.text.replace(/\s+/g, ' ').trim())}">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://yesir.softdaddy-o.com/threads/${escapeHtml(thread.slug)}/">
     <meta property="og:image" content="https://yesir.softdaddy-o.com/assets/poor-fish.png">
+    <link rel="icon" href="data:,">
     <link rel="stylesheet" href="../../styles.css">
 </head>
 <body class="thread-page">
@@ -242,10 +356,10 @@ export function renderThreadPage(thread) {
         </header>
 
         <section class="thread-summary" aria-label="Archive summary">
-            <p>로그인 세션으로 스크롤 캡쳐한 Threads 답글 ${totalReplyCount}개. 기본 정렬은 좋아요순입니다.</p>
+            <p>로그인 세션으로 스크롤 캡처한 Threads 댓글 ${totalReplyCount}개. 기본 정렬은 좋아요순입니다.</p>
             <dl>
-                <div><dt>캡쳐</dt><dd>${screenshotCount}장</dd></div>
-                <div><dt>본문</dt><dd>${totalReplyCount}개 답글</dd></div>
+                <div><dt>캡처</dt><dd>${screenshotCount}장</dd></div>
+                <div><dt>본문</dt><dd>${totalReplyCount}개 댓글</dd></div>
                 <div><dt>기준일</dt><dd>${escapeHtml(generatedAt)}</dd></div>
             </dl>
         </section>
@@ -262,7 +376,7 @@ export function renderThreadPage(thread) {
                     ${renderText(main.text, true)}
                     <div class="post-actions" aria-label="Post stats">
                         <span>좋아요 ${escapeHtml(formatNumber(main.likeCount) || '0')}</span>
-                        <span>답글 ${escapeHtml(stats.replyCount ?? '')}</span>
+                        <span>댓글 ${escapeHtml(stats.replyCount ?? '')}</span>
                         <span>리포스트 ${escapeHtml(stats.repostCount ?? '')}</span>
                         <span>공유 ${escapeHtml(stats.shareCount ?? '')}</span>
                     </div>
@@ -274,7 +388,7 @@ ${sortedReplies.map((reply, index) => renderReply(reply, index, sortedReplies)).
             </div>
         </section>
 
-        <p class="scrape-note">Threads가 일부 답글을 접어두는 구간이 있어 화면 캡쳐는 바닥까지 도달한 ${screenshotCount}장 기준, 텍스트 목록은 GraphQL 응답에서 로드된 답글 ${totalReplyCount}개 기준입니다.</p>
+        <p class="scrape-note">Threads가 일부 댓글을 접어두는 구간이 있어 화면 캡처는 바닥까지 내린 ${screenshotCount}장 기준, 텍스트 목록은 GraphQL 응답에서 로드된 댓글 ${totalReplyCount}개 기준입니다.</p>
 ${renderSortToggle()}
     </main>
 ${renderSortScript()}

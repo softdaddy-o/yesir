@@ -316,6 +316,281 @@ a:hover {
         rgba(255, 255, 255, 0.82);
 }
 
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.hero-actions a,
+.collection-item-bottom a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    padding: 0 16px;
+    border: 2px solid var(--shadow);
+    border-radius: 999px;
+    background: var(--ink);
+    color: #fff;
+    box-shadow: 4px 4px 0 var(--shadow);
+    font-size: 14px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.hero-actions a:nth-child(2) {
+    background: #fff;
+    color: var(--ink);
+}
+
+.playground-hero {
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 390px);
+}
+
+.playground-visual::before,
+.playground-visual::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    border: 2px solid var(--shadow);
+    pointer-events: none;
+}
+
+.playground-visual::before {
+    left: 30px;
+    bottom: 104px;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    background: #ffcf4d;
+    box-shadow: 5px 5px 0 var(--shadow);
+}
+
+.playground-visual::after {
+    right: 72px;
+    top: 142px;
+    width: 52px;
+    height: 52px;
+    background: #6ae4d5;
+    transform: rotate(15deg);
+}
+
+.playground-visual .scrap-note {
+    z-index: 2;
+}
+
+.playground-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.playground-card {
+    position: relative;
+    display: grid;
+    min-height: 218px;
+    overflow: hidden;
+}
+
+.playground-card::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: -26px;
+    width: 96px;
+    height: 96px;
+    border: 3px solid var(--shadow);
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.42);
+    transform: rotate(12deg);
+}
+
+.playground-card-anxiety {
+    background:
+        radial-gradient(circle at 88% 18%, rgba(255, 207, 77, 0.8), transparent 70px),
+        linear-gradient(135deg, rgba(169, 245, 230, 0.82), rgba(255, 255, 255, 0.78));
+}
+
+.playground-card-psychology {
+    background:
+        radial-gradient(circle at 80% 18%, rgba(255, 120, 169, 0.68), transparent 74px),
+        linear-gradient(135deg, rgba(255, 242, 154, 0.86), rgba(255, 255, 255, 0.78));
+}
+
+.playground-card-self-growth {
+    background:
+        radial-gradient(circle at 84% 16%, rgba(217, 255, 104, 0.84), transparent 76px),
+        linear-gradient(135deg, rgba(255, 255, 255, 0.84), rgba(169, 245, 230, 0.54));
+}
+
+.playground-card-funny {
+    background:
+        radial-gradient(circle at 84% 18%, rgba(31, 112, 255, 0.22), transparent 76px),
+        linear-gradient(135deg, rgba(255, 181, 209, 0.78), rgba(255, 255, 255, 0.8));
+}
+
+.index-card em {
+    align-self: end;
+    width: max-content;
+    margin-top: 18px;
+    padding: 6px 10px;
+    border: 2px solid var(--shadow);
+    border-radius: 999px;
+    background: #fff;
+    color: var(--ink);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.collection-page {
+    min-height: 100vh;
+}
+
+.collection-shell {
+    width: min(calc(100% - 32px), 1080px);
+}
+
+.collection-hero {
+    position: relative;
+    padding: 90px 0 44px;
+}
+
+.collection-hero::after {
+    content: "";
+    position: absolute;
+    right: 6%;
+    top: 64px;
+    width: 130px;
+    height: 48px;
+    border: 3px solid var(--shadow);
+    background: var(--warm);
+    transform: rotate(-8deg);
+    box-shadow: 7px 7px 0 var(--shadow);
+}
+
+.collection-hero h1 {
+    max-width: 760px;
+    margin: 0;
+    font-family: "Bagel Fat One", "Jua", ui-sans-serif, system-ui, sans-serif;
+    font-size: clamp(56px, 9vw, 112px);
+    line-height: 0.98;
+    letter-spacing: 0;
+}
+
+.collection-hero p:last-child {
+    max-width: 690px;
+    margin: 22px 0 0;
+    color: #514b42;
+    font-size: 21px;
+    line-height: 1.55;
+    word-break: keep-all;
+}
+
+.collection-board {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.collection-item {
+    display: grid;
+    min-height: 320px;
+    padding: 20px;
+    border: 3px solid var(--shadow);
+    border-radius: 8px;
+    background:
+        radial-gradient(circle at 90% 12%, rgba(255, 207, 77, 0.32), transparent 80px),
+        rgba(255, 255, 255, 0.84);
+    box-shadow: 6px 6px 0 var(--shadow);
+}
+
+.collection-item:nth-child(2n) {
+    background:
+        radial-gradient(circle at 84% 14%, rgba(169, 245, 230, 0.5), transparent 82px),
+        rgba(255, 255, 255, 0.84);
+}
+
+.collection-item-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.source-pill {
+    display: inline-flex;
+    align-items: center;
+    min-height: 28px;
+    padding: 0 10px;
+    border: 2px solid var(--shadow);
+    border-radius: 999px;
+    background: var(--lemon);
+    color: var(--ink);
+}
+
+.collection-item h2 {
+    margin: 18px 0 10px;
+    font-family: "Jua", "Gowun Dodum", ui-sans-serif, system-ui, sans-serif;
+    font-size: 28px;
+    line-height: 1.12;
+    word-break: keep-all;
+}
+
+.collection-item p {
+    margin: 0;
+    color: #514b42;
+    font-size: 16px;
+    line-height: 1.58;
+    word-break: keep-all;
+}
+
+.tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 18px;
+}
+
+.tag-row span {
+    padding: 5px 9px;
+    border-radius: 999px;
+    background: rgba(16, 16, 16, 0.08);
+    color: #514b42;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.collection-item-bottom {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.collection-item-bottom span {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+.collection-item-bottom a {
+    flex: 0 0 auto;
+    min-height: 38px;
+    padding: 0 13px;
+    background: #fff;
+    color: var(--ink);
+    box-shadow: 3px 3px 0 var(--shadow);
+}
+
+.related-rooms {
+    padding-top: 56px;
+}
+
 .thread-page {
     background:
         radial-gradient(circle at 18px 18px, rgba(20, 18, 13, 0.08) 2px, transparent 3px) 0 0 / 30px 30px,
@@ -1196,6 +1471,40 @@ a:hover {
         margin: 0 auto;
     }
 
+    .hero-actions {
+        gap: 10px;
+        margin-top: 22px;
+    }
+
+    .hero-actions a {
+        min-height: 40px;
+        padding: 0 13px;
+        font-size: 13px;
+    }
+
+    .playground-grid,
+    .collection-board {
+        grid-template-columns: 1fr;
+    }
+
+    .playground-card {
+        min-height: 178px;
+    }
+
+    .playground-visual::before {
+        left: 24px;
+        bottom: 112px;
+        width: 56px;
+        height: 56px;
+    }
+
+    .playground-visual::after {
+        right: 58px;
+        top: 146px;
+        width: 42px;
+        height: 42px;
+    }
+
     .scrapbook-bar {
         left: 14px;
         right: 14px;
@@ -1225,6 +1534,52 @@ a:hover {
 
     .section-heading {
         display: block;
+    }
+
+    .collection-shell {
+        width: calc(100vw - 24px);
+    }
+
+    .collection-hero {
+        padding: 58px 0 30px;
+    }
+
+    .collection-hero::after {
+        display: none;
+    }
+
+    .collection-hero h1 {
+        font-size: clamp(48px, 17vw, 72px);
+    }
+
+    .collection-hero p:last-child {
+        font-size: 17px;
+        word-break: break-all;
+        overflow-wrap: anywhere;
+    }
+
+    .collection-item {
+        min-height: 0;
+        padding: 18px;
+        box-shadow: 5px 5px 0 var(--shadow);
+    }
+
+    .collection-item h2 {
+        font-size: 25px;
+    }
+
+    .collection-item p {
+        word-break: break-all;
+        overflow-wrap: anywhere;
+    }
+
+    .collection-item-bottom {
+        display: grid;
+        align-items: start;
+    }
+
+    .related-rooms {
+        padding-top: 44px;
     }
 
     .thread-shell {

@@ -1,8 +1,9 @@
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import { renderHomePage, renderThreadPage } from '../src/thread-template.mjs';
+import { renderCollectionPage, renderHomePage, renderThreadPage } from '../src/thread-template.mjs';
 
 const THREAD_DATA_DIR = 'data/threads';
+const PLAYGROUND_DATA_PATH = 'data/playground.json';
 
 async function readThreadData() {
     const files = (await readdir(THREAD_DATA_DIR))
@@ -23,7 +24,23 @@ if (threads.length === 0) {
     throw new Error(`No thread data found in ${THREAD_DATA_DIR}`);
 }
 
-await writeFile('index.html', renderHomePage({ threads }), 'utf8');
+const playground = JSON.parse(await readFile(PLAYGROUND_DATA_PATH, 'utf8'));
+
+await writeFile('index.html', renderHomePage({ threads, playground }), 'utf8');
+
+for (const category of playground.categories || []) {
+    if (!category.slug) {
+        throw new Error('Playground category is missing slug');
+    }
+
+    const outDir = path.join('play', category.slug);
+    await mkdir(outDir, { recursive: true });
+    await writeFile(
+        path.join(outDir, 'index.html'),
+        renderCollectionPage({ category, categories: playground.categories || [] }),
+        'utf8',
+    );
+}
 
 for (const thread of threads) {
     if (!thread.slug) {
@@ -35,4 +52,4 @@ for (const thread of threads) {
     await writeFile(path.join(outDir, 'index.html'), renderThreadPage(thread), 'utf8');
 }
 
-console.log(`built ${threads.length} thread page(s)`);
+console.log(`built ${threads.length} thread page(s) and ${(playground.categories || []).length} playground page(s)`);
