@@ -10,9 +10,10 @@
     "generatedAt": "2026-07-02",
     "screenshotCount": 0,
     "mediaCount": 45,
-    "note": "Daily scrape Threads 세션을 Playwright 프로필로 사용해 원문, 로드 가능한 답글 109개, 이미지 45개를 저장했습니다. 원본 CDN 이미지는 로컬 assets로 복사해 만료 영향을 줄였습니다.",
-    "summaryText": "Playwright 로그인 세션으로 보존한 Threads 망한요리대회 아카이브입니다. 원문 1개, 답글 109개, 이미지 45개를 로컬에 저장했습니다.",
-    "itemLabel": "답글"
+    "note": "Daily scrape Threads ??? Playwright ???? ??? ??, ?? ??? ?? 109?, ??? 45?, ?? 4?? ??????. ?? CDN ???? ?? assets? ??? ?? ??? ?????.",
+    "summaryText": "Playwright ??? ???? ??? Threads ?????? ???????. ?? 1?, ?? 109?, ??? 45?? ?? 4?? ??? ??????.",
+    "itemLabel": "답글",
+    "videoCount": 4
   },
   "stats": {
     "replyCount": 109,
@@ -117,7 +118,10 @@
       "takenAt": 1782852620,
       "image": "../../assets/threads/you-are-sorry-video/reply-009-DaOVvx4CuW5.jpg",
       "originalIndex": 9,
-      "imageAlt": "realmoa8b 답글 이미지"
+      "imageAlt": "realmoa8b 답글 이미지",
+      "video": "../../assets/threads/you-are-sorry-video/reply-009-DaOVvx4CuW5.mp4",
+      "videoType": "video/mp4",
+      "videoAlt": "realmoa8b ?? ??"
     },
     {
       "code": "DaOkwrpkr9L",
@@ -167,7 +171,10 @@
       "takenAt": 1782879082,
       "image": "../../assets/threads/you-are-sorry-video/reply-014-DaPIODiEy0o.jpg",
       "originalIndex": 14,
-      "imageAlt": "ur_prettyflower 답글 이미지"
+      "imageAlt": "ur_prettyflower 답글 이미지",
+      "video": "../../assets/threads/you-are-sorry-video/reply-014-DaPIODiEy0o.mp4",
+      "videoType": "video/mp4",
+      "videoAlt": "ur_prettyflower ?? ??"
     },
     {
       "code": "DaPJ1Q_krH4",
@@ -177,7 +184,10 @@
       "takenAt": 1782879943,
       "image": "../../assets/threads/you-are-sorry-video/reply-015-DaPJ1Q_krH4.jpg",
       "originalIndex": 15,
-      "imageAlt": "spoonn_2025 답글 이미지"
+      "imageAlt": "spoonn_2025 답글 이미지",
+      "video": "../../assets/threads/you-are-sorry-video/reply-015-DaPJ1Q_krH4.mp4",
+      "videoType": "video/mp4",
+      "videoAlt": "spoonn_2025 ?? ??"
     },
     {
       "code": "DaPLhxoATSt",
@@ -1043,7 +1053,10 @@
       "takenAt": 1782906460,
       "image": "../../assets/threads/you-are-sorry-video/reply-108-DaP8ah3gKKm.jpg",
       "originalIndex": 108,
-      "imageAlt": "isabella.hj 답글 이미지"
+      "imageAlt": "isabella.hj 답글 이미지",
+      "video": "../../assets/threads/you-are-sorry-video/reply-108-DaP8ah3gKKm.mp4",
+      "videoType": "video/mp4",
+      "videoAlt": "isabella.hj ?? ??"
     },
     {
       "code": "DaQWwnvk0yE",

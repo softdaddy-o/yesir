@@ -80,16 +80,22 @@ function renderThreadsEmbed(embedUrl) {
 }
 
 function renderPostMedia(post) {
-    if (!post.image) {
+    if (!post.image && !post.video) {
         return '';
     }
 
-    const escapedImage = escapeHtml(post.image);
-    const escapedAlt = escapeHtml(post.imageAlt || `${post.username || 'Threads'} media`);
+    const imageMarkup = post.image
+        ? `<img src="${escapeHtml(post.image)}" alt="${escapeHtml(post.imageAlt || `${post.username || 'Threads'} media`)}" loading="lazy">`
+        : '';
+    const videoMarkup = post.video
+        ? `<video class="post-video" controls preload="metadata"${post.image ? ` poster="${escapeHtml(post.image)}"` : ''}>
+                            <source src="${escapeHtml(post.video)}" type="${escapeHtml(post.videoType || 'video/mp4')}">
+                        </video>`
+        : '';
 
     return `
                     <figure class="post-media">
-                        <img src="${escapedImage}" alt="${escapedAlt}" loading="lazy">
+                        ${videoMarkup || imageMarkup}
                     </figure>`;
 }
 
@@ -338,6 +344,8 @@ export function renderThreadPage(thread) {
     const generatedAt = thread.capture?.generatedAt || '';
     const totalReplyCount = replies.length;
     const mediaCount = thread.capture?.mediaCount || 0;
+    const videoCount = thread.capture?.videoCount || 0;
+    const mediaLabel = videoCount > 0 ? `${mediaCount}개 / 영상 ${videoCount}개` : `${mediaCount}개`;
     const stats = thread.stats || {};
     const main = thread.main;
     const authorUsername = thread.author?.username || main.username;
@@ -378,7 +386,7 @@ export function renderThreadPage(thread) {
             <dl>
                 <div><dt>캡처</dt><dd>${screenshotCount}장</dd></div>
                 <div><dt>본문</dt><dd>${totalReplyCount}개 ${escapeHtml(itemLabel)}</dd></div>
-                <div><dt>미디어</dt><dd>${mediaCount}개</dd></div>
+                <div><dt>미디어</dt><dd>${escapeHtml(mediaLabel)}</dd></div>
                 <div><dt>기준일</dt><dd>${escapeHtml(generatedAt)}</dd></div>
             </dl>
         </section>

@@ -841,7 +841,8 @@ a:hover {
     background: #fff;
 }
 
-.post-media img {
+.post-media img,
+.post-media video {
     display: block;
     width: 100%;
     max-height: 720px;
