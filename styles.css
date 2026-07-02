@@ -812,6 +812,27 @@ a:hover {
     font-family: "Jua", "Gowun Dodum", ui-sans-serif, system-ui, sans-serif;
 }
 
+.thread-embed-card {
+    margin-top: 18px;
+    overflow: hidden;
+    border: 2px solid var(--ink);
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 5px 5px 0 rgba(22, 22, 22, 0.12);
+}
+
+.thread-embed-card .threads-post {
+    margin: 0;
+}
+
+.thread-embed-card a {
+    display: block;
+    padding: 18px;
+    color: var(--ink);
+    font-family: "Gowun Dodum", ui-sans-serif, system-ui, sans-serif;
+    font-weight: 700;
+}
+
 .post-actions {
     display: flex;
     flex-wrap: wrap;

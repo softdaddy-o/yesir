@@ -1,0 +1,30 @@
+{
+  "slug": "you-are-sorry-video",
+  "title": "you.are.sorry.j 영상 스레드",
+  "originalUrl": "https://www.threads.com/@you.are.sorry.j/post/DaNUPIumOzJ?xmt=AQG01965VL_hoWsDDuAWKhxIMQexsVSJYvgOzLe_C37ldADXgHxCJJ8NGTv8AB2kfk6GMT50&slof=1",
+  "author": {
+    "username": "you.are.sorry.j"
+  },
+  "capture": {
+    "generatedAt": "2026-07-01",
+    "screenshotCount": 0,
+    "note": "로그인 없는 직접 HTTP 요청은 Threads 로그인 유도 페이지만 반환했습니다. 그래서 원문 텍스트를 베끼지 않고 공식 Threads 임베드로 영상 원문을 보존했습니다.",
+    "summaryText": "Threads 영상 게시글을 공식 임베드로 저장했습니다. 영상은 원문 임베드에서 재생됩니다.",
+    "itemLabel": "임베드"
+  },
+  "stats": {
+    "replyCount": 0,
+    "repostCount": 0,
+    "shareCount": 0
+  },
+  "main": {
+    "code": "DaNUPIumOzJ",
+    "username": "you.are.sorry.j",
+    "text": "영상 원문은 아래 Threads 임베드에서 확인하세요.",
+    "likeCount": 0,
+    "takenAt": null,
+    "image": null,
+    "embedUrl": "https://www.threads.com/@you.are.sorry.j/post/DaNUPIumOzJ"
+  },
+  "replies": []
+}

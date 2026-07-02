@@ -8,6 +8,7 @@ const anxietyThreadHtml = await readFile('threads/anxiety-trigger-people/index.h
 const happinessThreadHtml = await readFile('threads/happiness-not-goal/index.html', 'utf8');
 const autonomyThreadHtml = await readFile('threads/autonomy-self-regulation/index.html', 'utf8');
 const middleClassThreadHtml = await readFile('threads/middle-class-patterns/index.html', 'utf8');
+const youAreSorryThreadHtml = await readFile('threads/you-are-sorry-video/index.html', 'utf8');
 const homeHtml = await readFile('index.html', 'utf8');
 const previewHtml = await readFile('design-previews/index.html', 'utf8');
 const mindHtml = await readFile('play/mind/index.html', 'utf8');
@@ -48,8 +49,8 @@ assertIncludes(homeHtml, 'play/mind/', 'index.html');
 assertIncludes(homeHtml, 'play/self-growth/', 'index.html');
 assertIncludes(homeHtml, 'play/funny/', 'index.html');
 assertIncludes(homeHtml, 'home-scrapbook', 'index.html');
-assertIncludes(homeHtml, '3 rooms / 7 saves', 'index.html');
-assertIncludes(homeHtml, '7 saved posts', 'index.html');
+assertIncludes(homeHtml, '3 rooms / 8 saves', 'index.html');
+assertIncludes(homeHtml, '8 saved posts', 'index.html');
 assertNotIncludes(homeHtml, 'threads/doha-poor-fish/', 'index.html');
 assertNotIncludes(homeHtml, 'play/anxiety/', 'index.html');
 assertNotIncludes(homeHtml, 'play/psychology/', 'index.html');
@@ -85,6 +86,8 @@ assertNotIncludes(selfGrowthHtml, 'https://www.threads.com/@yoonji_song/post/DXl
 assertIncludes(funnyHtml, '<title>웃긴 것 - 네님 놀이터 - yesir.softdaddy-o.com</title>', 'play/funny/index.html');
 assertIncludes(funnyHtml, '가난한 물고기', 'play/funny/index.html');
 assertIncludes(funnyHtml, '../../threads/doha-poor-fish/', 'play/funny/index.html');
+assertIncludes(funnyHtml, 'you.are.sorry.j 영상 스레드', 'play/funny/index.html');
+assertIncludes(funnyHtml, '../../threads/you-are-sorry-video/', 'play/funny/index.html');
 assertNotIncludes(funnyHtml, '웃긴 닉네임', 'play/funny/index.html');
 assertNotIncludes(funnyHtml, '아재개그 대회', 'play/funny/index.html');
 assertNotIncludes(funnyHtml, '천하제일 똥글 명언 대회', 'play/funny/index.html');
@@ -137,6 +140,11 @@ assertIncludes(middleClassThreadHtml, 'Logseq 검증 노트에 남은 본문 요
 assertIncludes(middleClassThreadHtml, 'Threads Logseq 항목 13개', 'threads/middle-class-patterns/index.html');
 assertIncludes(middleClassThreadHtml, 'D:/LogseqData의 verified literature note', 'threads/middle-class-patterns/index.html');
 
+assertIncludes(youAreSorryThreadHtml, '<title>you.are.sorry.j 영상 스레드 - yesir.softdaddy-o.com</title>', 'threads/you-are-sorry-video/index.html');
+assertIncludes(youAreSorryThreadHtml, 'Threads 영상 게시글을 공식 임베드로 저장했습니다', 'threads/you-are-sorry-video/index.html');
+assertIncludes(youAreSorryThreadHtml, 'data-text-post-permalink="https://www.threads.com/@you.are.sorry.j/post/DaNUPIumOzJ"', 'threads/you-are-sorry-video/index.html');
+assertIncludes(youAreSorryThreadHtml, 'https://www.threads.net/embed.js', 'threads/you-are-sorry-video/index.html');
+
 const firstReplyIndex = threadHtml.indexOf('id="reply-1"');
 const topLikedIndex = threadHtml.indexOf('minij0min');
 const previousChronologicalIndex = threadHtml.indexOf('john_and_peter__');
@@ -155,6 +163,7 @@ for (const path of [
     'data/threads/happiness-not-goal.json',
     'data/threads/autonomy-self-regulation.json',
     'data/threads/middle-class-patterns.json',
+    'data/threads/you-are-sorry-video.json',
 ]) {
     assertExists(path);
 }
@@ -184,6 +193,7 @@ for (const path of [
     'threads/happiness-not-goal/index.html',
     'threads/autonomy-self-regulation/index.html',
     'threads/middle-class-patterns/index.html',
+    'threads/you-are-sorry-video/index.html',
 ]) {
     assertExists(path);
 }
@@ -213,6 +223,7 @@ const checkedHtml = [
     happinessThreadHtml,
     autonomyThreadHtml,
     middleClassThreadHtml,
+    youAreSorryThreadHtml,
 ].join('');
 if (/[\uFFFD\u5a9b\u6e72\uf9ce\uc9cc]/.test(checkedHtml)) {
     throw new Error('generated HTML contains likely mojibake');

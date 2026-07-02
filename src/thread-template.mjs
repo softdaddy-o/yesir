@@ -64,6 +64,21 @@ function renderText(text, large = false) {
     return `<p class="${className}">${normalized}</p>`;
 }
 
+function renderThreadsEmbed(embedUrl) {
+    if (!embedUrl) {
+        return '';
+    }
+
+    const escapedUrl = escapeHtml(embedUrl);
+
+    return `
+                    <div class="thread-embed-card">
+                        <blockquote class="threads-post" data-text-post-permalink="${escapedUrl}" data-text-post-version="0">
+                            <a href="${escapedUrl}">Threads 원문 보기</a>
+                        </blockquote>
+                    </div>`;
+}
+
 function renderReply(reply, index, sortedReplies) {
     const likeRank = index + 1;
     const originalIndex = reply.originalIndex || likeRank;
@@ -361,7 +376,7 @@ export function renderThreadPage(thread) {
                         <span class="dot">&middot;</span>
                         <span>${escapeHtml(formatDate(main.takenAt) || '3일')}</span>
                     </div>
-                    ${renderText(main.text, true)}
+                    ${renderText(main.text, true)}${renderThreadsEmbed(main.embedUrl)}
                     <div class="post-actions" aria-label="Post stats">
                         <span>좋아요 ${escapeHtml(formatNumber(main.likeCount) || '0')}</span>
                         <span>댓글 ${escapeHtml(stats.replyCount ?? '')}</span>
@@ -379,7 +394,7 @@ ${sortedReplies.map((reply, index) => renderReply(reply, index, sortedReplies)).
         <p class="scrape-note">${escapeHtml(captureNote)}</p>
 ${renderSortToggle()}
     </main>
-${renderSortScript()}
+${main.embedUrl ? '    <script async src="https://www.threads.net/embed.js"></script>\n' : ''}${renderSortScript()}
 </body>
 </html>
 `;

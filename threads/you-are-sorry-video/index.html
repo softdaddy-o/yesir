@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>you.are.sorry.j 영상 스레드 - yesir.softdaddy-o.com</title>
+    <meta name="description" content="@you.are.sorry.j Threads 스레드와 임베드 0개를 yesir 아카이브로 정리한 페이지.">
+    <link rel="canonical" href="https://yesir.softdaddy-o.com/threads/you-are-sorry-video/">
+    <meta property="og:title" content="you.are.sorry.j 영상 스레드">
+    <meta property="og:description" content="영상 원문은 아래 Threads 임베드에서 확인하세요.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://yesir.softdaddy-o.com/threads/you-are-sorry-video/">
+    <meta property="og:image" content="https://yesir.softdaddy-o.com/assets/poor-fish.png">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body class="thread-page">
+    <main class="thread-shell">
+        <header class="thread-topbar">
+            <a class="back-link" href="../../" aria-label="Back to index">&lsaquo;</a>
+            <div>
+                <p class="thread-kicker">Threads archive</p>
+                <h1>you.are.sorry.j 영상 스레드</h1>
+            </div>
+            <a class="open-original" href="https://www.threads.com/@you.are.sorry.j/post/DaNUPIumOzJ?xmt=AQG01965VL_hoWsDDuAWKhxIMQexsVSJYvgOzLe_C37ldADXgHxCJJ8NGTv8AB2kfk6GMT50&amp;slof=1">원문</a>
+        </header>
+
+        <section class="thread-summary" aria-label="Archive summary">
+            <p>Threads 영상 게시글을 공식 임베드로 저장했습니다. 영상은 원문 임베드에서 재생됩니다.</p>
+            <dl>
+                <div><dt>캡처</dt><dd>0장</dd></div>
+                <div><dt>본문</dt><dd>0개 임베드</dd></div>
+                <div><dt>기준일</dt><dd>2026-07-01</dd></div>
+            </dl>
+        </section>
+
+        <section class="thread-feed" aria-label="Threads post and replies">
+            <article class="thread-post thread-post-root">
+                <div class="avatar avatar-author" aria-hidden="true">Y</div>
+                <div class="post-main">
+                    <div class="post-head">
+                        <a class="username" href="https://www.threads.com/@you.are.sorry.j">you.are.sorry.j</a>
+                        <span class="dot">&middot;</span>
+                        <span>3일</span>
+                    </div>
+                    <p class="post-text post-text-large">영상 원문은 아래 Threads 임베드에서 확인하세요.</p>
+                    <div class="thread-embed-card">
+                        <blockquote class="threads-post" data-text-post-permalink="https://www.threads.com/@you.are.sorry.j/post/DaNUPIumOzJ" data-text-post-version="0">
+                            <a href="https://www.threads.com/@you.are.sorry.j/post/DaNUPIumOzJ">Threads 원문 보기</a>
+                        </blockquote>
+                    </div>
+                    <div class="post-actions" aria-label="Post stats">
+                        <span>좋아요 0</span>
+                        <span>댓글 0</span>
+                        <span>리포스트 0</span>
+                        <span>공유 0</span>
+                    </div>
+                </div>
+            </article>
+
+            <div class="thread-replies" data-thread-replies>
+
+            </div>
+        </section>
+
+        <p class="scrape-note">로그인 없는 직접 HTTP 요청은 Threads 로그인 유도 페이지만 반환했습니다. 그래서 원문 텍스트를 베끼지 않고 공식 Threads 임베드로 영상 원문을 보존했습니다.</p>
+        <div class="sort-dock" data-thread-sort-toggle data-default-sort="likes" aria-label="댓글 정렬">
+            <button type="button" data-sort-button="likes" aria-pressed="true">좋아요순</button>
+            <button type="button" data-sort-button="original" aria-pressed="false">원래순</button>
+        </div>
+    </main>
+    <script async src="https://www.threads.net/embed.js"></script>
+    <script>
+(() => {
+    const list = document.querySelector('[data-thread-replies]');
+    const dock = document.querySelector('[data-thread-sort-toggle]');
+    if (!list || !dock) return;
+
+    const posts = Array.from(list.querySelectorAll('.thread-post-reply'));
+    const buttons = Array.from(dock.querySelectorAll('[data-sort-button]'));
+
+    function applySort(mode) {
+        const attr = mode === 'original' ? 'originalIndex' : 'likeIndex';
+        posts
+            .slice()
+            .sort((a, b) => Number(a.dataset[attr]) - Number(b.dataset[attr]))
+            .forEach((post, index) => {
+                const number = post.querySelector('.post-number');
+                if (number) number.textContent = '#' + (index + 1);
+                list.appendChild(post);
+            });
+
+        dock.dataset.currentSort = mode;
+        buttons.forEach((button) => {
+            button.setAttribute('aria-pressed', String(button.dataset.sortButton === mode));
+        });
+    }
+
+    buttons.forEach((button) => {
+        button.addEventListener('click', () => applySort(button.dataset.sortButton));
+    });
+
+    applySort(dock.dataset.defaultSort || 'likes');
+})();
+    </script>
+</body>
+</html>
