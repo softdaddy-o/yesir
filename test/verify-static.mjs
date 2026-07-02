@@ -142,10 +142,12 @@ assertIncludes(middleClassThreadHtml, 'D:/LogseqData의 verified literature note
 
 assertIncludes(youAreSorryThreadHtml, '<title>망한요리대회: 지옥에서 온 조기 - yesir.softdaddy-o.com</title>', 'threads/you-are-sorry-video/index.html');
 assertIncludes(youAreSorryThreadHtml, '지금부터 망한요리대회를 열도록 할게요', 'threads/you-are-sorry-video/index.html');
-assertIncludes(youAreSorryThreadHtml, '미디어</dt><dd>45개 / 영상 4개</dd>', 'threads/you-are-sorry-video/index.html');
+assertIncludes(youAreSorryThreadHtml, '미디어</dt><dd>58개 / 영상 4개</dd>', 'threads/you-are-sorry-video/index.html');
 assertIncludes(youAreSorryThreadHtml, '../../assets/threads/you-are-sorry-video/main-DaNUPIumOzJ.webp', 'threads/you-are-sorry-video/index.html');
 assertIncludes(youAreSorryThreadHtml, '<video class="post-video"', 'threads/you-are-sorry-video/index.html');
-assertIncludes(youAreSorryThreadHtml, '../../assets/threads/you-are-sorry-video/reply-009-DaOVvx4CuW5.mp4', 'threads/you-are-sorry-video/index.html');
+assertIncludes(youAreSorryThreadHtml, '../../assets/threads/you-are-sorry-video/reply-009-DaOVvx4CuW5-01.mp4', 'threads/you-are-sorry-video/index.html');
+assertIncludes(youAreSorryThreadHtml, 'post-media-grid', 'threads/you-are-sorry-video/index.html');
+assertIncludes(youAreSorryThreadHtml, '../../assets/threads/you-are-sorry-video/reply-008-DaNiqO_GRVA-06.webp', 'threads/you-are-sorry-video/index.html');
 assertIncludes(youAreSorryThreadHtml, 'id="reply-109"', 'threads/you-are-sorry-video/index.html');
 
 const firstReplyIndex = threadHtml.indexOf('id="reply-1"');

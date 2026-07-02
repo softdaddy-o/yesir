@@ -80,22 +80,40 @@ function renderThreadsEmbed(embedUrl) {
 }
 
 function renderPostMedia(post) {
-    if (!post.image && !post.video) {
+    const media = Array.isArray(post.media) && post.media.length > 0
+        ? post.media
+        : [
+            post.video ? {
+                type: 'video',
+                src: post.video,
+                videoType: post.videoType,
+                poster: post.image,
+                alt: post.videoAlt,
+            } : null,
+            !post.video && post.image ? {
+                type: 'image',
+                src: post.image,
+                alt: post.imageAlt,
+            } : null,
+        ].filter(Boolean);
+
+    if (media.length === 0) {
         return '';
     }
 
-    const imageMarkup = post.image
-        ? `<img src="${escapeHtml(post.image)}" alt="${escapeHtml(post.imageAlt || `${post.username || 'Threads'} media`)}" loading="lazy">`
-        : '';
-    const videoMarkup = post.video
-        ? `<video class="post-video" controls preload="metadata"${post.image ? ` poster="${escapeHtml(post.image)}"` : ''}>
-                            <source src="${escapeHtml(post.video)}" type="${escapeHtml(post.videoType || 'video/mp4')}">
-                        </video>`
-        : '';
+    const mediaMarkup = media.map((item) => {
+        if (item.type === 'video') {
+            return `<video class="post-video" controls preload="metadata"${item.poster ? ` poster="${escapeHtml(item.poster)}"` : ''}>
+                            <source src="${escapeHtml(item.src)}" type="${escapeHtml(item.videoType || 'video/mp4')}">
+                        </video>`;
+        }
+
+        return `<img src="${escapeHtml(item.src)}" alt="${escapeHtml(item.alt || `${post.username || 'Threads'} media`)}" loading="lazy">`;
+    }).join('\n                        ');
 
     return `
-                    <figure class="post-media">
-                        ${videoMarkup || imageMarkup}
+                    <figure class="post-media${media.length > 1 ? ' post-media-grid' : ''}">
+                        ${mediaMarkup}
                     </figure>`;
 }
 

@@ -9,11 +9,12 @@
   "capture": {
     "generatedAt": "2026-07-02",
     "screenshotCount": 0,
-    "mediaCount": 45,
-    "note": "Daily scrape Threads ??? Playwright ???? ??? ??, ?? ??? ?? 109?, ??? 45?, ?? 4?? ??????. ?? CDN ???? ?? assets? ??? ?? ??? ?????.",
-    "summaryText": "Playwright ??? ???? ??? Threads ?????? ???????. ?? 1?, ?? 109?, ??? 45?? ?? 4?? ??? ??????.",
+    "mediaCount": 58,
+    "note": "Daily scrape Threads 세션을 Playwright 프로필로 사용해 원문, 로드 가능한 답글 109개, 미디어 58개(영상 4개 포함)를 저장했습니다. carousel 미디어도 개별 로컬 assets로 복사했습니다.",
+    "summaryText": "Playwright 로그인 세션으로 보존한 Threads 망한요리대회 아카이브입니다. 원문 1개, 답글 109개, 미디어 58개와 영상 4개를 로컬에 저장했습니다.",
     "itemLabel": "답글",
-    "videoCount": 4
+    "videoCount": 4,
+    "multiMediaPostCount": 5
   },
   "stats": {
     "replyCount": 109,
@@ -27,7 +28,14 @@
     "likeCount": 4119,
     "takenAt": 1782818274,
     "image": "../../assets/threads/you-are-sorry-video/main-DaNUPIumOzJ.webp",
-    "imageAlt": "망한요리대회 원문 이미지"
+    "imageAlt": "you.are.sorry.j 이미지",
+    "media": [
+      {
+        "type": "image",
+        "src": "../../assets/threads/you-are-sorry-video/main-DaNUPIumOzJ.webp",
+        "alt": "you.are.sorry.j 이미지 1"
+      }
+    ]
   },
   "replies": [
     {
@@ -38,7 +46,14 @@
       "takenAt": 1782822242,
       "image": "../../assets/threads/you-are-sorry-video/reply-001-DaNbzfWCTzC.webp",
       "originalIndex": 1,
-      "imageAlt": "leemilim8449 답글 이미지"
+      "imageAlt": "leemilim8449 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-001-DaNbzfWCTzC.webp",
+          "alt": "leemilim8449 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaNb0samuBZ",
@@ -48,7 +63,14 @@
       "takenAt": 1782822252,
       "image": "../../assets/threads/you-are-sorry-video/reply-002-DaNb0samuBZ.webp",
       "originalIndex": 2,
-      "imageAlt": "eunsil367 답글 이미지"
+      "imageAlt": "eunsil367 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-002-DaNb0samuBZ.webp",
+          "alt": "eunsil367 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaNdakcGCeB",
@@ -58,7 +80,14 @@
       "takenAt": 1782823086,
       "image": "../../assets/threads/you-are-sorry-video/reply-003-DaNdakcGCeB.webp",
       "originalIndex": 3,
-      "imageAlt": "hey_rara.log 답글 이미지"
+      "imageAlt": "hey_rara.log 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-003-DaNdakcGCeB.webp",
+          "alt": "hey_rara.log 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaNeRBukpd3",
@@ -68,7 +97,7 @@
       "takenAt": 1782823532,
       "image": "../../assets/threads/you-are-sorry-video/reply-004-DaNeRBukpd3.webp",
       "originalIndex": 4,
-      "imageAlt": "fromrigby 답글 이미지"
+      "imageAlt": "fromrigby 이미지"
     },
     {
       "code": "DaNfoDhD-kE",
@@ -78,7 +107,14 @@
       "takenAt": 1782824245,
       "image": "../../assets/threads/you-are-sorry-video/reply-005-DaNfoDhD-kE.jpg",
       "originalIndex": 5,
-      "imageAlt": "meltingpopyou 답글 이미지"
+      "imageAlt": "meltingpopyou 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-005-DaNfoDhD-kE.jpg",
+          "alt": "meltingpopyou 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaNfv7nk3iB",
@@ -88,7 +124,14 @@
       "takenAt": 1782824310,
       "image": "../../assets/threads/you-are-sorry-video/reply-006-DaNfv7nk3iB.jpg",
       "originalIndex": 6,
-      "imageAlt": "cadadia_official_ 답글 이미지"
+      "imageAlt": "cadadia_official_ 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-006-DaNfv7nk3iB.jpg",
+          "alt": "cadadia_official_ 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaNhY3GAYRu",
@@ -98,7 +141,14 @@
       "takenAt": 1782825169,
       "image": "../../assets/threads/you-are-sorry-video/reply-007-DaNhY3GAYRu.webp",
       "originalIndex": 7,
-      "imageAlt": "hyun_jin_6348 답글 이미지"
+      "imageAlt": "hyun_jin_6348 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-007-DaNhY3GAYRu.webp",
+          "alt": "hyun_jin_6348 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaNiqO_GRVA",
@@ -106,9 +156,41 @@
       "text": "실패는 내전문인뎈ㅋ\n\n오이무침에 통후추쏟기\n계란한판 쏟기\n사발면쏟기\n조기 굽기 실패\n진미채 태우기\n수박화채에 콜라우유 붓기",
       "likeCount": 1194,
       "takenAt": 1782825836,
-      "image": "../../assets/threads/you-are-sorry-video/reply-008-DaNiqO_GRVA.webp",
+      "image": "../../assets/threads/you-are-sorry-video/reply-008-DaNiqO_GRVA-01.webp",
       "originalIndex": 8,
-      "imageAlt": "bangbang_jjun 답글 이미지"
+      "imageAlt": "bangbang_jjun 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-008-DaNiqO_GRVA-01.webp",
+          "alt": "bangbang_jjun 이미지 1"
+        },
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-008-DaNiqO_GRVA-02.webp",
+          "alt": "bangbang_jjun 이미지 2"
+        },
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-008-DaNiqO_GRVA-03.webp",
+          "alt": "bangbang_jjun 이미지 3"
+        },
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-008-DaNiqO_GRVA-04.webp",
+          "alt": "bangbang_jjun 이미지 4"
+        },
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-008-DaNiqO_GRVA-05.webp",
+          "alt": "bangbang_jjun 이미지 5"
+        },
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-008-DaNiqO_GRVA-06.webp",
+          "alt": "bangbang_jjun 이미지 6"
+        }
+      ]
     },
     {
       "code": "DaOVvx4CuW5",
@@ -116,12 +198,26 @@
       "text": "하 이걸 또 올리게 하네 … 이건 참깨빵이야",
       "likeCount": 8786,
       "takenAt": 1782852620,
-      "image": "../../assets/threads/you-are-sorry-video/reply-009-DaOVvx4CuW5.jpg",
+      "image": "../../assets/threads/you-are-sorry-video/reply-009-DaOVvx4CuW5-02.jpg",
       "originalIndex": 9,
-      "imageAlt": "realmoa8b 답글 이미지",
-      "video": "../../assets/threads/you-are-sorry-video/reply-009-DaOVvx4CuW5.mp4",
+      "imageAlt": "realmoa8b 이미지",
+      "video": "../../assets/threads/you-are-sorry-video/reply-009-DaOVvx4CuW5-01.mp4",
       "videoType": "video/mp4",
-      "videoAlt": "realmoa8b ?? ??"
+      "videoAlt": "realmoa8b 영상",
+      "media": [
+        {
+          "type": "video",
+          "src": "../../assets/threads/you-are-sorry-video/reply-009-DaOVvx4CuW5-01.mp4",
+          "videoType": "video/mp4",
+          "poster": "../../assets/threads/you-are-sorry-video/reply-009-DaOVvx4CuW5-01-poster.jpg",
+          "alt": "realmoa8b 영상 1"
+        },
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-009-DaOVvx4CuW5-02.jpg",
+          "alt": "realmoa8b 이미지 2"
+        }
+      ]
     },
     {
       "code": "DaOkwrpkr9L",
@@ -131,7 +227,7 @@
       "takenAt": 1782860492,
       "image": "../../assets/threads/you-are-sorry-video/reply-010-DaOkwrpkr9L.webp",
       "originalIndex": 10,
-      "imageAlt": "gooroom_yj_ 답글 이미지"
+      "imageAlt": "gooroom_yj_ 이미지"
     },
     {
       "code": "DaO7iwhkp_s",
@@ -141,7 +237,14 @@
       "takenAt": 1782872436,
       "image": "../../assets/threads/you-are-sorry-video/reply-011-DaO7iwhkp_s.webp",
       "originalIndex": 11,
-      "imageAlt": "davidjmoney7 답글 이미지"
+      "imageAlt": "davidjmoney7 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-011-DaO7iwhkp_s.webp",
+          "alt": "davidjmoney7 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaO_g-6E_y5",
@@ -151,7 +254,14 @@
       "takenAt": 1782874519,
       "image": "../../assets/threads/you-are-sorry-video/reply-012-DaO_g-6E_y5.jpg",
       "originalIndex": 12,
-      "imageAlt": "roseline0223 답글 이미지"
+      "imageAlt": "roseline0223 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-012-DaO_g-6E_y5.jpg",
+          "alt": "roseline0223 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaPHcHLjxH_",
@@ -161,7 +271,7 @@
       "takenAt": 1782878673,
       "image": "../../assets/threads/you-are-sorry-video/reply-013-DaPHcHLjxH_.webp",
       "originalIndex": 13,
-      "imageAlt": "mu1282pen 답글 이미지"
+      "imageAlt": "mu1282pen 이미지"
     },
     {
       "code": "DaPIODiEy0o",
@@ -169,12 +279,26 @@
       "text": "내 간장게장?",
       "likeCount": 497,
       "takenAt": 1782879082,
-      "image": "../../assets/threads/you-are-sorry-video/reply-014-DaPIODiEy0o.jpg",
+      "image": "../../assets/threads/you-are-sorry-video/reply-014-DaPIODiEy0o-02.webp",
       "originalIndex": 14,
-      "imageAlt": "ur_prettyflower 답글 이미지",
-      "video": "../../assets/threads/you-are-sorry-video/reply-014-DaPIODiEy0o.mp4",
+      "imageAlt": "ur_prettyflower 이미지",
+      "video": "../../assets/threads/you-are-sorry-video/reply-014-DaPIODiEy0o-01.mp4",
       "videoType": "video/mp4",
-      "videoAlt": "ur_prettyflower ?? ??"
+      "videoAlt": "ur_prettyflower 영상",
+      "media": [
+        {
+          "type": "video",
+          "src": "../../assets/threads/you-are-sorry-video/reply-014-DaPIODiEy0o-01.mp4",
+          "videoType": "video/mp4",
+          "poster": "../../assets/threads/you-are-sorry-video/reply-014-DaPIODiEy0o-01-poster.jpg",
+          "alt": "ur_prettyflower 영상 1"
+        },
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-014-DaPIODiEy0o-02.webp",
+          "alt": "ur_prettyflower 이미지 2"
+        }
+      ]
     },
     {
       "code": "DaPJ1Q_krH4",
@@ -182,12 +306,21 @@
       "text": "요린이가 돌김을 만났을 때 🥲",
       "likeCount": 653,
       "takenAt": 1782879943,
-      "image": "../../assets/threads/you-are-sorry-video/reply-015-DaPJ1Q_krH4.jpg",
+      "image": "../../assets/threads/you-are-sorry-video/reply-015-DaPJ1Q_krH4-poster.jpg",
       "originalIndex": 15,
-      "imageAlt": "spoonn_2025 답글 이미지",
+      "imageAlt": "spoonn_2025 이미지",
       "video": "../../assets/threads/you-are-sorry-video/reply-015-DaPJ1Q_krH4.mp4",
       "videoType": "video/mp4",
-      "videoAlt": "spoonn_2025 ?? ??"
+      "videoAlt": "spoonn_2025 영상",
+      "media": [
+        {
+          "type": "video",
+          "src": "../../assets/threads/you-are-sorry-video/reply-015-DaPJ1Q_krH4.mp4",
+          "videoType": "video/mp4",
+          "poster": "../../assets/threads/you-are-sorry-video/reply-015-DaPJ1Q_krH4-poster.jpg",
+          "alt": "spoonn_2025 영상 1"
+        }
+      ]
     },
     {
       "code": "DaPLhxoATSt",
@@ -224,7 +357,7 @@
       "takenAt": 1782881329,
       "image": "../../assets/threads/you-are-sorry-video/reply-019-DaPMgQlmeD6.jpg",
       "originalIndex": 19,
-      "imageAlt": "loonythunnnus 답글 이미지"
+      "imageAlt": "loonythunnnus 이미지"
     },
     {
       "code": "DaPM7G6kl_9",
@@ -270,7 +403,14 @@
       "takenAt": 1782881790,
       "image": "../../assets/threads/you-are-sorry-video/reply-024-DaPNYk8D_d3.jpg",
       "originalIndex": 24,
-      "imageAlt": "yonam.zipbab 답글 이미지"
+      "imageAlt": "yonam.zipbab 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-024-DaPNYk8D_d3.jpg",
+          "alt": "yonam.zipbab 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaPNmVqk7KI",
@@ -307,7 +447,14 @@
       "takenAt": 1782882044,
       "image": "../../assets/threads/you-are-sorry-video/reply-028-DaPN3nWFO-X.jpg",
       "originalIndex": 28,
-      "imageAlt": "transnational_jk 답글 이미지"
+      "imageAlt": "transnational_jk 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-028-DaPN3nWFO-X.jpg",
+          "alt": "transnational_jk 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaPOCs-Eg_O",
@@ -335,7 +482,14 @@
       "takenAt": 1782882353,
       "image": "../../assets/threads/you-are-sorry-video/reply-031-DaPOdQ7E2dx.webp",
       "originalIndex": 31,
-      "imageAlt": "theduriduli 답글 이미지"
+      "imageAlt": "theduriduli 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-031-DaPOdQ7E2dx.webp",
+          "alt": "theduriduli 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaPOd-xk67t",
@@ -345,7 +499,14 @@
       "takenAt": 1782882359,
       "image": "../../assets/threads/you-are-sorry-video/reply-032-DaPOd-xk67t.jpg",
       "originalIndex": 32,
-      "imageAlt": "twomeshu 답글 이미지"
+      "imageAlt": "twomeshu 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-032-DaPOd-xk67t.jpg",
+          "alt": "twomeshu 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaPOu3Jktq6",
@@ -355,7 +516,14 @@
       "takenAt": 1782882497,
       "image": "../../assets/threads/you-are-sorry-video/reply-033-DaPOu3Jktq6.jpg",
       "originalIndex": 33,
-      "imageAlt": "tiger_brews 답글 이미지"
+      "imageAlt": "tiger_brews 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-033-DaPOu3Jktq6.jpg",
+          "alt": "tiger_brews 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaPOzbJGgTx",
@@ -410,7 +578,14 @@
       "takenAt": 1782882932,
       "image": "../../assets/threads/you-are-sorry-video/reply-039-DaPPkCJmytF.webp",
       "originalIndex": 39,
-      "imageAlt": "jk_11049 답글 이미지"
+      "imageAlt": "jk_11049 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-039-DaPPkCJmytF.webp",
+          "alt": "jk_11049 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaPPwrakmsg",
@@ -420,7 +595,7 @@
       "takenAt": 1782883036,
       "image": "../../assets/threads/you-are-sorry-video/reply-040-DaPPwrakmsg.webp",
       "originalIndex": 40,
-      "imageAlt": "n_npsk 답글 이미지"
+      "imageAlt": "n_npsk 이미지"
     },
     {
       "code": "DaPQBIXk3Ob",
@@ -439,7 +614,14 @@
       "takenAt": 1782883178,
       "image": "../../assets/threads/you-are-sorry-video/reply-042-DaPQCApk3YG.webp",
       "originalIndex": 42,
-      "imageAlt": "lele._.qrrrhee 답글 이미지"
+      "imageAlt": "lele._.qrrrhee 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-042-DaPQCApk3YG.webp",
+          "alt": "lele._.qrrrhee 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaPQKdqk7HJ",
@@ -458,7 +640,14 @@
       "takenAt": 1782883290,
       "image": "../../assets/threads/you-are-sorry-video/reply-044-DaPQPoXExtV.webp",
       "originalIndex": 44,
-      "imageAlt": "miyeon.bb 답글 이미지"
+      "imageAlt": "miyeon.bb 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-044-DaPQPoXExtV.webp",
+          "alt": "miyeon.bb 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaPRX31E8wU",
@@ -468,7 +657,14 @@
       "takenAt": 1782883881,
       "image": "../../assets/threads/you-are-sorry-video/reply-045-DaPRX31E8wU.webp",
       "originalIndex": 45,
-      "imageAlt": "_cookie.wisdom 답글 이미지"
+      "imageAlt": "_cookie.wisdom 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-045-DaPRX31E8wU.webp",
+          "alt": "_cookie.wisdom 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaPRakeESzW",
@@ -487,7 +683,7 @@
       "takenAt": 1782883962,
       "image": "../../assets/threads/you-are-sorry-video/reply-047-DaPRhtnkyWf.webp",
       "originalIndex": 47,
-      "imageAlt": "_cookie.wisdom 답글 이미지"
+      "imageAlt": "_cookie.wisdom 이미지"
     },
     {
       "code": "DaPRxyRGcs2",
@@ -587,7 +783,14 @@
       "takenAt": 1782884989,
       "image": "../../assets/threads/you-are-sorry-video/reply-058-DaPTfDtAdoL.jpg",
       "originalIndex": 58,
-      "imageAlt": "enmeichang 답글 이미지"
+      "imageAlt": "enmeichang 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-058-DaPTfDtAdoL.jpg",
+          "alt": "enmeichang 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaPT3myEsfW",
@@ -615,7 +818,14 @@
       "takenAt": 1782885397,
       "image": "../../assets/threads/you-are-sorry-video/reply-061-DaPUQ1hkU0V.jpg",
       "originalIndex": 61,
-      "imageAlt": "yoonnarae0201 답글 이미지"
+      "imageAlt": "yoonnarae0201 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-061-DaPUQ1hkU0V.jpg",
+          "alt": "yoonnarae0201 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaPUft3lHu6",
@@ -634,7 +844,14 @@
       "takenAt": 1782885529,
       "image": "../../assets/threads/you-are-sorry-video/reply-063-DaPUg8uibBn.jpg",
       "originalIndex": 63,
-      "imageAlt": "jeegojeesun 답글 이미지"
+      "imageAlt": "jeegojeesun 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-063-DaPUg8uibBn.jpg",
+          "alt": "jeegojeesun 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaPUlmFExug",
@@ -644,7 +861,14 @@
       "takenAt": 1782885567,
       "image": "../../assets/threads/you-are-sorry-video/reply-064-DaPUlmFExug.jpg",
       "originalIndex": 64,
-      "imageAlt": "mmmin8.8 답글 이미지"
+      "imageAlt": "mmmin8.8 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-064-DaPUlmFExug.jpg",
+          "alt": "mmmin8.8 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaPVAlUibHW",
@@ -654,7 +878,14 @@
       "takenAt": 1782885788,
       "image": "../../assets/threads/you-are-sorry-video/reply-065-DaPVAlUibHW.jpg",
       "originalIndex": 65,
-      "imageAlt": "5ook5ook 답글 이미지"
+      "imageAlt": "5ook5ook 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-065-DaPVAlUibHW.jpg",
+          "alt": "5ook5ook 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaPVe_EmA6l",
@@ -662,9 +893,36 @@
       "text": "집에선 요리 잘 안해서 얼마 안되지만 눈 호강 하시라고 올려요 (요식업8년차)",
       "likeCount": 28,
       "takenAt": 1782886037,
-      "image": "../../assets/threads/you-are-sorry-video/reply-066-DaPVe_EmA6l.webp",
+      "image": "../../assets/threads/you-are-sorry-video/reply-066-DaPVe_EmA6l-01.webp",
       "originalIndex": 66,
-      "imageAlt": "jeonghoon_12 답글 이미지"
+      "imageAlt": "jeonghoon_12 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-066-DaPVe_EmA6l-01.webp",
+          "alt": "jeonghoon_12 이미지 1"
+        },
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-066-DaPVe_EmA6l-02.webp",
+          "alt": "jeonghoon_12 이미지 2"
+        },
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-066-DaPVe_EmA6l-03.webp",
+          "alt": "jeonghoon_12 이미지 3"
+        },
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-066-DaPVe_EmA6l-04.webp",
+          "alt": "jeonghoon_12 이미지 4"
+        },
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-066-DaPVe_EmA6l-05.webp",
+          "alt": "jeonghoon_12 이미지 5"
+        }
+      ]
     },
     {
       "code": "DaPV-rdCSuv",
@@ -719,7 +977,14 @@
       "takenAt": 1782887180,
       "image": "../../assets/threads/you-are-sorry-video/reply-072-DaPXqfmk-9s.jpg",
       "originalIndex": 72,
-      "imageAlt": "cozy__www 답글 이미지"
+      "imageAlt": "cozy__www 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-072-DaPXqfmk-9s.jpg",
+          "alt": "cozy__www 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaPXrXtiZnQ",
@@ -738,7 +1003,14 @@
       "takenAt": 1782887343,
       "image": "../../assets/threads/you-are-sorry-video/reply-074-DaPX-Yoj842.jpg",
       "originalIndex": 74,
-      "imageAlt": "luminonex 답글 이미지"
+      "imageAlt": "luminonex 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-074-DaPX-Yoj842.jpg",
+          "alt": "luminonex 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaPYcHnkvIl",
@@ -784,7 +1056,7 @@
       "takenAt": 1782890440,
       "image": "../../assets/threads/you-are-sorry-video/reply-079-DaPd4fLk6WU.webp",
       "originalIndex": 79,
-      "imageAlt": "hwa0804 답글 이미지"
+      "imageAlt": "hwa0804 이미지"
     },
     {
       "code": "DaPd4pbmEHN",
@@ -821,7 +1093,7 @@
       "takenAt": 1782890772,
       "image": "../../assets/threads/you-are-sorry-video/reply-083-DaPehB-k7_u.webp",
       "originalIndex": 83,
-      "imageAlt": "5073cjd 답글 이미지"
+      "imageAlt": "5073cjd 이미지"
     },
     {
       "code": "DaPehGcmo9e",
@@ -831,7 +1103,7 @@
       "takenAt": 1782890773,
       "image": "../../assets/threads/you-are-sorry-video/reply-084-DaPehGcmo9e.webp",
       "originalIndex": 84,
-      "imageAlt": "yeongseog8071 답글 이미지"
+      "imageAlt": "yeongseog8071 이미지"
     },
     {
       "code": "DaPeuaek7na",
@@ -904,7 +1176,14 @@
       "takenAt": 1782891330,
       "image": "../../assets/threads/you-are-sorry-video/reply-092-DaPflJ9D-Ca.jpg",
       "originalIndex": 92,
-      "imageAlt": "eunice_yoonsuhpark 답글 이미지"
+      "imageAlt": "eunice_yoonsuhpark 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-092-DaPflJ9D-Ca.jpg",
+          "alt": "eunice_yoonsuhpark 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaPfqhtk65a",
@@ -914,7 +1193,14 @@
       "takenAt": 1782891374,
       "image": "../../assets/threads/you-are-sorry-video/reply-093-DaPfqhtk65a.webp",
       "originalIndex": 93,
-      "imageAlt": "muniman_witch_ 답글 이미지"
+      "imageAlt": "muniman_witch_ 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-093-DaPfqhtk65a.webp",
+          "alt": "muniman_witch_ 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaPgAs8AZOh",
@@ -969,7 +1255,14 @@
       "takenAt": 1782892113,
       "image": "../../assets/threads/you-are-sorry-video/reply-099-DaPhEvhGAoh.webp",
       "originalIndex": 99,
-      "imageAlt": "__jisong__ 답글 이미지"
+      "imageAlt": "__jisong__ 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-099-DaPhEvhGAoh.webp",
+          "alt": "__jisong__ 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaPhLhQkgv-",
@@ -1004,9 +1297,26 @@
       "text": "앞뒤가 다른 팬케이크 되시겠습니다..",
       "likeCount": 10,
       "takenAt": 1782892300,
-      "image": "../../assets/threads/you-are-sorry-video/reply-103-DaPhbd8Ed1B.webp",
+      "image": "../../assets/threads/you-are-sorry-video/reply-103-DaPhbd8Ed1B-01.webp",
       "originalIndex": 103,
-      "imageAlt": "gem922 답글 이미지"
+      "imageAlt": "gem922 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-103-DaPhbd8Ed1B-01.webp",
+          "alt": "gem922 이미지 1"
+        },
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-103-DaPhbd8Ed1B-02.webp",
+          "alt": "gem922 이미지 2"
+        },
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-103-DaPhbd8Ed1B-03.webp",
+          "alt": "gem922 이미지 3"
+        }
+      ]
     },
     {
       "code": "DaPheNWElNB",
@@ -1025,7 +1335,14 @@
       "takenAt": 1782892424,
       "image": "../../assets/threads/you-are-sorry-video/reply-105-DaPhqm-EzlR.jpg",
       "originalIndex": 105,
-      "imageAlt": "hanaj0626 답글 이미지"
+      "imageAlt": "hanaj0626 이미지",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/you-are-sorry-video/reply-105-DaPhqm-EzlR.jpg",
+          "alt": "hanaj0626 이미지 1"
+        }
+      ]
     },
     {
       "code": "DaPiqQSGSyA",
@@ -1051,12 +1368,21 @@
       "text": "잊을만 하면 오는 대창입죠.. 긁적.",
       "likeCount": 288,
       "takenAt": 1782906460,
-      "image": "../../assets/threads/you-are-sorry-video/reply-108-DaP8ah3gKKm.jpg",
+      "image": "../../assets/threads/you-are-sorry-video/reply-108-DaP8ah3gKKm-poster.jpg",
       "originalIndex": 108,
-      "imageAlt": "isabella.hj 답글 이미지",
+      "imageAlt": "isabella.hj 이미지",
       "video": "../../assets/threads/you-are-sorry-video/reply-108-DaP8ah3gKKm.mp4",
       "videoType": "video/mp4",
-      "videoAlt": "isabella.hj ?? ??"
+      "videoAlt": "isabella.hj 영상",
+      "media": [
+        {
+          "type": "video",
+          "src": "../../assets/threads/you-are-sorry-video/reply-108-DaP8ah3gKKm.mp4",
+          "videoType": "video/mp4",
+          "poster": "../../assets/threads/you-are-sorry-video/reply-108-DaP8ah3gKKm-poster.jpg",
+          "alt": "isabella.hj 영상 1"
+        }
+      ]
     },
     {
       "code": "DaQWwnvk0yE",

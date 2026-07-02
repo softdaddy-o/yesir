@@ -849,6 +849,20 @@ a:hover {
     object-fit: contain;
 }
 
+.post-media-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2px;
+}
+
+.post-media-grid img,
+.post-media-grid video {
+    height: 100%;
+    min-height: 180px;
+    max-height: 420px;
+    object-fit: cover;
+}
+
 .post-actions {
     display: flex;
     flex-wrap: wrap;
