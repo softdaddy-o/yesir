@@ -134,18 +134,18 @@
           ]
         },
         {
-          "title": "you.are.sorry.j 영상 스레드",
+          "title": "망한요리대회: 지옥에서 온 조기",
           "author": "@you.are.sorry.j",
           "sourceType": "yesir archive",
           "url": "https://www.threads.com/@you.are.sorry.j/post/DaNUPIumOzJ",
           "internalUrl": "../../threads/you-are-sorry-video/",
-          "summary": "Threads 영상 게시글을 공식 임베드로 저장했습니다. 원문 텍스트는 로그인 없이 확인되지 않아 임베드와 원문 링크 중심으로 보존했습니다.",
+          "summary": "Playwright 로그인 세션으로 원문 1개, 답글 109개, 로컬 이미지 45개를 보존한 Threads 아카이브.",
           "note": "yesir: threads/you-are-sorry-video",
           "tags": [
-            "video",
             "funny",
             "archive",
-            "threads"
+            "threads",
+            "media"
           ]
         }
       ]

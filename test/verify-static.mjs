@@ -86,7 +86,7 @@ assertNotIncludes(selfGrowthHtml, 'https://www.threads.com/@yoonji_song/post/DXl
 assertIncludes(funnyHtml, '<title>웃긴 것 - 네님 놀이터 - yesir.softdaddy-o.com</title>', 'play/funny/index.html');
 assertIncludes(funnyHtml, '가난한 물고기', 'play/funny/index.html');
 assertIncludes(funnyHtml, '../../threads/doha-poor-fish/', 'play/funny/index.html');
-assertIncludes(funnyHtml, 'you.are.sorry.j 영상 스레드', 'play/funny/index.html');
+assertIncludes(funnyHtml, '망한요리대회: 지옥에서 온 조기', 'play/funny/index.html');
 assertIncludes(funnyHtml, '../../threads/you-are-sorry-video/', 'play/funny/index.html');
 assertNotIncludes(funnyHtml, '웃긴 닉네임', 'play/funny/index.html');
 assertNotIncludes(funnyHtml, '아재개그 대회', 'play/funny/index.html');
