@@ -1,30 +1,1058 @@
 {
   "slug": "you-are-sorry-video",
-  "title": "you.are.sorry.j 영상 스레드",
+  "title": "망한요리대회: 지옥에서 온 조기",
   "originalUrl": "https://www.threads.com/@you.are.sorry.j/post/DaNUPIumOzJ?xmt=AQG01965VL_hoWsDDuAWKhxIMQexsVSJYvgOzLe_C37ldADXgHxCJJ8NGTv8AB2kfk6GMT50&slof=1",
   "author": {
     "username": "you.are.sorry.j"
   },
+  "description": "Threads 망한요리대회 게시글과 로드 가능한 답글/이미지를 Playwright 로그인 세션으로 보존한 아카이브입니다.",
   "capture": {
-    "generatedAt": "2026-07-01",
+    "generatedAt": "2026-07-02",
     "screenshotCount": 0,
-    "note": "로그인 없는 직접 HTTP 요청은 Threads 로그인 유도 페이지만 반환했습니다. 그래서 원문 텍스트를 베끼지 않고 공식 Threads 임베드로 영상 원문을 보존했습니다.",
-    "summaryText": "Threads 영상 게시글을 공식 임베드로 저장했습니다. 영상은 원문 임베드에서 재생됩니다.",
-    "itemLabel": "임베드"
+    "mediaCount": 45,
+    "note": "Daily scrape Threads 세션을 Playwright 프로필로 사용해 원문, 로드 가능한 답글 109개, 이미지 45개를 저장했습니다. 원본 CDN 이미지는 로컬 assets로 복사해 만료 영향을 줄였습니다.",
+    "summaryText": "Playwright 로그인 세션으로 보존한 Threads 망한요리대회 아카이브입니다. 원문 1개, 답글 109개, 이미지 45개를 로컬에 저장했습니다.",
+    "itemLabel": "답글"
   },
   "stats": {
-    "replyCount": 0,
+    "replyCount": 109,
     "repostCount": 0,
     "shareCount": 0
   },
   "main": {
     "code": "DaNUPIumOzJ",
     "username": "you.are.sorry.j",
-    "text": "영상 원문은 아래 Threads 임베드에서 확인하세요.",
-    "likeCount": 0,
-    "takenAt": null,
-    "image": null,
-    "embedUrl": "https://www.threads.com/@you.are.sorry.j/post/DaNUPIumOzJ"
+    "text": "지금부터 망한요리대회를 열도록 할게요\n먼저 지옥에서 온 조기예요",
+    "likeCount": 4119,
+    "takenAt": 1782818274,
+    "image": "../../assets/threads/you-are-sorry-video/main-DaNUPIumOzJ.webp",
+    "imageAlt": "망한요리대회 원문 이미지"
   },
-  "replies": []
+  "replies": [
+    {
+      "code": "DaNbzfWCTzC",
+      "username": "leemilim8449",
+      "text": "엄살부리지마",
+      "likeCount": 1077,
+      "takenAt": 1782822242,
+      "image": "../../assets/threads/you-are-sorry-video/reply-001-DaNbzfWCTzC.webp",
+      "originalIndex": 1,
+      "imageAlt": "leemilim8449 답글 이미지"
+    },
+    {
+      "code": "DaNb0samuBZ",
+      "username": "eunsil367",
+      "text": "감자 위에 까만 건 방울 토마토예요.",
+      "likeCount": 599,
+      "takenAt": 1782822252,
+      "image": "../../assets/threads/you-are-sorry-video/reply-002-DaNb0samuBZ.webp",
+      "originalIndex": 2,
+      "imageAlt": "eunsil367 답글 이미지"
+    },
+    {
+      "code": "DaNdakcGCeB",
+      "username": "hey_rara.log",
+      "text": "마들렌이예요.. \n살짝 오버쿡 했다고 숭해졌어요🥹",
+      "likeCount": 2363,
+      "takenAt": 1782823086,
+      "image": "../../assets/threads/you-are-sorry-video/reply-003-DaNdakcGCeB.webp",
+      "originalIndex": 3,
+      "imageAlt": "hey_rara.log 답글 이미지"
+    },
+    {
+      "code": "DaNeRBukpd3",
+      "username": "fromrigby",
+      "text": "달걀찜!!",
+      "likeCount": 272,
+      "takenAt": 1782823532,
+      "image": "../../assets/threads/you-are-sorry-video/reply-004-DaNeRBukpd3.webp",
+      "originalIndex": 4,
+      "imageAlt": "fromrigby 답글 이미지"
+    },
+    {
+      "code": "DaNfoDhD-kE",
+      "username": "meltingpopyou",
+      "text": "지옥에서... 왔다고 했나...",
+      "likeCount": 1170,
+      "takenAt": 1782824245,
+      "image": "../../assets/threads/you-are-sorry-video/reply-005-DaNfoDhD-kE.jpg",
+      "originalIndex": 5,
+      "imageAlt": "meltingpopyou 답글 이미지"
+    },
+    {
+      "code": "DaNfv7nk3iB",
+      "username": "cadadia_official_",
+      "text": "▓\n색깔 진짜 잘 나와찌?",
+      "likeCount": 813,
+      "takenAt": 1782824310,
+      "image": "../../assets/threads/you-are-sorry-video/reply-006-DaNfv7nk3iB.jpg",
+      "originalIndex": 6,
+      "imageAlt": "cadadia_official_ 답글 이미지"
+    },
+    {
+      "code": "DaNhY3GAYRu",
+      "username": "hyun_jin_6348",
+      "text": "축구보면서 맥주따르다가 이렇게 됬어요 그래서 명보주라고 이름 붙었어요.",
+      "likeCount": 467,
+      "takenAt": 1782825169,
+      "image": "../../assets/threads/you-are-sorry-video/reply-007-DaNhY3GAYRu.webp",
+      "originalIndex": 7,
+      "imageAlt": "hyun_jin_6348 답글 이미지"
+    },
+    {
+      "code": "DaNiqO_GRVA",
+      "username": "bangbang_jjun",
+      "text": "실패는 내전문인뎈ㅋ\n\n오이무침에 통후추쏟기\n계란한판 쏟기\n사발면쏟기\n조기 굽기 실패\n진미채 태우기\n수박화채에 콜라우유 붓기",
+      "likeCount": 1194,
+      "takenAt": 1782825836,
+      "image": "../../assets/threads/you-are-sorry-video/reply-008-DaNiqO_GRVA.webp",
+      "originalIndex": 8,
+      "imageAlt": "bangbang_jjun 답글 이미지"
+    },
+    {
+      "code": "DaOVvx4CuW5",
+      "username": "realmoa8b",
+      "text": "하 이걸 또 올리게 하네 … 이건 참깨빵이야",
+      "likeCount": 8786,
+      "takenAt": 1782852620,
+      "image": "../../assets/threads/you-are-sorry-video/reply-009-DaOVvx4CuW5.jpg",
+      "originalIndex": 9,
+      "imageAlt": "realmoa8b 답글 이미지"
+    },
+    {
+      "code": "DaOkwrpkr9L",
+      "username": "gooroom_yj_",
+      "text": "돌이라 불렸던 포카치아.\n올리브 엄청 넣었는데...아까웠어",
+      "likeCount": 227,
+      "takenAt": 1782860492,
+      "image": "../../assets/threads/you-are-sorry-video/reply-010-DaOkwrpkr9L.webp",
+      "originalIndex": 10,
+      "imageAlt": "gooroom_yj_ 답글 이미지"
+    },
+    {
+      "code": "DaO7iwhkp_s",
+      "username": "davidjmoney7",
+      "text": "기본적인 밥부터 시작해야지.",
+      "likeCount": 1381,
+      "takenAt": 1782872436,
+      "image": "../../assets/threads/you-are-sorry-video/reply-011-DaO7iwhkp_s.webp",
+      "originalIndex": 11,
+      "imageAlt": "davidjmoney7 답글 이미지"
+    },
+    {
+      "code": "DaO_g-6E_y5",
+      "username": "roseline0223",
+      "text": "순대간 아님. 말차쿠키임.",
+      "likeCount": 341,
+      "takenAt": 1782874519,
+      "image": "../../assets/threads/you-are-sorry-video/reply-012-DaO_g-6E_y5.jpg",
+      "originalIndex": 12,
+      "imageAlt": "roseline0223 답글 이미지"
+    },
+    {
+      "code": "DaPHcHLjxH_",
+      "username": "mu1282pen",
+      "text": "다 덤벼 \n\n어느 요리사분의 똥바리 바게트",
+      "likeCount": 271,
+      "takenAt": 1782878673,
+      "image": "../../assets/threads/you-are-sorry-video/reply-013-DaPHcHLjxH_.webp",
+      "originalIndex": 13,
+      "imageAlt": "mu1282pen 답글 이미지"
+    },
+    {
+      "code": "DaPIODiEy0o",
+      "username": "ur_prettyflower",
+      "text": "내 간장게장?",
+      "likeCount": 497,
+      "takenAt": 1782879082,
+      "image": "../../assets/threads/you-are-sorry-video/reply-014-DaPIODiEy0o.jpg",
+      "originalIndex": 14,
+      "imageAlt": "ur_prettyflower 답글 이미지"
+    },
+    {
+      "code": "DaPJ1Q_krH4",
+      "username": "spoonn_2025",
+      "text": "요린이가 돌김을 만났을 때 🥲",
+      "likeCount": 653,
+      "takenAt": 1782879943,
+      "image": "../../assets/threads/you-are-sorry-video/reply-015-DaPJ1Q_krH4.jpg",
+      "originalIndex": 15,
+      "imageAlt": "spoonn_2025 답글 이미지"
+    },
+    {
+      "code": "DaPLhxoATSt",
+      "username": "byeong_joon_kim",
+      "text": "망했다는 말을 붙일 수 있으려면 일단 입에 넣을 수 없어야해요. 저건 맛있어보임.",
+      "likeCount": 0,
+      "takenAt": 1782880817,
+      "image": null,
+      "originalIndex": 16
+    },
+    {
+      "code": "DaPMHaiG73v",
+      "username": "vanilla_rice22",
+      "text": "화형당한 물고기",
+      "likeCount": 0,
+      "takenAt": 1782881125,
+      "image": null,
+      "originalIndex": 17
+    },
+    {
+      "code": "DaPMYMvGT9G",
+      "username": "farm_bake_oo",
+      "text": "속은 괜찮은데?",
+      "likeCount": 0,
+      "takenAt": 1782881263,
+      "image": null,
+      "originalIndex": 18
+    },
+    {
+      "code": "DaPMgQlmeD6",
+      "username": "loonythunnnus",
+      "text": "요리와 제일 거리가 먼 사람 둘이 대결했는데, 낙승을 예상했는데 제가 참패한 결과물입니다. 일단은 계란찜입니다.",
+      "likeCount": 30,
+      "takenAt": 1782881329,
+      "image": "../../assets/threads/you-are-sorry-video/reply-019-DaPMgQlmeD6.jpg",
+      "originalIndex": 19,
+      "imageAlt": "loonythunnnus 답글 이미지"
+    },
+    {
+      "code": "DaPM7G6kl_9",
+      "username": "heejinson87",
+      "text": "덕분테 크게 웃고 갑니다. 감사합니다.",
+      "likeCount": 0,
+      "takenAt": 1782881549,
+      "image": null,
+      "originalIndex": 20
+    },
+    {
+      "code": "DaPNAvwGfim",
+      "username": "ilculok",
+      "text": "ㅋㅋㅋㅋㅋㅋㅋㅋ 아 근데 겉은 이래도 속은 맛있을듯 ㅋㅋ",
+      "likeCount": 0,
+      "takenAt": 1782881595,
+      "image": null,
+      "originalIndex": 21
+    },
+    {
+      "code": "DaPNLwemKzz",
+      "username": "2jhmom",
+      "text": "정말 너무들 한다",
+      "likeCount": 0,
+      "takenAt": 1782881685,
+      "image": null,
+      "originalIndex": 22
+    },
+    {
+      "code": "DaPNN6PkTu3",
+      "username": "hong__gyeom",
+      "text": "지옥음식전문이들이다",
+      "likeCount": 0,
+      "takenAt": 1782881703,
+      "image": null,
+      "originalIndex": 23
+    },
+    {
+      "code": "DaPNYk8D_d3",
+      "username": "yonam.zipbab",
+      "text": "한강라면이시다",
+      "likeCount": 5,
+      "takenAt": 1782881790,
+      "image": "../../assets/threads/you-are-sorry-video/reply-024-DaPNYk8D_d3.jpg",
+      "originalIndex": 24,
+      "imageAlt": "yonam.zipbab 답글 이미지"
+    },
+    {
+      "code": "DaPNmVqk7KI",
+      "username": "_dandelion__1004",
+      "text": "앜ㅋㅋㅋㅋ",
+      "likeCount": 0,
+      "takenAt": 1782881903,
+      "image": null,
+      "originalIndex": 25
+    },
+    {
+      "code": "DaPNm9VHwDz",
+      "username": "jongsin2233",
+      "text": "댓글보고 내가 요리를 잘하는거였구나...깨닫고감 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+      "likeCount": 0,
+      "takenAt": 1782881908,
+      "image": null,
+      "originalIndex": 26
+    },
+    {
+      "code": "DaPNxSGERPV",
+      "username": "roasting_coffee316",
+      "text": "스하리",
+      "likeCount": 0,
+      "takenAt": 1782881992,
+      "image": null,
+      "originalIndex": 27
+    },
+    {
+      "code": "DaPN3nWFO-X",
+      "username": "transnational_jk",
+      "text": "여기서라면 나도 대상을 노릴수 있을지도\n부제: 꽃꽂이",
+      "likeCount": 5,
+      "takenAt": 1782882044,
+      "image": "../../assets/threads/you-are-sorry-video/reply-028-DaPN3nWFO-X.jpg",
+      "originalIndex": 28,
+      "imageAlt": "transnational_jk 답글 이미지"
+    },
+    {
+      "code": "DaPOCs-Eg_O",
+      "username": "may5mimi",
+      "text": "형태도 있고 심각한 지옥은 아니였네요",
+      "likeCount": 0,
+      "takenAt": 1782882135,
+      "image": null,
+      "originalIndex": 29
+    },
+    {
+      "code": "DaPOOKBE3-U",
+      "username": "line.of.run",
+      "text": "눈이 멀어도 먹을 순 있짆아.",
+      "likeCount": 0,
+      "takenAt": 1782882229,
+      "image": null,
+      "originalIndex": 30
+    },
+    {
+      "code": "DaPOdQ7E2dx",
+      "username": "theduriduli",
+      "text": "삼겹살이였던 거. 맛은 삼겹 과자.",
+      "likeCount": 7,
+      "takenAt": 1782882353,
+      "image": "../../assets/threads/you-are-sorry-video/reply-031-DaPOdQ7E2dx.webp",
+      "originalIndex": 31,
+      "imageAlt": "theduriduli 답글 이미지"
+    },
+    {
+      "code": "DaPOd-xk67t",
+      "username": "twomeshu",
+      "text": "지옥떡갈비",
+      "likeCount": 4,
+      "takenAt": 1782882359,
+      "image": "../../assets/threads/you-are-sorry-video/reply-032-DaPOd-xk67t.jpg",
+      "originalIndex": 32,
+      "imageAlt": "twomeshu 답글 이미지"
+    },
+    {
+      "code": "DaPOu3Jktq6",
+      "username": "tiger_brews",
+      "text": "이븐하게\n타버린 무화과 사워도우🔥🤪",
+      "likeCount": 1,
+      "takenAt": 1782882497,
+      "image": "../../assets/threads/you-are-sorry-video/reply-033-DaPOu3Jktq6.jpg",
+      "originalIndex": 33,
+      "imageAlt": "tiger_brews 답글 이미지"
+    },
+    {
+      "code": "DaPOzbJGgTx",
+      "username": "blue_80kim",
+      "text": "조기 왜 썬탠시켰노",
+      "likeCount": 0,
+      "takenAt": 1782882534,
+      "image": null,
+      "originalIndex": 34
+    },
+    {
+      "code": "DaPPBCSERG1",
+      "username": "ssong_b612",
+      "text": "나 고통받으라고 이런 글이 뜬건가🥹🥹🥹",
+      "likeCount": 0,
+      "takenAt": 1782882646,
+      "image": null,
+      "originalIndex": 35
+    },
+    {
+      "code": "DaPPFJuAWON",
+      "username": "anonhada_house",
+      "text": "나 평생 요리 못하는줄 알고 살았는데 나 요리 잘하는거였네.....",
+      "likeCount": 3,
+      "takenAt": 1782882680,
+      "image": null,
+      "originalIndex": 36
+    },
+    {
+      "code": "DaPPHyCGCXt",
+      "username": "hohoho67789796",
+      "text": "지우지마요",
+      "likeCount": 0,
+      "takenAt": 1782882701,
+      "image": null,
+      "originalIndex": 37
+    },
+    {
+      "code": "DaPPeZFAb-y",
+      "username": "eunjuunni",
+      "text": "ㅋㅋㅋㅋㅋㅋ",
+      "likeCount": 0,
+      "takenAt": 1782882886,
+      "image": null,
+      "originalIndex": 38
+    },
+    {
+      "code": "DaPPkCJmytF",
+      "username": "jk_11049",
+      "text": "이래뵈도 소고기 뭇국이야~",
+      "likeCount": 332,
+      "takenAt": 1782882932,
+      "image": "../../assets/threads/you-are-sorry-video/reply-039-DaPPkCJmytF.webp",
+      "originalIndex": 39,
+      "imageAlt": "jk_11049 답글 이미지"
+    },
+    {
+      "code": "DaPPwrakmsg",
+      "username": "n_npsk",
+      "text": "여기 안되겠어... 다들 내가 만든요리로 눈호강은 꼭 하고 나가...",
+      "likeCount": 225,
+      "takenAt": 1782883036,
+      "image": "../../assets/threads/you-are-sorry-video/reply-040-DaPPwrakmsg.webp",
+      "originalIndex": 40,
+      "imageAlt": "n_npsk 답글 이미지"
+    },
+    {
+      "code": "DaPQBIXk3Ob",
+      "username": "seojeonghwa99",
+      "text": "재가되기직전 이구만",
+      "likeCount": 0,
+      "takenAt": 1782883171,
+      "image": null,
+      "originalIndex": 41
+    },
+    {
+      "code": "DaPQCApk3YG",
+      "username": "lele._.qrrrhee",
+      "text": "망한요리!!!!!\n왜 망했냐고 물으신다면..맛이 없기때문에\n(쉬운요리를 잘못하는 편)",
+      "likeCount": 13,
+      "takenAt": 1782883178,
+      "image": "../../assets/threads/you-are-sorry-video/reply-042-DaPQCApk3YG.webp",
+      "originalIndex": 42,
+      "imageAlt": "lele._.qrrrhee 답글 이미지"
+    },
+    {
+      "code": "DaPQKdqk7HJ",
+      "username": "sunday_glyph",
+      "text": "오우 양호하네! 나는 전자레인지 두개 버렷오",
+      "likeCount": 0,
+      "takenAt": 1782883247,
+      "image": null,
+      "originalIndex": 43
+    },
+    {
+      "code": "DaPQPoXExtV",
+      "username": "miyeon.bb",
+      "text": "하아..",
+      "likeCount": 4,
+      "takenAt": 1782883290,
+      "image": "../../assets/threads/you-are-sorry-video/reply-044-DaPQPoXExtV.webp",
+      "originalIndex": 44,
+      "imageAlt": "miyeon.bb 답글 이미지"
+    },
+    {
+      "code": "DaPRX31E8wU",
+      "username": "_cookie.wisdom",
+      "text": "계란찜ㅠ",
+      "likeCount": 3,
+      "takenAt": 1782883881,
+      "image": "../../assets/threads/you-are-sorry-video/reply-045-DaPRX31E8wU.webp",
+      "originalIndex": 45,
+      "imageAlt": "_cookie.wisdom 답글 이미지"
+    },
+    {
+      "code": "DaPRakeESzW",
+      "username": "gg234ddd",
+      "text": "아..댓글 다 너무 웃기고 귀엽다 ㅋㅋㅋㅋㅋㅋ",
+      "likeCount": 0,
+      "takenAt": 1782883904,
+      "image": null,
+      "originalIndex": 46
+    },
+    {
+      "code": "DaPRhtnkyWf",
+      "username": "_cookie.wisdom",
+      "text": "팥호빵ㅠ",
+      "likeCount": 4,
+      "takenAt": 1782883962,
+      "image": "../../assets/threads/you-are-sorry-video/reply-047-DaPRhtnkyWf.webp",
+      "originalIndex": 47,
+      "imageAlt": "_cookie.wisdom 답글 이미지"
+    },
+    {
+      "code": "DaPRxyRGcs2",
+      "username": "rissy_lub",
+      "text": "정작 조기는 딱 먹기 좋아 보이는데....\n댓글 스크롤을 멈출 수가 없엌 ㅋㅋㅋㅋㅋ",
+      "likeCount": 0,
+      "takenAt": 1782884094,
+      "image": null,
+      "originalIndex": 48
+    },
+    {
+      "code": "DaPR7adDxH8",
+      "username": "drjinuni",
+      "text": "와~~ 진정한 요리계 빌런 동지들 모임이구나!!! 😎👍👍👍",
+      "likeCount": 1,
+      "takenAt": 1782884173,
+      "image": null,
+      "originalIndex": 49
+    },
+    {
+      "code": "DaPSbilmeWq",
+      "username": "kimho_83",
+      "text": "삶은 감자야 ㅋㅋㅋㅋ 포슬포슬을 기대했지 뭐야😱😱😱😱",
+      "likeCount": 0,
+      "takenAt": 1782884436,
+      "image": null,
+      "originalIndex": 50
+    },
+    {
+      "code": "DaPSfb8D_xP",
+      "username": "cocaasky321",
+      "text": "작품들이 엄청 많네여~^^",
+      "likeCount": 0,
+      "takenAt": 1782884468,
+      "image": null,
+      "originalIndex": 51
+    },
+    {
+      "code": "DaPSje0k_tf",
+      "username": "rubia_cho",
+      "text": "이건 껍질 벗기면 맛있을 듯",
+      "likeCount": 0,
+      "takenAt": 1782884501,
+      "image": null,
+      "originalIndex": 52
+    },
+    {
+      "code": "DaPSn-kkwMu",
+      "username": "tori._.toon",
+      "text": "아니 댓글들 보니 스치니 지옥 조기는 천국 조기여써ㅎㅎㅎㅎㅎㅎㅎㅎㅎ",
+      "likeCount": 0,
+      "takenAt": 1782884538,
+      "image": null,
+      "originalIndex": 53
+    },
+    {
+      "code": "DaPSvSDkefv",
+      "username": "noeyyad_eel",
+      "text": "어우 여기 세상 난리도 이런 난리가없다 진짜..",
+      "likeCount": 0,
+      "takenAt": 1782884598,
+      "image": null,
+      "originalIndex": 54
+    },
+    {
+      "code": "DaPTEooj9pW",
+      "username": "sossdam",
+      "text": "수묵채색화 느낌이라..고급지다~~",
+      "likeCount": 0,
+      "takenAt": 1782884772,
+      "image": null,
+      "originalIndex": 55
+    },
+    {
+      "code": "DaPTHKSkttx",
+      "username": "love_coholic",
+      "text": "다시 지옥으로 보내줘야지요. 뼈만 남기고…",
+      "likeCount": 0,
+      "takenAt": 1782884793,
+      "image": null,
+      "originalIndex": 56
+    },
+    {
+      "code": "DaPTTZTHZie",
+      "username": "_so.hii",
+      "text": "댓분들이 더 심한뎁슈",
+      "likeCount": 0,
+      "takenAt": 1782884893,
+      "image": null,
+      "originalIndex": 57
+    },
+    {
+      "code": "DaPTfDtAdoL",
+      "username": "enmeichang",
+      "text": "싹이난 감자처럼 보이지만 두쫀쿠야",
+      "likeCount": 813,
+      "takenAt": 1782884989,
+      "image": "../../assets/threads/you-are-sorry-video/reply-058-DaPTfDtAdoL.jpg",
+      "originalIndex": 58,
+      "imageAlt": "enmeichang 답글 이미지"
+    },
+    {
+      "code": "DaPT3myEsfW",
+      "username": "ji_hoon8207",
+      "text": "ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ댓글 축제네 ㅋㅋㅋ",
+      "likeCount": 16,
+      "takenAt": 1782885190,
+      "image": null,
+      "originalIndex": 59
+    },
+    {
+      "code": "DaPUBcFkzTh",
+      "username": "yjhs23",
+      "text": "오늘 웃음은 여기네\n미챠\n병원 대기중이라 웃음 안되는데 ㅜㅜ\n육성터졌어 ㅋ\n다들 쳐다봐 아놔",
+      "likeCount": 0,
+      "takenAt": 1782885271,
+      "image": null,
+      "originalIndex": 60
+    },
+    {
+      "code": "DaPUQ1hkU0V",
+      "username": "yoonnarae0201",
+      "text": "어디서부터 잘못된 건지 아직도 모르겠어.",
+      "likeCount": 22,
+      "takenAt": 1782885397,
+      "image": "../../assets/threads/you-are-sorry-video/reply-061-DaPUQ1hkU0V.jpg",
+      "originalIndex": 61,
+      "imageAlt": "yoonnarae0201 답글 이미지"
+    },
+    {
+      "code": "DaPUft3lHu6",
+      "username": "z_hye0ni",
+      "text": "이번엔 개최자가 우승 못할 듯 ㅋㅋㅋ\n고작 저 정도로 지옥 운운하다니 ㅋㅋㅋ",
+      "likeCount": 25,
+      "takenAt": 1782885519,
+      "image": null,
+      "originalIndex": 62
+    },
+    {
+      "code": "DaPUg8uibBn",
+      "username": "jeegojeesun",
+      "text": "장갑이랑 똑같네^^",
+      "likeCount": 4,
+      "takenAt": 1782885529,
+      "image": "../../assets/threads/you-are-sorry-video/reply-063-DaPUg8uibBn.jpg",
+      "originalIndex": 63,
+      "imageAlt": "jeegojeesun 답글 이미지"
+    },
+    {
+      "code": "DaPUlmFExug",
+      "username": "mmmin8.8",
+      "text": "키토김밥",
+      "likeCount": 10,
+      "takenAt": 1782885567,
+      "image": "../../assets/threads/you-are-sorry-video/reply-064-DaPUlmFExug.jpg",
+      "originalIndex": 64,
+      "imageAlt": "mmmin8.8 답글 이미지"
+    },
+    {
+      "code": "DaPVAlUibHW",
+      "username": "5ook5ook",
+      "text": "밥이 빠질 수 없지",
+      "likeCount": 11,
+      "takenAt": 1782885788,
+      "image": "../../assets/threads/you-are-sorry-video/reply-065-DaPVAlUibHW.jpg",
+      "originalIndex": 65,
+      "imageAlt": "5ook5ook 답글 이미지"
+    },
+    {
+      "code": "DaPVe_EmA6l",
+      "username": "jeonghoon_12",
+      "text": "집에선 요리 잘 안해서 얼마 안되지만 눈 호강 하시라고 올려요 (요식업8년차)",
+      "likeCount": 28,
+      "takenAt": 1782886037,
+      "image": "../../assets/threads/you-are-sorry-video/reply-066-DaPVe_EmA6l.webp",
+      "originalIndex": 66,
+      "imageAlt": "jeonghoon_12 답글 이미지"
+    },
+    {
+      "code": "DaPV-rdCSuv",
+      "username": "yoonjinyoonjin",
+      "text": "@hee._.zaa 여기 망한요리들 봐봐ㅎㅎ 우리 지옥에서 온 썬드라이토마토도 출전하면 딱인데. 탄 치아바타. 탄 브리오슈. 탄 앙금빵… 진짜 많은데 사진이없넹.",
+      "likeCount": 0,
+      "takenAt": 1782886297,
+      "image": null,
+      "originalIndex": 67
+    },
+    {
+      "code": "DaPWFRMkvJS",
+      "username": "hee._.zaa",
+      "text": "ㅋㅋㅋㅋㅋㅋㅋㅋㅋ무섭게 생겼는데 탄 빵들😂",
+      "likeCount": 0,
+      "takenAt": 1782886350,
+      "image": null,
+      "originalIndex": 68
+    },
+    {
+      "code": "DaPWlm0H7W0",
+      "username": "alp_habetter",
+      "text": "조기들은 이 일을 기억할 것입니다.",
+      "likeCount": 1,
+      "takenAt": 1782886615,
+      "image": null,
+      "originalIndex": 69
+    },
+    {
+      "code": "DaPW-a9k4hO",
+      "username": "ggongs__123",
+      "text": "저 조기는 망했다 대회에 일단못나와",
+      "likeCount": 0,
+      "takenAt": 1782886819,
+      "image": null,
+      "originalIndex": 70
+    },
+    {
+      "code": "DaPXi1_Dy4i",
+      "username": "jy_grgo",
+      "text": "와.. 나 요리 소질없다 생각했는데 댓글들 다 보다보니 나 완전 쉐프였네",
+      "likeCount": 15,
+      "takenAt": 1782887117,
+      "image": null,
+      "originalIndex": 71
+    },
+    {
+      "code": "DaPXqfmk-9s",
+      "username": "cozy__www",
+      "text": "성심당 빵이야",
+      "likeCount": 12,
+      "takenAt": 1782887180,
+      "image": "../../assets/threads/you-are-sorry-video/reply-072-DaPXqfmk-9s.jpg",
+      "originalIndex": 72,
+      "imageAlt": "cozy__www 답글 이미지"
+    },
+    {
+      "code": "DaPXrXtiZnQ",
+      "username": "kim.j.a.gogo",
+      "text": "아니 이게 다 뭐야 ㅋㅋㅋㅋㅋ \n여기 무서워여 ㅋㅋㅋㅋㅋㅋ🤣",
+      "likeCount": 0,
+      "takenAt": 1782887187,
+      "image": null,
+      "originalIndex": 73
+    },
+    {
+      "code": "DaPX-Yoj842",
+      "username": "luminonex",
+      "text": "분명 비프웰링턴을 만들었는데 오븐에서 ㅉㅉ가 나왔다",
+      "likeCount": 20,
+      "takenAt": 1782887343,
+      "image": "../../assets/threads/you-are-sorry-video/reply-074-DaPX-Yoj842.jpg",
+      "originalIndex": 74,
+      "imageAlt": "luminonex 답글 이미지"
+    },
+    {
+      "code": "DaPYcHnkvIl",
+      "username": "yisool2",
+      "text": "조기가 시연을 당했네",
+      "likeCount": 0,
+      "takenAt": 1782887586,
+      "image": null,
+      "originalIndex": 75
+    },
+    {
+      "code": "DaPYwM0kfBa",
+      "username": "soran9273nono",
+      "text": "조기가 형태를 갖추고 있는데 뭐가 망한건지",
+      "likeCount": 1,
+      "takenAt": 1782887751,
+      "image": null,
+      "originalIndex": 76
+    },
+    {
+      "code": "DaPdhQamFVn",
+      "username": "tranquillo_luna",
+      "text": "앜ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 저장해놨다가 웃고 싶을 때 봐야지",
+      "likeCount": 0,
+      "takenAt": 1782890250,
+      "image": null,
+      "originalIndex": 77
+    },
+    {
+      "code": "DaPdtvhEmPy",
+      "username": "___daddadadda___",
+      "text": "ㅋㅋㅋㅋ  여기 다 현웃터져 ㅋㅋㅋ 넘 잼따 ㅋㅋㅋㅋㅋㅋ",
+      "likeCount": 0,
+      "takenAt": 1782890352,
+      "image": null,
+      "originalIndex": 78
+    },
+    {
+      "code": "DaPd4fLk6WU",
+      "username": "hwa0804",
+      "text": "이걸 또올려 ㅋㅋㅋ",
+      "likeCount": 4,
+      "takenAt": 1782890440,
+      "image": "../../assets/threads/you-are-sorry-video/reply-079-DaPd4fLk6WU.webp",
+      "originalIndex": 79,
+      "imageAlt": "hwa0804 답글 이미지"
+    },
+    {
+      "code": "DaPd4pbmEHN",
+      "username": "plan.h_jihye",
+      "text": "오늘은 여기군~~",
+      "likeCount": 0,
+      "takenAt": 1782890441,
+      "image": null,
+      "originalIndex": 80
+    },
+    {
+      "code": "DaPd5JaE-Db",
+      "username": "wiederbethe",
+      "text": "여기 댓글까지 대체 무슨 일....",
+      "likeCount": 0,
+      "takenAt": 1782890445,
+      "image": null,
+      "originalIndex": 81
+    },
+    {
+      "code": "DaPd644ErvK",
+      "username": "im_younge_",
+      "text": "@mick_naldo",
+      "likeCount": 0,
+      "takenAt": 1782890460,
+      "image": null,
+      "originalIndex": 82
+    },
+    {
+      "code": "DaPehB-k7_u",
+      "username": "5073cjd",
+      "text": "ㅋㅋㅋ",
+      "likeCount": 6,
+      "takenAt": 1782890772,
+      "image": "../../assets/threads/you-are-sorry-video/reply-083-DaPehB-k7_u.webp",
+      "originalIndex": 83,
+      "imageAlt": "5073cjd 답글 이미지"
+    },
+    {
+      "code": "DaPehGcmo9e",
+      "username": "yeongseog8071",
+      "text": "제가만든 한강라면은 못비비지요?",
+      "likeCount": 2,
+      "takenAt": 1782890773,
+      "image": "../../assets/threads/you-are-sorry-video/reply-084-DaPehGcmo9e.webp",
+      "originalIndex": 84,
+      "imageAlt": "yeongseog8071 답글 이미지"
+    },
+    {
+      "code": "DaPeuaek7na",
+      "username": "berry.goood",
+      "text": "내가 무슨 부귀영화를 누리자고 이 글을 눌러봤을까….. ㅠㅠ",
+      "likeCount": 0,
+      "takenAt": 1782890882,
+      "image": null,
+      "originalIndex": 85
+    },
+    {
+      "code": "DaPe2j4CatQ",
+      "username": "kkkiiimmm1209",
+      "text": "이게 말로듣던 저승조기",
+      "likeCount": 0,
+      "takenAt": 1782890949,
+      "image": null,
+      "originalIndex": 86
+    },
+    {
+      "code": "DaPe7_dE7xy",
+      "username": "shyun6809",
+      "text": "이정도면 맛있겠는데?",
+      "likeCount": 0,
+      "takenAt": 1782890993,
+      "image": null,
+      "originalIndex": 87
+    },
+    {
+      "code": "DaPfYdggedR",
+      "username": "ddongjjamong",
+      "text": "배꼽잡고 웃었다 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+      "likeCount": 0,
+      "takenAt": 1782891226,
+      "image": null,
+      "originalIndex": 88
+    },
+    {
+      "code": "DaPfb1AE5Wh",
+      "username": "8_k_31",
+      "text": "왜 조기... 맛있어보이지... 츄르르ㅂ..",
+      "likeCount": 0,
+      "takenAt": 1782891254,
+      "image": null,
+      "originalIndex": 89
+    },
+    {
+      "code": "DaPfeN6ABOQ",
+      "username": "seosancity",
+      "text": "맛있어보이는데.. 나 똥입이야??",
+      "likeCount": 0,
+      "takenAt": 1782891273,
+      "image": null,
+      "originalIndex": 90
+    },
+    {
+      "code": "DaPfj19kwVG",
+      "username": "ddooooolgi",
+      "text": "음 나 요리천재였어",
+      "likeCount": 0,
+      "takenAt": 1782891320,
+      "image": null,
+      "originalIndex": 91
+    },
+    {
+      "code": "DaPflJ9D-Ca",
+      "username": "eunice_yoonsuhpark",
+      "text": "감태 김밥이라고 만들었는데….\nㅜㅜ",
+      "likeCount": 2,
+      "takenAt": 1782891330,
+      "image": "../../assets/threads/you-are-sorry-video/reply-092-DaPflJ9D-Ca.jpg",
+      "originalIndex": 92,
+      "imageAlt": "eunice_yoonsuhpark 답글 이미지"
+    },
+    {
+      "code": "DaPfqhtk65a",
+      "username": "muniman_witch_",
+      "text": "인절미구이예요",
+      "likeCount": 5,
+      "takenAt": 1782891374,
+      "image": "../../assets/threads/you-are-sorry-video/reply-093-DaPfqhtk65a.webp",
+      "originalIndex": 93,
+      "imageAlt": "muniman_witch_ 답글 이미지"
+    },
+    {
+      "code": "DaPgAs8AZOh",
+      "username": "youjungjung6315",
+      "text": "왜 맛나보이죠?",
+      "likeCount": 0,
+      "takenAt": 1782891556,
+      "image": null,
+      "originalIndex": 94
+    },
+    {
+      "code": "DaPgBKaHwla",
+      "username": "tamra_chopped_noodles",
+      "text": "ㅎㅎㅎㅎ",
+      "likeCount": 0,
+      "takenAt": 1782891560,
+      "image": null,
+      "originalIndex": 95
+    },
+    {
+      "code": "DaPgDCYkXoF",
+      "username": "nami_raon_mom",
+      "text": "먹을만한데!! 머히만 떼면 뭐",
+      "likeCount": 0,
+      "takenAt": 1782891575,
+      "image": null,
+      "originalIndex": 96
+    },
+    {
+      "code": "DaPgKghmcJr",
+      "username": "kkkk_wisely",
+      "text": "여기.. 마운자로가 필요없겠어 식욕 급 떨어진다…",
+      "likeCount": 1,
+      "takenAt": 1782891636,
+      "image": null,
+      "originalIndex": 97
+    },
+    {
+      "code": "DaPg2l-EYQy",
+      "username": "starting_science",
+      "text": "그래도 옷은 입고있네^^;;;",
+      "likeCount": 1,
+      "takenAt": 1782891997,
+      "image": null,
+      "originalIndex": 98
+    },
+    {
+      "code": "DaPhEvhGAoh",
+      "username": "__jisong__",
+      "text": "아침에 갓 구운 따뜻한 빵을 주고 싶어서\n소금빵 생지를 사서 굽굽했는데\n애들이 대체 이게 뭐냐고 물었다...\n\n'효모 사용이 익숙지 않았던 중세 유럽의 흑색빵'\n을 구현한 것이라고 소개해 주었다.",
+      "likeCount": 19,
+      "takenAt": 1782892113,
+      "image": "../../assets/threads/you-are-sorry-video/reply-099-DaPhEvhGAoh.webp",
+      "originalIndex": 99,
+      "imageAlt": "__jisong__ 답글 이미지"
+    },
+    {
+      "code": "DaPhLhQkgv-",
+      "username": "hiya80",
+      "text": "조기 화석 아니야??",
+      "likeCount": 0,
+      "takenAt": 1782892169,
+      "image": null,
+      "originalIndex": 100
+    },
+    {
+      "code": "DaPhRtniWDj",
+      "username": "luv.eun.love",
+      "text": "난 이렇게 바짝태운 지옥에서 온조기 좋아해 ! 🫶🏼",
+      "likeCount": 0,
+      "takenAt": 1782892220,
+      "image": null,
+      "originalIndex": 101
+    },
+    {
+      "code": "DaPhbXbGcOg",
+      "username": "oh_seungbin_",
+      "text": "하이구야~불구덩이에서 왔나벼~",
+      "likeCount": 0,
+      "takenAt": 1782892299,
+      "image": null,
+      "originalIndex": 102
+    },
+    {
+      "code": "DaPhbd8Ed1B",
+      "username": "gem922",
+      "text": "앞뒤가 다른 팬케이크 되시겠습니다..",
+      "likeCount": 10,
+      "takenAt": 1782892300,
+      "image": "../../assets/threads/you-are-sorry-video/reply-103-DaPhbd8Ed1B.webp",
+      "originalIndex": 103,
+      "imageAlt": "gem922 답글 이미지"
+    },
+    {
+      "code": "DaPheNWElNB",
+      "username": "bluepool68",
+      "text": "조기 의외로 맛있겠는디 빠삭하니",
+      "likeCount": 0,
+      "takenAt": 1782892322,
+      "image": null,
+      "originalIndex": 104
+    },
+    {
+      "code": "DaPhqm-EzlR",
+      "username": "hanaj0626",
+      "text": "내가 만든 부추오징어 부침개얌!! 딸래미가 찍어놨옹😎😎",
+      "likeCount": 7,
+      "takenAt": 1782892424,
+      "image": "../../assets/threads/you-are-sorry-video/reply-105-DaPhqm-EzlR.jpg",
+      "originalIndex": 105,
+      "imageAlt": "hanaj0626 답글 이미지"
+    },
+    {
+      "code": "DaPiqQSGSyA",
+      "username": "aihina01",
+      "text": "맛있겠는뎅",
+      "likeCount": 0,
+      "takenAt": 1782892945,
+      "image": null,
+      "originalIndex": 106
+    },
+    {
+      "code": "DaPjYreFP6O",
+      "username": "chiyou______",
+      "text": "수의 비싼걸루다가 입었어🤣🤣🤣🤣",
+      "likeCount": 0,
+      "takenAt": 1782893325,
+      "image": null,
+      "originalIndex": 107
+    },
+    {
+      "code": "DaP8ah3gKKm",
+      "username": "isabella.hj",
+      "text": "잊을만 하면 오는 대창입죠.. 긁적.",
+      "likeCount": 288,
+      "takenAt": 1782906460,
+      "image": "../../assets/threads/you-are-sorry-video/reply-108-DaP8ah3gKKm.jpg",
+      "originalIndex": 108,
+      "imageAlt": "isabella.hj 답글 이미지"
+    },
+    {
+      "code": "DaQWwnvk0yE",
+      "username": "luggage.bang",
+      "text": "완벽해👏👏👏",
+      "likeCount": 1,
+      "takenAt": 1782920260,
+      "image": null,
+      "originalIndex": 109
+    }
+  ]
 }

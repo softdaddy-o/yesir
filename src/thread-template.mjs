@@ -79,6 +79,20 @@ function renderThreadsEmbed(embedUrl) {
                     </div>`;
 }
 
+function renderPostMedia(post) {
+    if (!post.image) {
+        return '';
+    }
+
+    const escapedImage = escapeHtml(post.image);
+    const escapedAlt = escapeHtml(post.imageAlt || `${post.username || 'Threads'} media`);
+
+    return `
+                    <figure class="post-media">
+                        <img src="${escapedImage}" alt="${escapedAlt}" loading="lazy">
+                    </figure>`;
+}
+
 function renderReply(reply, index, sortedReplies) {
     const likeRank = index + 1;
     const originalIndex = reply.originalIndex || likeRank;
@@ -94,7 +108,7 @@ function renderReply(reply, index, sortedReplies) {
                         <span>${escapeHtml(date)}</span>
                         <a class="post-number" href="#reply-${likeRank}" aria-label="댓글 ${likeRank}번">#${likeRank}</a>
                     </div>
-                    ${renderText(reply.text)}
+                    ${renderText(reply.text)}${renderPostMedia(reply)}
                     <div class="post-actions">
                         <span>좋아요 ${escapeHtml(formatNumber(likeCount) || '0')}</span>
                         <span>원래순 ${originalIndex}/${sortedReplies.length}</span>
@@ -323,6 +337,7 @@ export function renderThreadPage(thread) {
     const screenshotCount = thread.capture?.screenshotCount || 0;
     const generatedAt = thread.capture?.generatedAt || '';
     const totalReplyCount = replies.length;
+    const mediaCount = thread.capture?.mediaCount || 0;
     const stats = thread.stats || {};
     const main = thread.main;
     const authorUsername = thread.author?.username || main.username;
@@ -363,6 +378,7 @@ export function renderThreadPage(thread) {
             <dl>
                 <div><dt>캡처</dt><dd>${screenshotCount}장</dd></div>
                 <div><dt>본문</dt><dd>${totalReplyCount}개 ${escapeHtml(itemLabel)}</dd></div>
+                <div><dt>미디어</dt><dd>${mediaCount}개</dd></div>
                 <div><dt>기준일</dt><dd>${escapeHtml(generatedAt)}</dd></div>
             </dl>
         </section>
@@ -376,7 +392,7 @@ export function renderThreadPage(thread) {
                         <span class="dot">&middot;</span>
                         <span>${escapeHtml(formatDate(main.takenAt) || '3일')}</span>
                     </div>
-                    ${renderText(main.text, true)}${renderThreadsEmbed(main.embedUrl)}
+                    ${renderText(main.text, true)}${renderPostMedia(main)}${renderThreadsEmbed(main.embedUrl)}
                     <div class="post-actions" aria-label="Post stats">
                         <span>좋아요 ${escapeHtml(formatNumber(main.likeCount) || '0')}</span>
                         <span>댓글 ${escapeHtml(stats.replyCount ?? '')}</span>

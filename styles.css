@@ -690,7 +690,7 @@ a:hover {
 
 .thread-summary dl {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 10px;
     margin: 0;
 }
@@ -831,6 +831,21 @@ a:hover {
     color: var(--ink);
     font-family: "Gowun Dodum", ui-sans-serif, system-ui, sans-serif;
     font-weight: 700;
+}
+
+.post-media {
+    margin: 14px 0 0;
+    overflow: hidden;
+    border: 2px solid rgba(20, 18, 13, 0.78);
+    border-radius: 8px;
+    background: #fff;
+}
+
+.post-media img {
+    display: block;
+    width: 100%;
+    max-height: 720px;
+    object-fit: contain;
 }
 
 .post-actions {
@@ -1663,7 +1678,7 @@ a:hover {
     }
 
     .thread-summary dl {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .post-text {

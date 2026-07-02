@@ -140,10 +140,11 @@ assertIncludes(middleClassThreadHtml, 'Logseq 검증 노트에 남은 본문 요
 assertIncludes(middleClassThreadHtml, 'Threads Logseq 항목 13개', 'threads/middle-class-patterns/index.html');
 assertIncludes(middleClassThreadHtml, 'D:/LogseqData의 verified literature note', 'threads/middle-class-patterns/index.html');
 
-assertIncludes(youAreSorryThreadHtml, '<title>you.are.sorry.j 영상 스레드 - yesir.softdaddy-o.com</title>', 'threads/you-are-sorry-video/index.html');
-assertIncludes(youAreSorryThreadHtml, 'Threads 영상 게시글을 공식 임베드로 저장했습니다', 'threads/you-are-sorry-video/index.html');
-assertIncludes(youAreSorryThreadHtml, 'data-text-post-permalink="https://www.threads.com/@you.are.sorry.j/post/DaNUPIumOzJ"', 'threads/you-are-sorry-video/index.html');
-assertIncludes(youAreSorryThreadHtml, 'https://www.threads.net/embed.js', 'threads/you-are-sorry-video/index.html');
+assertIncludes(youAreSorryThreadHtml, '<title>망한요리대회: 지옥에서 온 조기 - yesir.softdaddy-o.com</title>', 'threads/you-are-sorry-video/index.html');
+assertIncludes(youAreSorryThreadHtml, '지금부터 망한요리대회를 열도록 할게요', 'threads/you-are-sorry-video/index.html');
+assertIncludes(youAreSorryThreadHtml, '미디어</dt><dd>45개</dd>', 'threads/you-are-sorry-video/index.html');
+assertIncludes(youAreSorryThreadHtml, '../../assets/threads/you-are-sorry-video/main-DaNUPIumOzJ.webp', 'threads/you-are-sorry-video/index.html');
+assertIncludes(youAreSorryThreadHtml, 'id="reply-109"', 'threads/you-are-sorry-video/index.html');
 
 const firstReplyIndex = threadHtml.indexOf('id="reply-1"');
 const topLikedIndex = threadHtml.indexOf('minij0min');
