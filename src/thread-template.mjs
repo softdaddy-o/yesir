@@ -101,20 +101,61 @@ function renderPostMedia(post) {
         return '';
     }
 
-    const mediaMarkup = media.map((item) => {
+    const mediaMarkup = media.map((item, index) => {
+        const itemClass = media.length > 1 ? ' class="post-media-item"' : '';
+        const itemIndex = media.length > 1 ? ` aria-label="미디어 ${index + 1}/${media.length}"` : '';
         if (item.type === 'video') {
-            return `<video class="post-video" controls preload="metadata"${item.poster ? ` poster="${escapeHtml(item.poster)}"` : ''}>
-                            <source src="${escapeHtml(item.src)}" type="${escapeHtml(item.videoType || 'video/mp4')}">
-                        </video>`;
+            return `<span${itemClass}${itemIndex}><video class="post-video" controls muted playsinline loop preload="metadata" data-autoplay-video${item.poster ? ` poster="${escapeHtml(item.poster)}"` : ''}>
+                                <source src="${escapeHtml(item.src)}" type="${escapeHtml(item.videoType || 'video/mp4')}">
+                            </video></span>`;
         }
 
-        return `<img src="${escapeHtml(item.src)}" alt="${escapeHtml(item.alt || `${post.username || 'Threads'} media`)}" loading="lazy">`;
+        return `<span${itemClass}${itemIndex}><img src="${escapeHtml(item.src)}" alt="${escapeHtml(item.alt || `${post.username || 'Threads'} media`)}" loading="lazy"></span>`;
     }).join('\n                        ');
 
     return `
-                    <figure class="post-media${media.length > 1 ? ' post-media-grid' : ''}">
+                    <figure class="post-media${media.length > 1 ? ' post-media-strip' : ''}">
                         ${mediaMarkup}
                     </figure>`;
+}
+
+function renderVideoAutoplayScript() {
+    return `    <script>
+(() => {
+    const videos = Array.from(document.querySelectorAll('[data-autoplay-video]'));
+    if (videos.length === 0) return;
+
+    videos.forEach((video) => {
+        video.muted = true;
+        video.playsInline = true;
+    });
+
+    const tryPlay = (video) => {
+        const promise = video.play();
+        if (promise && typeof promise.catch === 'function') {
+            promise.catch(() => {});
+        }
+    };
+
+    if (!('IntersectionObserver' in window)) {
+        videos.forEach(tryPlay);
+        return;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            const video = entry.target;
+            if (entry.isIntersecting && entry.intersectionRatio >= 0.55) {
+                tryPlay(video);
+            } else {
+                video.pause();
+            }
+        });
+    }, { threshold: [0, 0.55, 1] });
+
+    videos.forEach((video) => observer.observe(video));
+})();
+    </script>`;
 }
 
 function renderReply(reply, index, sortedReplies) {
@@ -437,6 +478,7 @@ ${sortedReplies.map((reply, index) => renderReply(reply, index, sortedReplies)).
 ${renderSortToggle()}
     </main>
 ${main.embedUrl ? '    <script async src="https://www.threads.net/embed.js"></script>\n' : ''}${renderSortScript()}
+${renderVideoAutoplayScript()}
 </body>
 </html>
 `;

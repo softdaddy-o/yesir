@@ -145,10 +145,16 @@ assertIncludes(youAreSorryThreadHtml, '지금부터 망한요리대회를 열도
 assertIncludes(youAreSorryThreadHtml, '미디어</dt><dd>58개 / 영상 4개</dd>', 'threads/you-are-sorry-video/index.html');
 assertIncludes(youAreSorryThreadHtml, '../../assets/threads/you-are-sorry-video/main-DaNUPIumOzJ.webp', 'threads/you-are-sorry-video/index.html');
 assertIncludes(youAreSorryThreadHtml, '<video class="post-video"', 'threads/you-are-sorry-video/index.html');
+assertIncludes(youAreSorryThreadHtml, 'muted playsinline loop preload="metadata" data-autoplay-video', 'threads/you-are-sorry-video/index.html');
+assertIncludes(youAreSorryThreadHtml, 'IntersectionObserver', 'threads/you-are-sorry-video/index.html');
 assertIncludes(youAreSorryThreadHtml, '../../assets/threads/you-are-sorry-video/reply-009-DaOVvx4CuW5-01.mp4', 'threads/you-are-sorry-video/index.html');
-assertIncludes(youAreSorryThreadHtml, 'post-media-grid', 'threads/you-are-sorry-video/index.html');
+assertIncludes(youAreSorryThreadHtml, 'post-media-strip', 'threads/you-are-sorry-video/index.html');
+assertNotIncludes(youAreSorryThreadHtml, 'post-media-grid', 'threads/you-are-sorry-video/index.html');
 assertIncludes(youAreSorryThreadHtml, '../../assets/threads/you-are-sorry-video/reply-008-DaNiqO_GRVA-06.webp', 'threads/you-are-sorry-video/index.html');
 assertIncludes(youAreSorryThreadHtml, 'id="reply-109"', 'threads/you-are-sorry-video/index.html');
+assertNotIncludes(youAreSorryThreadHtml, 'Playwright', 'threads/you-are-sorry-video/index.html');
+assertNotIncludes(youAreSorryThreadHtml, 'Daily scrape', 'threads/you-are-sorry-video/index.html');
+assertNotIncludes(youAreSorryThreadHtml, 'GraphQL', 'threads/you-are-sorry-video/index.html');
 
 const firstReplyIndex = threadHtml.indexOf('id="reply-1"');
 const topLikedIndex = threadHtml.indexOf('minij0min');

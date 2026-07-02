@@ -401,5 +401,41 @@
     applySort(dock.dataset.defaultSort || 'likes');
 })();
     </script>
+    <script>
+(() => {
+    const videos = Array.from(document.querySelectorAll('[data-autoplay-video]'));
+    if (videos.length === 0) return;
+
+    videos.forEach((video) => {
+        video.muted = true;
+        video.playsInline = true;
+    });
+
+    const tryPlay = (video) => {
+        const promise = video.play();
+        if (promise && typeof promise.catch === 'function') {
+            promise.catch(() => {});
+        }
+    };
+
+    if (!('IntersectionObserver' in window)) {
+        videos.forEach(tryPlay);
+        return;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            const video = entry.target;
+            if (entry.isIntersecting && entry.intersectionRatio >= 0.55) {
+                tryPlay(video);
+            } else {
+                video.pause();
+            }
+        });
+    }, { threshold: [0, 0.55, 1] });
+
+    videos.forEach((video) => observer.observe(video));
+})();
+    </script>
 </body>
 </html>

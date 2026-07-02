@@ -849,18 +849,31 @@ a:hover {
     object-fit: contain;
 }
 
-.post-media-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 2px;
+.post-media-strip {
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
 }
 
-.post-media-grid img,
-.post-media-grid video {
-    height: 100%;
-    min-height: 180px;
-    max-height: 420px;
-    object-fit: cover;
+.post-media-item {
+    display: grid;
+    flex: 0 0 100%;
+    min-width: 0;
+    scroll-snap-align: center;
+    background: #0f0f0f;
+}
+
+.post-media-strip img,
+.post-media-strip video {
+    width: 100%;
+    height: min(680px, 82vh);
+    max-height: none;
+    object-fit: contain;
 }
 
 .post-actions {
