@@ -5,25 +5,25 @@
   "author": {
     "username": "pottas_kitchen"
   },
-  "description": "사자성어를 엉뚱하게 풀이한 말장난 Threads 아카이브입니다.",
+  "description": "사자성어를 엉뚱하게 재해석한 말장난 Threads 아카이브입니다.",
   "capture": {
-    "generatedAt": "2026-07-09",
-    "screenshotCount": 17,
+    "generatedAt": "2026-07-10",
+    "screenshotCount": 29,
     "mediaCount": 0,
-    "note": "공개 상태에서 Playwright로 스크롤 캡처한 본문과 공개 답글 일부를 정리했습니다.",
-    "summaryText": "사자성어를 일부러 엉뚱하게 해석하는 댓글들이 이어지는 Threads 아카이브입니다.",
-    "itemLabel": "공개 답글"
+    "note": "로그인된 Threads 세션에서 Playwright로 다시 스크롤 캡처해 본문과 공개 답글 일부를 정리했습니다.",
+    "summaryText": "사자성어를 일부러 이상하게 풀이하는 댓글이 이어지는 Threads 아카이브입니다.",
+    "itemLabel": "로그인 캡처 답글"
   },
   "stats": {
-    "replyCount": 170,
-    "repostCount": 24,
-    "shareCount": 78
+    "replyCount": 356,
+    "repostCount": 193,
+    "shareCount": 313
   },
   "main": {
     "code": "DajyEBLoJ_-",
     "username": "pottas_kitchen",
     "text": "다들 알고있는 사자성어 하나씩 알려줄수있어?\n노심초사\n나이많은 심판인줄 알았는데 알고보니 초등학교 4학년\n이런거처럼 사자성어랑 뜻도 같이 적어주라",
-    "likeCount": 232,
+    "likeCount": 1200,
     "image": null
   },
   "replies": [
@@ -31,120 +31,120 @@
       "code": "DajyEBLoJ-r1",
       "username": "blumintaze_907",
       "text": "조삼모사\n조금 모르면 삼번 아예 모르면 사번",
-      "likeCount": 247,
-      "relativeTime": "6시간",
+      "likeCount": 1100,
+      "relativeTime": "1일",
       "originalIndex": 1
     },
     {
       "code": "DajyEBLoJ-r2",
       "username": "ddongssayo",
       "text": "고진감래\n고용해주셔서 진짜 감사한데 집에갈래 (퍼옴)",
-      "likeCount": 133,
-      "relativeTime": "7시간",
+      "likeCount": 630,
+      "relativeTime": "1일",
       "originalIndex": 2
     },
     {
       "code": "DajyEBLoJ-r3",
       "username": "black_bean.sy",
       "text": "역지사지\n역으로 지랄해줘야 사람들이 지 잘못을 안다",
-      "likeCount": 84,
-      "relativeTime": "7시간",
+      "likeCount": 435,
+      "relativeTime": "1일",
       "originalIndex": 3
     },
     {
       "code": "DajyEBLoJ-r4",
-      "username": "su_jung_2_2",
-      "text": "순망치한\n순간 망치로 한대 칠뻔했네",
-      "likeCount": 80,
-      "relativeTime": "7시간",
+      "username": "pottas_kitchen",
+      "text": "ㅋㅋㅋㅋㅋㅋㅋㅋ오 ㅋㅋㅋㅋ어느정도 원래뜻에서 크게 차이안나면서도 재치있어 ㅋㅋㅋㅋㅋ",
+      "likeCount": 7,
+      "relativeTime": "작성자",
       "originalIndex": 4
     },
     {
       "code": "DajyEBLoJ-r5",
-      "username": "pythagorean_theorem___",
-      "text": "제왕절개 - 왕의 변치 않는 신념",
-      "likeCount": 57,
-      "relativeTime": "7시간",
+      "username": "su_jung_2_2",
+      "text": "순망치한\n순간 망치로 한대 칠뻔했네",
+      "likeCount": 430,
+      "relativeTime": "1일",
       "originalIndex": 5
     },
     {
       "code": "DajyEBLoJ-r6",
       "username": "hdmc618",
       "text": "오리지날\n오리도 지랄하면 날 수 있다",
-      "likeCount": 48,
-      "relativeTime": "7시간",
+      "likeCount": 284,
+      "relativeTime": "1일",
       "originalIndex": 6
     },
     {
       "code": "DajyEBLoJ-r7",
-      "username": "jin_stagram_86",
-      "text": "오매불망\n오매~불이 쎄서 요리 망했네",
-      "likeCount": 38,
-      "relativeTime": "7시간",
+      "username": "pythagorean_theorem___",
+      "text": "제왕절개 - 왕의 변치 않는 신념",
+      "likeCount": 148,
+      "relativeTime": "1일",
       "originalIndex": 7
     },
     {
       "code": "DajyEBLoJ-r8",
-      "username": "eun.violet",
-      "text": "神義美貌 世上間地\n用安恚西 費治難多\n河鼓風去 削多海蘿\n신의미모 세상간지\n용안에서 비치난다\n하고풍거 삭다해라",
-      "likeCount": 14,
-      "relativeTime": "7시간",
+      "username": "jin_stagram_86",
+      "text": "오매불망\n오매~불이 쎄서 요리 망했네",
+      "likeCount": 215,
+      "relativeTime": "1일",
       "originalIndex": 8
     },
     {
       "code": "DajyEBLoJ-r9",
-      "username": "minsta_kilogram",
-      "text": "와신상담\n와서 신발 벗고 상담하자",
-      "likeCount": 15,
-      "relativeTime": "6시간",
+      "username": "brion73",
+      "text": "백설공주\n백방으로 설치는 공포의 주둥아리…",
+      "likeCount": 149,
+      "relativeTime": "1일",
       "originalIndex": 9
     },
     {
       "code": "DajyEBLoJ-r10",
-      "username": "fofo_10reps",
-      "text": "우유부단\n우유 유부 단무지",
-      "likeCount": 13,
-      "relativeTime": "5시간",
+      "username": "minsta_kilogram",
+      "text": "와신상담\n와서 신발 벗고 상담하자",
+      "likeCount": 101,
+      "relativeTime": "1일",
       "originalIndex": 10
     },
     {
       "code": "DajyEBLoJ-r11",
-      "username": "yomaamc",
-      "text": "결초보은\n결국 초보는 실버로 진급했다",
-      "likeCount": 12,
-      "relativeTime": "5시간",
+      "username": "eun.violet",
+      "text": "神義美貌 世上間地\n用安恚西 費治難多\n河鼓風去 削多海蘿\n신의미모 세상간지\n용안에서 비치난다\n하고풍거 삭다해라",
+      "likeCount": 50,
+      "relativeTime": "1일",
       "originalIndex": 11
     },
     {
       "code": "DajyEBLoJ-r12",
-      "username": "choivincent1234",
-      "text": "좌고우면 左膏右麵\n왼쪽에 기름진 고기, 오른쪽에 국수\n돼지갈비를 먹을 때는 냉면을 빼먹지 말라는\n선조들의 지혜가 담긴 사자성어死者成魚",
-      "likeCount": 4,
-      "relativeTime": "3시간",
+      "username": "mon_moni777",
+      "text": "좌지우지\n왼쪽에서 지랄 오른쪽에서 지랄\n여기저기서 지랄한다...내가 뜻을 창조 해봤어🫠ㅋㅋㅋㅋ",
+      "likeCount": 70,
+      "relativeTime": "1일",
       "originalIndex": 12
     },
     {
       "code": "DajyEBLoJ-r13",
-      "username": "lov_entp",
-      "text": "내로남불\n내가하면 로맨스 남이하면 불륜 ㅋㅋ",
-      "likeCount": 3,
-      "relativeTime": "3시간",
+      "username": "yomaamc",
+      "text": "결초보은\n결국 초보는 실버로 진급했다",
+      "likeCount": 65,
+      "relativeTime": "1일",
       "originalIndex": 13
     },
     {
       "code": "DajyEBLoJ-r14",
-      "username": "shining_eag1e",
-      "text": "화양연화\n화가많은 양띠 안녕하세요 옥연화입니다~",
-      "likeCount": 0,
-      "relativeTime": "4시간",
+      "username": "choivincent1234",
+      "text": "좌고우면 左膏右麵\n왼쪽에 기름진 고기, 오른쪽에 국수\n돼지갈비를 먹을 때는 냉면을 빼먹지 말라는\n선조들의 지혜가 담긴 사자성어死者成魚",
+      "likeCount": 53,
+      "relativeTime": "1일",
       "originalIndex": 14
     },
     {
       "code": "DajyEBLoJ-r15",
-      "username": "nichea_yii_",
-      "text": "몬스터볼\n몬지 모르겠는데\n스리슬쩍 내맘에\n터를 잡은\n볼수록 매력적인 그대",
-      "likeCount": 0,
-      "relativeTime": "3시간",
+      "username": "fofo_10reps",
+      "text": "우유부단\n우유 유부 단무지",
+      "likeCount": 40,
+      "relativeTime": "1일",
       "originalIndex": 15
     }
   ]

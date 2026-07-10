@@ -12,6 +12,7 @@ const youAreSorryThreadHtml = await readFile('threads/you-are-sorry-video/index.
 const misspellingThreadHtml = await readFile('threads/misspelling-jokes/index.html', 'utf8');
 const fourCharacterThreadHtml = await readFile('threads/four-character-wordplay/index.html', 'utf8');
 const professionalIronyThreadHtml = await readFile('threads/professional-irony/index.html', 'utf8');
+const sharedAnniversaryThreadHtml = await readFile('threads/shared-anniversary/index.html', 'utf8');
 const homeHtml = await readFile('index.html', 'utf8');
 const previewHtml = await readFile('design-previews/index.html', 'utf8');
 const mindHtml = await readFile('play/mind/index.html', 'utf8');
@@ -52,8 +53,8 @@ assertIncludes(homeHtml, 'play/mind/', 'index.html');
 assertIncludes(homeHtml, 'play/self-growth/', 'index.html');
 assertIncludes(homeHtml, 'play/funny/', 'index.html');
 assertIncludes(homeHtml, 'home-scrapbook', 'index.html');
-assertIncludes(homeHtml, '3 rooms / 11 saves', 'index.html');
-assertIncludes(homeHtml, '11 saved posts', 'index.html');
+assertIncludes(homeHtml, '3 rooms / 12 saves', 'index.html');
+assertIncludes(homeHtml, '12 saved posts', 'index.html');
 assertNotIncludes(homeHtml, 'threads/doha-poor-fish/', 'index.html');
 assertNotIncludes(homeHtml, 'play/anxiety/', 'index.html');
 assertNotIncludes(homeHtml, 'play/psychology/', 'index.html');
@@ -97,6 +98,8 @@ assertIncludes(funnyHtml, '사자성어 아무말 대회', 'play/funny/index.htm
 assertIncludes(funnyHtml, '../../threads/four-character-wordplay/', 'play/funny/index.html');
 assertIncludes(funnyHtml, '직업과 현실의 배신', 'play/funny/index.html');
 assertIncludes(funnyHtml, '../../threads/professional-irony/', 'play/funny/index.html');
+assertIncludes(funnyHtml, '결혼기념일이 똑같은 부부', 'play/funny/index.html');
+assertIncludes(funnyHtml, '../../threads/shared-anniversary/', 'play/funny/index.html');
 assertNotIncludes(funnyHtml, '웃긴 닉네임', 'play/funny/index.html');
 assertNotIncludes(funnyHtml, '아재개그 대회', 'play/funny/index.html');
 assertNotIncludes(funnyHtml, '천하제일 똥글 명언 대회', 'play/funny/index.html');
@@ -178,7 +181,13 @@ assertIncludes(fourCharacterThreadHtml, 'id="reply-15"', 'threads/four-character
 assertIncludes(professionalIronyThreadHtml, '<title>직업과 현실의 배신 - yesir.softdaddy-o.com</title>', 'threads/professional-irony/index.html');
 assertIncludes(professionalIronyThreadHtml, '서울대 출신 의사입니다', 'threads/professional-irony/index.html');
 assertIncludes(professionalIronyThreadHtml, '플로리스트입니다', 'threads/professional-irony/index.html');
-assertIncludes(professionalIronyThreadHtml, 'id="reply-15"', 'threads/professional-irony/index.html');
+assertIncludes(professionalIronyThreadHtml, '웨딩플래너입니다', 'threads/professional-irony/index.html');
+assertIncludes(professionalIronyThreadHtml, 'id="reply-20"', 'threads/professional-irony/index.html');
+
+assertIncludes(sharedAnniversaryThreadHtml, '<title>결혼기념일이 똑같은 부부 - yesir.softdaddy-o.com</title>', 'threads/shared-anniversary/index.html');
+assertIncludes(sharedAnniversaryThreadHtml, '저와 아내는 신기하게도 결혼기념일이 똑같습니다.', 'threads/shared-anniversary/index.html');
+assertIncludes(sharedAnniversaryThreadHtml, '부모님도 서로 결혼 기념일 같은 경우가 많더라구요', 'threads/shared-anniversary/index.html');
+assertIncludes(sharedAnniversaryThreadHtml, 'id="reply-20"', 'threads/shared-anniversary/index.html');
 
 const firstReplyIndex = threadHtml.indexOf('id="reply-1"');
 const topLikedIndex = threadHtml.indexOf('minij0min');
@@ -202,6 +211,7 @@ for (const path of [
     'data/threads/misspelling-jokes.json',
     'data/threads/four-character-wordplay.json',
     'data/threads/professional-irony.json',
+    'data/threads/shared-anniversary.json',
 ]) {
     assertExists(path);
 }
@@ -235,6 +245,7 @@ for (const path of [
     'threads/misspelling-jokes/index.html',
     'threads/four-character-wordplay/index.html',
     'threads/professional-irony/index.html',
+    'threads/shared-anniversary/index.html',
 ]) {
     assertExists(path);
 }
@@ -268,6 +279,7 @@ const checkedHtml = [
     misspellingThreadHtml,
     fourCharacterThreadHtml,
     professionalIronyThreadHtml,
+    sharedAnniversaryThreadHtml,
 ].join('');
 if (/[\uFFFD\u5a9b\u6e72\uf9ce\uc9cc]/.test(checkedHtml)) {
     throw new Error('generated HTML contains likely mojibake');

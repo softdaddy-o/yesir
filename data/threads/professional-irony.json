@@ -5,121 +5,121 @@
   "author": {
     "username": "dr.salbbaeja"
   },
-  "description": "직업과 실제 생활 사이의 반전 댓글을 모아둔 Threads 아카이브입니다.",
+  "description": "직업과 실제 생활 사이의 반전 댓글을 모은 Threads 아카이브입니다.",
   "capture": {
     "generatedAt": "2026-07-10",
-    "screenshotCount": 10,
-    "mediaCount": 0,
-    "note": "공개 상태에서 Playwright로 스크롤 캡처한 본문과 공개 답글 일부를 정리했습니다.",
-    "summaryText": "전문직, 전공, 직업과 반대로 사는 현실 고백 댓글들이 이어지는 Threads 아카이브입니다.",
-    "itemLabel": "공개 답글"
+    "screenshotCount": 80,
+    "mediaCount": 2,
+    "note": "로그인된 Threads 세션에서 Playwright로 다시 스크롤 캡처해 본문과 공개 답글 일부를 정리했습니다.",
+    "summaryText": "전문직, 전공, 업장과 반대로 사는 현실 고백 댓글들이 이어지는 Threads 아카이브입니다.",
+    "itemLabel": "로그인 캡처 답글"
   },
   "stats": {
-    "replyCount": 794,
-    "repostCount": 63,
-    "shareCount": 118
+    "replyCount": 1200,
+    "repostCount": 158,
+    "shareCount": 400
   },
   "main": {
     "code": "Dae7P-RE4LR",
     "username": "dr.salbbaeja",
     "text": "서울대 출신 의사입니다\n돈계산 암산으로 못합니다.",
-    "likeCount": 2200,
+    "likeCount": 4200,
     "image": null
   },
   "replies": [
     {
       "code": "Dae7P-RE4LR-r1",
-      "username": "keepcalmandstaythankful",
-      "text": "미국간호산데\n알츠하이머 스펠링 못 외워서 맨날 구글 돌리는데\n옆자리 미국인 동료도 그러고 있음 ㅋㅋ",
-      "likeCount": 1700,
-      "relativeTime": "22시간",
+      "username": "dan___flower",
+      "text": "플로리스트입니다.\n집에 있는 화분 다죽었습니다.",
+      "likeCount": 1000,
+      "relativeTime": "2일",
       "originalIndex": 1
     },
     {
       "code": "Dae7P-RE4LR-r2",
-      "username": "bookwave_official",
-      "text": "출판사합니다. 비속어 없이 글쓰기 어렵습니다.",
-      "likeCount": 472,
-      "relativeTime": "2일",
+      "username": "pink20222",
+      "text": "웨딩플래너입니다.\n결혼못했습니다.",
+      "likeCount": 1800,
+      "relativeTime": "3일",
       "originalIndex": 2
     },
     {
       "code": "Dae7P-RE4LR-r3",
-      "username": "dan___flower",
-      "text": "플로리스트입니다.\n집에 있는 화분 다죽었습니다.",
-      "likeCount": 442,
+      "username": "keepcalmandstaythankful",
+      "text": "미국간호산데\n알츠하이머 스펠링 못 외워서 맨날 구글 돌리는데\n옆자리 미국인 동료도 그러고 있음 ㅋㅋ",
+      "likeCount": 2400,
       "relativeTime": "1일",
       "originalIndex": 3
     },
     {
       "code": "Dae7P-RE4LR-r4",
-      "username": "minhohohohohohoho",
-      "text": "먹산입니다.\n많이 먹으면 배부릅니다.",
-      "likeCount": 393,
-      "relativeTime": "20시간",
+      "username": "bookwave_official",
+      "text": "출판사합니다. 비속어 없이 글쓰기 어렵습니다.",
+      "likeCount": 859,
+      "relativeTime": "3일",
       "originalIndex": 4
     },
     {
       "code": "Dae7P-RE4LR-r5",
       "username": "ko.somi.9",
       "text": "타코야끼가게 사장입니다 문어 오징어 낙지 무서워합니다",
-      "likeCount": 283,
-      "relativeTime": "1일",
+      "likeCount": 617,
+      "relativeTime": "3일",
       "originalIndex": 5
     },
     {
       "code": "Dae7P-RE4LR-r6",
-      "username": "book_kingkong",
-      "text": "기계공학 전공입니다\n뭐 고장나면 힘으로 해결합니다",
-      "likeCount": 278,
-      "relativeTime": "1일",
+      "username": "do_it63",
+      "text": "지나가는 무용과 발레강사입니다. 회원님께 몸관리 필수라면서 저는 비오면 시큰거리고 사지에서 뚝 뚝 소리납니다ㅋㅋ",
+      "likeCount": 377,
+      "relativeTime": "3일",
       "originalIndex": 6
     },
     {
       "code": "Dae7P-RE4LR-r7",
-      "username": "skytreesea",
-      "text": "좀 심하군요. 지나가는 지리학 박사입니다. 가나 수도 모릅니다.",
-      "likeCount": 211,
-      "relativeTime": "23시간",
+      "username": "ohse.jin",
+      "text": "치과 직원입니다.\n치아에 구멍났는데 무서워서\n3년째 치료 안받고 버티고 있습니다.",
+      "likeCount": 447,
+      "relativeTime": "3일",
       "originalIndex": 7
     },
     {
       "code": "Dae7P-RE4LR-r8",
-      "username": "do_it63",
-      "text": "지나가는 무용과 발레강사입니다. 회원님께 몸관리 필수라면서 저는 비오면 시큰거리고 사지에서 뚝 뚝 소리납니다ㅋㅋ",
-      "likeCount": 202,
-      "relativeTime": "1일",
+      "username": "book_kingkong",
+      "text": "기계공학 전공입니다\n뭐 고장나면 힘으로 해결합니다",
+      "likeCount": 486,
+      "relativeTime": "3일",
       "originalIndex": 8
     },
     {
       "code": "Dae7P-RE4LR-r9",
-      "username": "beom_wee",
-      "text": "법대 나왔습니다\n어제 주정차위반 딱지 날라왔습니다.",
-      "likeCount": 197,
-      "relativeTime": "23시간",
+      "username": "jh_the_pilot",
+      "text": "헬기 조종사입니다. 높은데 싫어해요.",
+      "likeCount": 374,
+      "relativeTime": "3일",
       "originalIndex": 9
     },
     {
       "code": "Dae7P-RE4LR-r10",
-      "username": "pink20222",
-      "text": "웨딩플래너입니다.\n결혼못했습니다.",
-      "likeCount": 176,
-      "relativeTime": "1일",
+      "username": "skytreesea",
+      "text": "좀 심하군요. 지나가는 지리학 박사입니다. 가나 수도 모릅니다.",
+      "likeCount": 391,
+      "relativeTime": "3일",
       "originalIndex": 10
     },
     {
       "code": "Dae7P-RE4LR-r11",
       "username": "lim_h.sssss",
       "text": "중고차합니다 자가용 헤이딜러에 팔아요",
-      "likeCount": 175,
-      "relativeTime": "18시간",
+      "likeCount": 362,
+      "relativeTime": "3일",
       "originalIndex": 11
     },
     {
       "code": "Dae7P-RE4LR-r12",
-      "username": "jh_the_pilot",
-      "text": "헬기 조종사입니다. 높은데 싫어해요.",
-      "likeCount": 150,
+      "username": "hyo.sister",
+      "text": "기독교인입니다\n절에가면 마음이진정되고 교회가면 시끄럽습니다",
+      "likeCount": 241,
       "relativeTime": "20시간",
       "originalIndex": 12
     },
@@ -127,25 +127,65 @@
       "code": "Dae7P-RE4LR-r13",
       "username": "yeongseog8071",
       "text": "삼겹살집 사장입니다 고기잘 못굽습니다\n고깃집가면 와이프가 다구워줍니다",
-      "likeCount": 147,
-      "relativeTime": "20시간",
+      "likeCount": 255,
+      "relativeTime": "3일",
       "originalIndex": 13
     },
     {
       "code": "Dae7P-RE4LR-r14",
-      "username": "ohse.jin",
-      "text": "치과 직원입니다.\n치아에 구멍났는데 무서워서\n3년째 치료 안받고 버티고 있습니다.",
-      "likeCount": 144,
-      "relativeTime": "8시간",
+      "username": "isuyeong9057",
+      "text": "30년 은향원입니다.계산기 없으면 합이 두자리부터 계산못합나다",
+      "likeCount": 214,
+      "relativeTime": "3일",
       "originalIndex": 14
     },
     {
       "code": "Dae7P-RE4LR-r15",
+      "username": "pd.psycho",
+      "text": "중국에서 중문과 졸업했습니다.\n덕질중이라 일본어만 쓰고 있습니다.",
+      "likeCount": 171,
+      "relativeTime": "3일",
+      "originalIndex": 15
+    },
+    {
+      "code": "Dae7P-RE4LR-r16",
+      "username": "son.yeojeong",
+      "text": "무역학 전공입니다.\n당근이 최고입니다.",
+      "likeCount": 192,
+      "relativeTime": "3일",
+      "originalIndex": 16
+    },
+    {
+      "code": "Dae7P-RE4LR-r17",
       "username": "_soohwan.kim",
       "text": "생물학 박사입니다.\n공룡 만들수 있냐고 그만 물어보세요",
-      "likeCount": 129,
-      "relativeTime": "20시간",
-      "originalIndex": 15
+      "likeCount": 216,
+      "relativeTime": "3일",
+      "originalIndex": 17
+    },
+    {
+      "code": "Dae7P-RE4LR-r18",
+      "username": "refined_mv3_cpa",
+      "text": "연세대 출신 회계사입니다. 저도 못해요 ㅠㅠ",
+      "likeCount": 108,
+      "relativeTime": "3일",
+      "originalIndex": 18
+    },
+    {
+      "code": "Dae7P-RE4LR-r19",
+      "username": "somsomi32",
+      "text": "남편이 소방관입니다. 우리집 완강기도 없고 소화기는 오조오억년 되었습니다. 지 아들 열경기로 기절했는데 지가 더소리 지르며 어떻게!!!어떻게!! 외치는 남편이라 제가 119에 신고해 응급실 댕겨왔습니다ㅠㅠ",
+      "likeCount": 96,
+      "relativeTime": "7시간",
+      "originalIndex": 19
+    },
+    {
+      "code": "Dae7P-RE4LR-r20",
+      "username": "coffee.25kmall",
+      "text": "커피로스터예요\n12년차 카페운영 해요\n라떼아트....몬해용 ㅋㅋㅋㅋ",
+      "likeCount": 83,
+      "relativeTime": "3일",
+      "originalIndex": 20
     }
   ]
 }
