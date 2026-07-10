@@ -1,0 +1,151 @@
+{
+  "slug": "professional-irony",
+  "title": "직업과 현실의 배신",
+  "originalUrl": "https://www.threads.com/@dr.salbbaeja/post/Dae7P-RE4LR?xmt=AQG0RYIjv3hbv0odY8cx3aYj2PxF4WtEuXgCthA74Qg32F59wFMm4Ue6I3Z_Rke9oJ40scfp&slof=1",
+  "author": {
+    "username": "dr.salbbaeja"
+  },
+  "description": "직업과 실제 생활 사이의 반전 댓글을 모아둔 Threads 아카이브입니다.",
+  "capture": {
+    "generatedAt": "2026-07-10",
+    "screenshotCount": 10,
+    "mediaCount": 0,
+    "note": "공개 상태에서 Playwright로 스크롤 캡처한 본문과 공개 답글 일부를 정리했습니다.",
+    "summaryText": "전문직, 전공, 직업과 반대로 사는 현실 고백 댓글들이 이어지는 Threads 아카이브입니다.",
+    "itemLabel": "공개 답글"
+  },
+  "stats": {
+    "replyCount": 794,
+    "repostCount": 63,
+    "shareCount": 118
+  },
+  "main": {
+    "code": "Dae7P-RE4LR",
+    "username": "dr.salbbaeja",
+    "text": "서울대 출신 의사입니다\n돈계산 암산으로 못합니다.",
+    "likeCount": 2200,
+    "image": null
+  },
+  "replies": [
+    {
+      "code": "Dae7P-RE4LR-r1",
+      "username": "keepcalmandstaythankful",
+      "text": "미국간호산데\n알츠하이머 스펠링 못 외워서 맨날 구글 돌리는데\n옆자리 미국인 동료도 그러고 있음 ㅋㅋ",
+      "likeCount": 1700,
+      "relativeTime": "22시간",
+      "originalIndex": 1
+    },
+    {
+      "code": "Dae7P-RE4LR-r2",
+      "username": "bookwave_official",
+      "text": "출판사합니다. 비속어 없이 글쓰기 어렵습니다.",
+      "likeCount": 472,
+      "relativeTime": "2일",
+      "originalIndex": 2
+    },
+    {
+      "code": "Dae7P-RE4LR-r3",
+      "username": "dan___flower",
+      "text": "플로리스트입니다.\n집에 있는 화분 다죽었습니다.",
+      "likeCount": 442,
+      "relativeTime": "1일",
+      "originalIndex": 3
+    },
+    {
+      "code": "Dae7P-RE4LR-r4",
+      "username": "minhohohohohohoho",
+      "text": "먹산입니다.\n많이 먹으면 배부릅니다.",
+      "likeCount": 393,
+      "relativeTime": "20시간",
+      "originalIndex": 4
+    },
+    {
+      "code": "Dae7P-RE4LR-r5",
+      "username": "ko.somi.9",
+      "text": "타코야끼가게 사장입니다 문어 오징어 낙지 무서워합니다",
+      "likeCount": 283,
+      "relativeTime": "1일",
+      "originalIndex": 5
+    },
+    {
+      "code": "Dae7P-RE4LR-r6",
+      "username": "book_kingkong",
+      "text": "기계공학 전공입니다\n뭐 고장나면 힘으로 해결합니다",
+      "likeCount": 278,
+      "relativeTime": "1일",
+      "originalIndex": 6
+    },
+    {
+      "code": "Dae7P-RE4LR-r7",
+      "username": "skytreesea",
+      "text": "좀 심하군요. 지나가는 지리학 박사입니다. 가나 수도 모릅니다.",
+      "likeCount": 211,
+      "relativeTime": "23시간",
+      "originalIndex": 7
+    },
+    {
+      "code": "Dae7P-RE4LR-r8",
+      "username": "do_it63",
+      "text": "지나가는 무용과 발레강사입니다. 회원님께 몸관리 필수라면서 저는 비오면 시큰거리고 사지에서 뚝 뚝 소리납니다ㅋㅋ",
+      "likeCount": 202,
+      "relativeTime": "1일",
+      "originalIndex": 8
+    },
+    {
+      "code": "Dae7P-RE4LR-r9",
+      "username": "beom_wee",
+      "text": "법대 나왔습니다\n어제 주정차위반 딱지 날라왔습니다.",
+      "likeCount": 197,
+      "relativeTime": "23시간",
+      "originalIndex": 9
+    },
+    {
+      "code": "Dae7P-RE4LR-r10",
+      "username": "pink20222",
+      "text": "웨딩플래너입니다.\n결혼못했습니다.",
+      "likeCount": 176,
+      "relativeTime": "1일",
+      "originalIndex": 10
+    },
+    {
+      "code": "Dae7P-RE4LR-r11",
+      "username": "lim_h.sssss",
+      "text": "중고차합니다 자가용 헤이딜러에 팔아요",
+      "likeCount": 175,
+      "relativeTime": "18시간",
+      "originalIndex": 11
+    },
+    {
+      "code": "Dae7P-RE4LR-r12",
+      "username": "jh_the_pilot",
+      "text": "헬기 조종사입니다. 높은데 싫어해요.",
+      "likeCount": 150,
+      "relativeTime": "20시간",
+      "originalIndex": 12
+    },
+    {
+      "code": "Dae7P-RE4LR-r13",
+      "username": "yeongseog8071",
+      "text": "삼겹살집 사장입니다 고기잘 못굽습니다\n고깃집가면 와이프가 다구워줍니다",
+      "likeCount": 147,
+      "relativeTime": "20시간",
+      "originalIndex": 13
+    },
+    {
+      "code": "Dae7P-RE4LR-r14",
+      "username": "ohse.jin",
+      "text": "치과 직원입니다.\n치아에 구멍났는데 무서워서\n3년째 치료 안받고 버티고 있습니다.",
+      "likeCount": 144,
+      "relativeTime": "8시간",
+      "originalIndex": 14
+    },
+    {
+      "code": "Dae7P-RE4LR-r15",
+      "username": "_soohwan.kim",
+      "text": "생물학 박사입니다.\n공룡 만들수 있냐고 그만 물어보세요",
+      "likeCount": 129,
+      "relativeTime": "20시간",
+      "originalIndex": 15
+    }
+  ]
+}

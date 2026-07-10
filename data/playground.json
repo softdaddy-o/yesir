@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-01",
+  "updatedAt": "2026-07-10",
   "categories": [
     {
       "slug": "mind",
@@ -146,6 +146,51 @@
             "archive",
             "threads",
             "media"
+          ]
+        },
+        {
+          "title": "화가 취미로 오른다",
+          "author": "@life.enhancing.item",
+          "sourceType": "yesir archive",
+          "url": "https://www.threads.com/@life.enhancing.item/post/DaedaEVj9KC",
+          "internalUrl": "../../threads/misspelling-jokes/",
+          "summary": "맞춤법 실수 하나에서 댓글창이 언어유희 대회로 번진 스레드.",
+          "note": "yesir: threads/misspelling-jokes",
+          "tags": [
+            "funny",
+            "wordplay",
+            "archive",
+            "threads"
+          ]
+        },
+        {
+          "title": "사자성어 아무말 대회",
+          "author": "@pottas_kitchen",
+          "sourceType": "yesir archive",
+          "url": "https://www.threads.com/@pottas_kitchen/post/DajyEBLoJ_-",
+          "internalUrl": "../../threads/four-character-wordplay/",
+          "summary": "사자성어를 일부러 엉뚱하게 풀이하는 댓글들이 이어지는 말장난 스레드.",
+          "note": "yesir: threads/four-character-wordplay",
+          "tags": [
+            "funny",
+            "wordplay",
+            "archive",
+            "threads"
+          ]
+        },
+        {
+          "title": "직업과 현실의 배신",
+          "author": "@dr.salbbaeja",
+          "sourceType": "yesir archive",
+          "url": "https://www.threads.com/@dr.salbbaeja/post/Dae7P-RE4LR",
+          "internalUrl": "../../threads/professional-irony/",
+          "summary": "직업과 실제 생활 사이의 반전 고백이 이어지는 댓글 맛집 스레드.",
+          "note": "yesir: threads/professional-irony",
+          "tags": [
+            "funny",
+            "irony",
+            "archive",
+            "threads"
           ]
         }
       ]

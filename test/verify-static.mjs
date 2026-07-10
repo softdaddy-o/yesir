@@ -9,6 +9,9 @@ const happinessThreadHtml = await readFile('threads/happiness-not-goal/index.htm
 const autonomyThreadHtml = await readFile('threads/autonomy-self-regulation/index.html', 'utf8');
 const middleClassThreadHtml = await readFile('threads/middle-class-patterns/index.html', 'utf8');
 const youAreSorryThreadHtml = await readFile('threads/you-are-sorry-video/index.html', 'utf8');
+const misspellingThreadHtml = await readFile('threads/misspelling-jokes/index.html', 'utf8');
+const fourCharacterThreadHtml = await readFile('threads/four-character-wordplay/index.html', 'utf8');
+const professionalIronyThreadHtml = await readFile('threads/professional-irony/index.html', 'utf8');
 const homeHtml = await readFile('index.html', 'utf8');
 const previewHtml = await readFile('design-previews/index.html', 'utf8');
 const mindHtml = await readFile('play/mind/index.html', 'utf8');
@@ -49,8 +52,8 @@ assertIncludes(homeHtml, 'play/mind/', 'index.html');
 assertIncludes(homeHtml, 'play/self-growth/', 'index.html');
 assertIncludes(homeHtml, 'play/funny/', 'index.html');
 assertIncludes(homeHtml, 'home-scrapbook', 'index.html');
-assertIncludes(homeHtml, '3 rooms / 8 saves', 'index.html');
-assertIncludes(homeHtml, '8 saved posts', 'index.html');
+assertIncludes(homeHtml, '3 rooms / 11 saves', 'index.html');
+assertIncludes(homeHtml, '11 saved posts', 'index.html');
 assertNotIncludes(homeHtml, 'threads/doha-poor-fish/', 'index.html');
 assertNotIncludes(homeHtml, 'play/anxiety/', 'index.html');
 assertNotIncludes(homeHtml, 'play/psychology/', 'index.html');
@@ -88,6 +91,12 @@ assertIncludes(funnyHtml, '가난한 물고기', 'play/funny/index.html');
 assertIncludes(funnyHtml, '../../threads/doha-poor-fish/', 'play/funny/index.html');
 assertIncludes(funnyHtml, '망한요리대회: 지옥에서 온 조기', 'play/funny/index.html');
 assertIncludes(funnyHtml, '../../threads/you-are-sorry-video/', 'play/funny/index.html');
+assertIncludes(funnyHtml, '화가 취미로 오른다', 'play/funny/index.html');
+assertIncludes(funnyHtml, '../../threads/misspelling-jokes/', 'play/funny/index.html');
+assertIncludes(funnyHtml, '사자성어 아무말 대회', 'play/funny/index.html');
+assertIncludes(funnyHtml, '../../threads/four-character-wordplay/', 'play/funny/index.html');
+assertIncludes(funnyHtml, '직업과 현실의 배신', 'play/funny/index.html');
+assertIncludes(funnyHtml, '../../threads/professional-irony/', 'play/funny/index.html');
 assertNotIncludes(funnyHtml, '웃긴 닉네임', 'play/funny/index.html');
 assertNotIncludes(funnyHtml, '아재개그 대회', 'play/funny/index.html');
 assertNotIncludes(funnyHtml, '천하제일 똥글 명언 대회', 'play/funny/index.html');
@@ -156,6 +165,21 @@ assertNotIncludes(youAreSorryThreadHtml, 'Playwright', 'threads/you-are-sorry-vi
 assertNotIncludes(youAreSorryThreadHtml, 'Daily scrape', 'threads/you-are-sorry-video/index.html');
 assertNotIncludes(youAreSorryThreadHtml, 'GraphQL', 'threads/you-are-sorry-video/index.html');
 
+assertIncludes(misspellingThreadHtml, '<title>화가 취미로 오른다 - yesir.softdaddy-o.com</title>', 'threads/misspelling-jokes/index.html');
+assertIncludes(misspellingThreadHtml, '충격적인 맞춤법을 목격했어', 'threads/misspelling-jokes/index.html');
+assertIncludes(misspellingThreadHtml, '의자젖치기', 'threads/misspelling-jokes/index.html');
+assertIncludes(misspellingThreadHtml, 'id="reply-15"', 'threads/misspelling-jokes/index.html');
+
+assertIncludes(fourCharacterThreadHtml, '<title>사자성어 아무말 대회 - yesir.softdaddy-o.com</title>', 'threads/four-character-wordplay/index.html');
+assertIncludes(fourCharacterThreadHtml, '노심초사', 'threads/four-character-wordplay/index.html');
+assertIncludes(fourCharacterThreadHtml, '조금 모르면 삼번', 'threads/four-character-wordplay/index.html');
+assertIncludes(fourCharacterThreadHtml, 'id="reply-15"', 'threads/four-character-wordplay/index.html');
+
+assertIncludes(professionalIronyThreadHtml, '<title>직업과 현실의 배신 - yesir.softdaddy-o.com</title>', 'threads/professional-irony/index.html');
+assertIncludes(professionalIronyThreadHtml, '서울대 출신 의사입니다', 'threads/professional-irony/index.html');
+assertIncludes(professionalIronyThreadHtml, '플로리스트입니다', 'threads/professional-irony/index.html');
+assertIncludes(professionalIronyThreadHtml, 'id="reply-15"', 'threads/professional-irony/index.html');
+
 const firstReplyIndex = threadHtml.indexOf('id="reply-1"');
 const topLikedIndex = threadHtml.indexOf('minij0min');
 const previousChronologicalIndex = threadHtml.indexOf('john_and_peter__');
@@ -175,6 +199,9 @@ for (const path of [
     'data/threads/autonomy-self-regulation.json',
     'data/threads/middle-class-patterns.json',
     'data/threads/you-are-sorry-video.json',
+    'data/threads/misspelling-jokes.json',
+    'data/threads/four-character-wordplay.json',
+    'data/threads/professional-irony.json',
 ]) {
     assertExists(path);
 }
@@ -205,6 +232,9 @@ for (const path of [
     'threads/autonomy-self-regulation/index.html',
     'threads/middle-class-patterns/index.html',
     'threads/you-are-sorry-video/index.html',
+    'threads/misspelling-jokes/index.html',
+    'threads/four-character-wordplay/index.html',
+    'threads/professional-irony/index.html',
 ]) {
     assertExists(path);
 }
@@ -235,6 +265,9 @@ const checkedHtml = [
     autonomyThreadHtml,
     middleClassThreadHtml,
     youAreSorryThreadHtml,
+    misspellingThreadHtml,
+    fourCharacterThreadHtml,
+    professionalIronyThreadHtml,
 ].join('');
 if (/[\uFFFD\u5a9b\u6e72\uf9ce\uc9cc]/.test(checkedHtml)) {
     throw new Error('generated HTML contains likely mojibake');
