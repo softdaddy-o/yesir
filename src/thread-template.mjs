@@ -162,15 +162,17 @@ function renderReply(reply, index, sortedReplies) {
     const likeRank = index + 1;
     const originalIndex = reply.originalIndex || likeRank;
     const likeCount = reply.likeCount || 0;
-    const date = formatDate(reply.takenAt) || reply.relativeTime || '2일';
+    const rawDate = formatDate(reply.takenAt) || reply.relativeTime || '';
+    const date = rawDate === '캡처 당시' ? '' : rawDate;
+    const dateMarkup = date ? `
+                        <span class="dot">&middot;</span>
+                        <span>${escapeHtml(date)}</span>` : '';
 
     return `            <article class="thread-post thread-post-reply" id="reply-${likeRank}" data-original-index="${originalIndex}" data-like-index="${likeRank}" data-like-count="${likeCount}">
                 <div class="avatar" aria-hidden="true">${escapeHtml(getInitial(reply.username))}</div>
                 <div class="post-main">
                     <div class="post-head">
-                        <span class="username">${escapeHtml(reply.username)}</span>
-                        <span class="dot">&middot;</span>
-                        <span>${escapeHtml(date)}</span>
+                        <span class="username">${escapeHtml(reply.username)}</span>${dateMarkup}
                         <a class="post-number" href="#reply-${likeRank}" aria-label="댓글 ${likeRank}번">#${likeRank}</a>
                     </div>
                     ${renderText(reply.text)}${renderPostMedia(reply)}
@@ -259,7 +261,7 @@ function renderCollectionItem(item) {
                     <p>${escapeHtml(item.summary)}</p>
                     <div class="tag-row">${tags}</div>
                     <div class="collection-item-bottom">
-                        <span>${escapeHtml(item.note || '')}</span>
+                        <span>${escapeHtml(item.sourceType || 'saved')}</span>
                         <a href="${escapeHtml(href)}">${sourceLabel}</a>
                     </div>
                 </article>`;
@@ -275,7 +277,7 @@ export function renderHomePage({ threads, playground }) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>네님 놀이터 - yesir.softdaddy-o.com</title>
-    <meta name="description" content="네님이 필요할 때 다시 보려고 남겨둔 글, 링크, 캡처를 주제별로 정리한 개인 페이지.">
+    <meta name="description" content="네님이 필요할 때 다시 보려고 남겨둔 글과 링크를 주제별로 정리한 개인 페이지.">
     <link rel="canonical" href="https://yesir.softdaddy-o.com/">
     <meta property="og:title" content="네님 놀이터">
     <meta property="og:description" content="마음, 자기계발, 웃긴 것들을 가볍게 모아둔 네님 놀이터.">
@@ -299,7 +301,7 @@ export function renderHomePage({ threads, playground }) {
             <div>
                 <p class="eyebrow">Naenim playground</p>
                 <h1 id="page-title"><span>네님</span><span>놀이터</span></h1>
-                <p class="lede">필요할 때 다시 보려고 남겨둔 글과 캡처를<br>주제별로 가볍게 모아둔 곳입니다.</p>
+                <p class="lede">필요할 때 다시 보려고 남겨둔 글과 링크를<br>주제별로 가볍게 모아둔 곳입니다.</p>
                 <div class="hero-actions" aria-label="Playground quick links">
                     <a href="#playground">주제별 보기</a>
                     <a href="play/funny/">웃긴 것 보기</a>
@@ -399,19 +401,13 @@ export function renderThreadPage(thread) {
     const title = getThreadTitle(thread);
     const replies = thread.replies || [];
     const sortedReplies = sortRepliesByLikes(replies);
-    const screenshotCount = thread.capture?.screenshotCount || 0;
-    const generatedAt = thread.capture?.generatedAt || '';
     const totalReplyCount = replies.length;
-    const mediaCount = thread.capture?.mediaCount || 0;
-    const videoCount = thread.capture?.videoCount || 0;
-    const mediaLabel = videoCount > 0 ? `${mediaCount}개 / 영상 ${videoCount}개` : `${mediaCount}개`;
     const stats = thread.stats || {};
     const main = thread.main;
     const authorUsername = thread.author?.username || main.username;
-    const itemLabel = thread.capture?.itemLabel || '댓글';
+    const itemLabel = thread.mainOnly ? '본문' : '댓글';
     const description = thread.description || `@${authorUsername} Threads 스레드와 ${itemLabel} ${totalReplyCount}개를 yesir 아카이브로 정리한 페이지.`;
-    const captureNote = thread.capture?.note || `Threads가 일부 댓글을 접어두는 구간이 있어 화면 캡처는 바닥까지 내린 ${screenshotCount}장 기준, 텍스트 목록은 GraphQL 응답에서 로드된 댓글 ${totalReplyCount}개 기준입니다.`;
-    const summaryText = thread.capture?.summaryText || `로그인 세션으로 스크롤 캡처한 Threads ${itemLabel} ${totalReplyCount}개. 기본 정렬은 좋아요순입니다.`;
+    const summaryText = thread.capture?.summaryText || `Threads ${itemLabel} ${totalReplyCount}개를 정리한 아카이브입니다. 기본 정렬은 좋아요순입니다.`;
 
     return `<!doctype html>
 <html lang="ko">
@@ -443,10 +439,9 @@ export function renderThreadPage(thread) {
         <section class="thread-summary" aria-label="Archive summary">
             <p>${escapeHtml(summaryText)}</p>
             <dl>
-                <div><dt>캡처</dt><dd>${screenshotCount}장</dd></div>
-                <div><dt>본문</dt><dd>${totalReplyCount}개 ${escapeHtml(itemLabel)}</dd></div>
-                <div><dt>미디어</dt><dd>${escapeHtml(mediaLabel)}</dd></div>
-                <div><dt>기준일</dt><dd>${escapeHtml(generatedAt)}</dd></div>
+                <div><dt>원문</dt><dd>@${escapeHtml(authorUsername)}</dd></div>
+                <div><dt>정리</dt><dd>${totalReplyCount}개 ${escapeHtml(itemLabel)}</dd></div>
+                <div><dt>정렬</dt><dd>좋아요순</dd></div>
             </dl>
         </section>
 
@@ -474,7 +469,6 @@ ${sortedReplies.map((reply, index) => renderReply(reply, index, sortedReplies)).
             </div>
         </section>
 
-        <p class="scrape-note">${escapeHtml(captureNote)}</p>
 ${renderSortToggle()}
     </main>
 ${main.embedUrl ? '    <script async src="https://www.threads.net/embed.js"></script>\n' : ''}${renderSortScript()}

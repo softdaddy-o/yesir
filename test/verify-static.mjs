@@ -48,7 +48,7 @@ assertIncludes(homeHtml, '<title>네님 놀이터 - yesir.softdaddy-o.com</title
 assertIncludes(homeHtml, 'Naenim playground', 'index.html');
 assertIncludes(homeHtml, '네님</span><span>놀이터', 'index.html');
 assertIncludes(homeHtml, '다시 볼 것들<br>주제별로 정리', 'index.html');
-assertIncludes(homeHtml, '필요할 때 다시 보려고 남겨둔 글과 캡처를', 'index.html');
+assertIncludes(homeHtml, '필요할 때 다시 보려고 남겨둔 글과 링크를', 'index.html');
 assertIncludes(homeHtml, 'play/mind/', 'index.html');
 assertIncludes(homeHtml, 'play/self-growth/', 'index.html');
 assertIncludes(homeHtml, 'play/funny/', 'index.html');
@@ -117,8 +117,8 @@ assertIncludes(threadHtml, '<title>가난한 물고기 - yesir.softdaddy-o.com</
 assertIncludes(threadHtml, 'Threads archive', 'threads/doha-poor-fish/index.html');
 assertIncludes(threadHtml, '가난한 물고기를', 'threads/doha-poor-fish/index.html');
 assertIncludes(threadHtml, '푸어 라고 한다', 'threads/doha-poor-fish/index.html');
-assertIncludes(threadHtml, '로그인 세션으로 스크롤 캡처한 Threads 댓글 405개', 'threads/doha-poor-fish/index.html');
-assertIncludes(threadHtml, '캡처</dt><dd>162장</dd>', 'threads/doha-poor-fish/index.html');
+assertIncludes(threadHtml, 'Threads 댓글 405개', 'threads/doha-poor-fish/index.html');
+assertIncludes(threadHtml, '<dt>정리</dt><dd>405개 댓글</dd>', 'threads/doha-poor-fish/index.html');
 assertIncludes(threadHtml, 'id="reply-405"', 'threads/doha-poor-fish/index.html');
 assertIncludes(threadHtml, 'data-thread-sort-toggle', 'threads/doha-poor-fish/index.html');
 assertIncludes(threadHtml, 'data-default-sort="likes"', 'threads/doha-poor-fish/index.html');
@@ -128,33 +128,33 @@ assertIncludes(threadHtml, 'https://www.threads.com/@doha_txt/post/DZusRTzgQmh',
 
 assertIncludes(nervousThreadHtml, '<title>신경계를 불안하게 만드는 일상 습관 - yesir.softdaddy-o.com</title>', 'threads/nervous-system-habits/index.html');
 assertIncludes(nervousThreadHtml, '조용히 신경계를 불안하게 만드는', 'threads/nervous-system-habits/index.html');
-assertIncludes(nervousThreadHtml, 'Threads 본문 조각 6개', 'threads/nervous-system-habits/index.html');
-assertIncludes(nervousThreadHtml, '캡처</dt><dd>7장</dd>', 'threads/nervous-system-habits/index.html');
+assertIncludes(nervousThreadHtml, 'Threads 댓글 6개', 'threads/nervous-system-habits/index.html');
+assertIncludes(nervousThreadHtml, '<dt>정리</dt><dd>6개 댓글</dd>', 'threads/nervous-system-habits/index.html');
 
 assertIncludes(aiPlayThreadHtml, '<title>AI로 나랑 잘 놀기 - yesir.softdaddy-o.com</title>', 'threads/ai-play-self/index.html');
 assertIncludes(aiPlayThreadHtml, '내가 나랑 잘 놀기', 'threads/ai-play-self/index.html');
-assertIncludes(aiPlayThreadHtml, 'Threads 본문 조각 4개', 'threads/ai-play-self/index.html');
+assertIncludes(aiPlayThreadHtml, 'Threads 댓글 4개', 'threads/ai-play-self/index.html');
 
 assertIncludes(anxietyThreadHtml, '<title>불안을 자극하는 사람을 고르는 이유 - yesir.softdaddy-o.com</title>', 'threads/anxiety-trigger-people/index.html');
 assertIncludes(anxietyThreadHtml, '무의식적 얽힘', 'threads/anxiety-trigger-people/index.html');
-assertIncludes(anxietyThreadHtml, 'Threads 본문 조각 8개', 'threads/anxiety-trigger-people/index.html');
+assertIncludes(anxietyThreadHtml, 'Threads 댓글 8개', 'threads/anxiety-trigger-people/index.html');
 
 assertIncludes(happinessThreadHtml, '<title>행복을 목표로 삼지 말라 - yesir.softdaddy-o.com</title>', 'threads/happiness-not-goal/index.html');
 assertIncludes(happinessThreadHtml, '행복을 목표로 삼지 마라', 'threads/happiness-not-goal/index.html');
-assertIncludes(happinessThreadHtml, 'Threads 본문 조각 19개', 'threads/happiness-not-goal/index.html');
+assertIncludes(happinessThreadHtml, 'Threads 댓글 19개', 'threads/happiness-not-goal/index.html');
 
 assertIncludes(autonomyThreadHtml, '<title>자율성이 오래 가는 자기조절을 만든다 - yesir.softdaddy-o.com</title>', 'threads/autonomy-self-regulation/index.html');
 assertIncludes(autonomyThreadHtml, '자율성의 문제입니다', 'threads/autonomy-self-regulation/index.html');
-assertIncludes(autonomyThreadHtml, 'Threads 본문 조각 6개', 'threads/autonomy-self-regulation/index.html');
+assertIncludes(autonomyThreadHtml, 'Threads 댓글 6개', 'threads/autonomy-self-regulation/index.html');
 
 assertIncludes(middleClassThreadHtml, '<title>서민 중산층에 머무는 10가지 패턴 - yesir.softdaddy-o.com</title>', 'threads/middle-class-patterns/index.html');
 assertIncludes(middleClassThreadHtml, 'Logseq 검증 노트에 남은 본문 요지', 'threads/middle-class-patterns/index.html');
-assertIncludes(middleClassThreadHtml, 'Threads Logseq 항목 13개', 'threads/middle-class-patterns/index.html');
-assertIncludes(middleClassThreadHtml, 'D:/LogseqData의 verified literature note', 'threads/middle-class-patterns/index.html');
+assertIncludes(middleClassThreadHtml, 'Threads 댓글 13개', 'threads/middle-class-patterns/index.html');
+assertNotIncludes(middleClassThreadHtml, 'D:/LogseqData의 verified literature note', 'threads/middle-class-patterns/index.html');
 
 assertIncludes(youAreSorryThreadHtml, '<title>망한요리대회: 지옥에서 온 조기 - yesir.softdaddy-o.com</title>', 'threads/you-are-sorry-video/index.html');
 assertIncludes(youAreSorryThreadHtml, '지금부터 망한요리대회를 열도록 할게요', 'threads/you-are-sorry-video/index.html');
-assertIncludes(youAreSorryThreadHtml, '미디어</dt><dd>58개 / 영상 4개</dd>', 'threads/you-are-sorry-video/index.html');
+assertIncludes(youAreSorryThreadHtml, '<dt>정리</dt><dd>109개 댓글</dd>', 'threads/you-are-sorry-video/index.html');
 assertIncludes(youAreSorryThreadHtml, '../../assets/threads/you-are-sorry-video/main-DaNUPIumOzJ.webp', 'threads/you-are-sorry-video/index.html');
 assertIncludes(youAreSorryThreadHtml, '<video class="post-video"', 'threads/you-are-sorry-video/index.html');
 assertIncludes(youAreSorryThreadHtml, 'muted playsinline loop preload="metadata" data-autoplay-video', 'threads/you-are-sorry-video/index.html');
@@ -283,6 +283,20 @@ const checkedHtml = [
 ].join('');
 if (/[\uFFFD\u5a9b\u6e72\uf9ce\uc9cc]/.test(checkedHtml)) {
     throw new Error('generated HTML contains likely mojibake');
+}
+
+for (const forbidden of [
+    'Playwright',
+    '로그인 세션',
+    '로그인된 Threads',
+    '스크롤 캡처',
+    '캡처</dt>',
+    '캡처 당시',
+    'GraphQL',
+]) {
+    if (checkedHtml.includes(forbidden)) {
+        throw new Error(`generated HTML exposes archive metadata: ${forbidden}`);
+    }
 }
 
 console.log('static page checks passed');
