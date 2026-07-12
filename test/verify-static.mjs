@@ -6,6 +6,7 @@ const nervousThreadHtml = await readFile('threads/nervous-system-habits/index.ht
 const aiPlayThreadHtml = await readFile('threads/ai-play-self/index.html', 'utf8');
 const anxietyThreadHtml = await readFile('threads/anxiety-trigger-people/index.html', 'utf8');
 const parentKarmaThreadHtml = await readFile('threads/parent-karma-clearing/index.html', 'utf8');
+const handsomeMenThreadHtml = await readFile('threads/handsome-men-healing/index.html', 'utf8');
 const happinessThreadHtml = await readFile('threads/happiness-not-goal/index.html', 'utf8');
 const autonomyThreadHtml = await readFile('threads/autonomy-self-regulation/index.html', 'utf8');
 const middleClassThreadHtml = await readFile('threads/middle-class-patterns/index.html', 'utf8');
@@ -54,8 +55,8 @@ assertIncludes(homeHtml, 'play/mind/', 'index.html');
 assertIncludes(homeHtml, 'play/self-growth/', 'index.html');
 assertIncludes(homeHtml, 'play/funny/', 'index.html');
 assertIncludes(homeHtml, 'home-scrapbook', 'index.html');
-assertIncludes(homeHtml, '3 rooms / 13 saves', 'index.html');
-assertIncludes(homeHtml, '13 saved posts', 'index.html');
+assertIncludes(homeHtml, '3 rooms / 14 saves', 'index.html');
+assertIncludes(homeHtml, '14 saved posts', 'index.html');
 assertNotIncludes(homeHtml, 'threads/doha-poor-fish/', 'index.html');
 assertNotIncludes(homeHtml, 'play/anxiety/', 'index.html');
 assertNotIncludes(homeHtml, 'play/psychology/', 'index.html');
@@ -72,6 +73,8 @@ assertIncludes(mindHtml, '불안을 자극하는 사람을 고르는 이유', 'p
 assertIncludes(mindHtml, '../../threads/anxiety-trigger-people/', 'play/mind/index.html');
 assertIncludes(mindHtml, '부모와의 카르마를 정화하는 법', 'play/mind/index.html');
 assertIncludes(mindHtml, '../../threads/parent-karma-clearing/', 'play/mind/index.html');
+assertIncludes(mindHtml, '우울할 때 미남 보기', 'play/mind/index.html');
+assertIncludes(mindHtml, '../../threads/handsome-men-healing/', 'play/mind/index.html');
 assertNotIncludes(mindHtml, 'https://www.threads.com/@youngtech_01/post/DZPfJdrkXSB', 'play/mind/index.html');
 assertNotIncludes(mindHtml, 'https://www.threads.com/@wrigglingshop/post/DWlnZF_D0KK', 'play/mind/index.html');
 assertNotIncludes(mindHtml, 'https://www.threads.com/@gentleman.kr/post/DRTTM74CCgE', 'play/mind/index.html');
@@ -147,6 +150,11 @@ assertIncludes(parentKarmaThreadHtml, '무력한 어린시절의 내가', 'threa
 assertIncludes(parentKarmaThreadHtml, '부모에게 불안정한 사랑을 갈구하지 않고', 'threads/parent-karma-clearing/index.html');
 assertIncludes(parentKarmaThreadHtml, 'id="reply-11"', 'threads/parent-karma-clearing/index.html');
 
+assertIncludes(handsomeMenThreadHtml, '<title>우울할 때 미남 보기 - yesir.softdaddy-o.com</title>', 'threads/handsome-men-healing/index.html');
+assertIncludes(handsomeMenThreadHtml, '난 우울할 때 미남을 봐', 'threads/handsome-men-healing/index.html');
+assertIncludes(handsomeMenThreadHtml, '저장버튼 꾹. 세상 아직 아름답네.', 'threads/handsome-men-healing/index.html');
+assertIncludes(handsomeMenThreadHtml, 'id="reply-20"', 'threads/handsome-men-healing/index.html');
+
 assertIncludes(happinessThreadHtml, '<title>행복을 목표로 삼지 말라 - yesir.softdaddy-o.com</title>', 'threads/happiness-not-goal/index.html');
 assertIncludes(happinessThreadHtml, '행복을 목표로 삼지 마라', 'threads/happiness-not-goal/index.html');
 assertIncludes(happinessThreadHtml, 'Threads 댓글 19개', 'threads/happiness-not-goal/index.html');
@@ -213,6 +221,7 @@ for (const path of [
     'data/threads/ai-play-self.json',
     'data/threads/anxiety-trigger-people.json',
     'data/threads/parent-karma-clearing.json',
+    'data/threads/handsome-men-healing.json',
     'data/threads/happiness-not-goal.json',
     'data/threads/autonomy-self-regulation.json',
     'data/threads/middle-class-patterns.json',
@@ -248,6 +257,7 @@ for (const path of [
     'threads/ai-play-self/index.html',
     'threads/anxiety-trigger-people/index.html',
     'threads/parent-karma-clearing/index.html',
+    'threads/handsome-men-healing/index.html',
     'threads/happiness-not-goal/index.html',
     'threads/autonomy-self-regulation/index.html',
     'threads/middle-class-patterns/index.html',
@@ -283,6 +293,7 @@ const checkedHtml = [
     aiPlayThreadHtml,
     anxietyThreadHtml,
     parentKarmaThreadHtml,
+    handsomeMenThreadHtml,
     happinessThreadHtml,
     autonomyThreadHtml,
     middleClassThreadHtml,
