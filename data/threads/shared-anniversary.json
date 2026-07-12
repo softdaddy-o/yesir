@@ -24,7 +24,15 @@
     "username": "jojo_gold_experience_requiem",
     "text": "저와 아내는 신기하게도 결혼기념일이 똑같습니다.",
     "likeCount": 5300,
-    "image": null
+    "image": "../../assets/threads/shared-anniversary/main.jpg",
+    "imageAlt": "jojo_gold_experience_requiem 이미지",
+    "media": [
+      {
+        "type": "image",
+        "src": "../../assets/threads/shared-anniversary/main.jpg",
+        "alt": "jojo_gold_experience_requiem 이미지 1"
+      }
+    ]
   },
   "replies": [
     {

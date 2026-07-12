@@ -152,6 +152,9 @@ assertIncludes(parentKarmaThreadHtml, 'id="reply-11"', 'threads/parent-karma-cle
 
 assertIncludes(handsomeMenThreadHtml, '<title>우울할 때 미남 보기 - yesir.softdaddy-o.com</title>', 'threads/handsome-men-healing/index.html');
 assertIncludes(handsomeMenThreadHtml, '난 우울할 때 미남을 봐', 'threads/handsome-men-healing/index.html');
+assertIncludes(handsomeMenThreadHtml, '../../assets/threads/handsome-men-healing/media-01.jpg', 'threads/handsome-men-healing/index.html');
+assertIncludes(handsomeMenThreadHtml, '../../assets/threads/handsome-men-healing/media-12.jpg', 'threads/handsome-men-healing/index.html');
+assertIncludes(handsomeMenThreadHtml, 'post-media-strip', 'threads/handsome-men-healing/index.html');
 assertIncludes(handsomeMenThreadHtml, '저장버튼 꾹. 세상 아직 아름답네.', 'threads/handsome-men-healing/index.html');
 assertIncludes(handsomeMenThreadHtml, 'id="reply-20"', 'threads/handsome-men-healing/index.html');
 
@@ -202,6 +205,7 @@ assertIncludes(professionalIronyThreadHtml, 'id="reply-20"', 'threads/profession
 
 assertIncludes(sharedAnniversaryThreadHtml, '<title>결혼기념일이 똑같은 부부 - yesir.softdaddy-o.com</title>', 'threads/shared-anniversary/index.html');
 assertIncludes(sharedAnniversaryThreadHtml, '저와 아내는 신기하게도 결혼기념일이 똑같습니다.', 'threads/shared-anniversary/index.html');
+assertIncludes(sharedAnniversaryThreadHtml, '../../assets/threads/shared-anniversary/main.jpg', 'threads/shared-anniversary/index.html');
 assertIncludes(sharedAnniversaryThreadHtml, '부모님도 서로 결혼 기념일 같은 경우가 많더라구요', 'threads/shared-anniversary/index.html');
 assertIncludes(sharedAnniversaryThreadHtml, 'id="reply-20"', 'threads/shared-anniversary/index.html');
 
@@ -248,6 +252,9 @@ for (const path of [
     'CNAME',
     '.nojekyll',
     'assets/poor-fish.png',
+    'assets/threads/handsome-men-healing/media-01.jpg',
+    'assets/threads/handsome-men-healing/media-12.jpg',
+    'assets/threads/shared-anniversary/main.jpg',
     'design-previews/index.html',
     'play/mind/index.html',
     'play/self-growth/index.html',
