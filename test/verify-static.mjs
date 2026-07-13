@@ -147,16 +147,18 @@ assertIncludes(anxietyThreadHtml, 'Threads 댓글 8개', 'threads/anxiety-trigge
 
 assertIncludes(parentKarmaThreadHtml, '<title>부모와의 카르마를 정화하는 법 - yesir.softdaddy-o.com</title>', 'threads/parent-karma-clearing/index.html');
 assertIncludes(parentKarmaThreadHtml, '무력한 어린시절의 내가', 'threads/parent-karma-clearing/index.html');
-assertIncludes(parentKarmaThreadHtml, '부모에게 불안정한 사랑을 갈구하지 않고', 'threads/parent-karma-clearing/index.html');
-assertIncludes(parentKarmaThreadHtml, 'id="reply-11"', 'threads/parent-karma-clearing/index.html');
+assertIncludes(parentKarmaThreadHtml, '그들의 행동이나 말을 수용', 'threads/parent-karma-clearing/index.html');
+assertIncludes(parentKarmaThreadHtml, 'id="reply-30"', 'threads/parent-karma-clearing/index.html');
 
 assertIncludes(handsomeMenThreadHtml, '<title>우울할 때 미남 보기 - yesir.softdaddy-o.com</title>', 'threads/handsome-men-healing/index.html');
 assertIncludes(handsomeMenThreadHtml, '난 우울할 때 미남을 봐', 'threads/handsome-men-healing/index.html');
 assertIncludes(handsomeMenThreadHtml, '../../assets/threads/handsome-men-healing/media-01.jpg', 'threads/handsome-men-healing/index.html');
 assertIncludes(handsomeMenThreadHtml, '../../assets/threads/handsome-men-healing/media-12.jpg', 'threads/handsome-men-healing/index.html');
+assertIncludes(handsomeMenThreadHtml, '../../assets/threads/handsome-men-healing/reply-001-Dap3jJUD_ue-01.jpg', 'threads/handsome-men-healing/index.html');
+assertIncludes(handsomeMenThreadHtml, '<video class="post-video"', 'threads/handsome-men-healing/index.html');
 assertIncludes(handsomeMenThreadHtml, 'post-media-strip', 'threads/handsome-men-healing/index.html');
-assertIncludes(handsomeMenThreadHtml, '저장버튼 꾹. 세상 아직 아름답네.', 'threads/handsome-men-healing/index.html');
-assertIncludes(handsomeMenThreadHtml, 'id="reply-20"', 'threads/handsome-men-healing/index.html');
+assertIncludes(handsomeMenThreadHtml, '그래서 난 워치배경이 미남들이야', 'threads/handsome-men-healing/index.html');
+assertIncludes(handsomeMenThreadHtml, 'id="reply-120"', 'threads/handsome-men-healing/index.html');
 
 assertIncludes(happinessThreadHtml, '<title>행복을 목표로 삼지 말라 - yesir.softdaddy-o.com</title>', 'threads/happiness-not-goal/index.html');
 assertIncludes(happinessThreadHtml, '행복을 목표로 삼지 마라', 'threads/happiness-not-goal/index.html');
@@ -199,15 +201,15 @@ assertIncludes(fourCharacterThreadHtml, 'id="reply-15"', 'threads/four-character
 
 assertIncludes(professionalIronyThreadHtml, '<title>직업과 현실의 배신 - yesir.softdaddy-o.com</title>', 'threads/professional-irony/index.html');
 assertIncludes(professionalIronyThreadHtml, '서울대 출신 의사입니다', 'threads/professional-irony/index.html');
-assertIncludes(professionalIronyThreadHtml, '플로리스트입니다', 'threads/professional-irony/index.html');
-assertIncludes(professionalIronyThreadHtml, '웨딩플래너입니다', 'threads/professional-irony/index.html');
-assertIncludes(professionalIronyThreadHtml, 'id="reply-20"', 'threads/professional-irony/index.html');
+assertIncludes(professionalIronyThreadHtml, '영어 강사입니다', 'threads/professional-irony/index.html');
+assertIncludes(professionalIronyThreadHtml, '../../assets/threads/professional-irony/reply-022-DaiBdkWj3tz.webp', 'threads/professional-irony/index.html');
+assertIncludes(professionalIronyThreadHtml, 'id="reply-100"', 'threads/professional-irony/index.html');
 
 assertIncludes(sharedAnniversaryThreadHtml, '<title>결혼기념일이 똑같은 부부 - yesir.softdaddy-o.com</title>', 'threads/shared-anniversary/index.html');
 assertIncludes(sharedAnniversaryThreadHtml, '저와 아내는 신기하게도 결혼기념일이 똑같습니다.', 'threads/shared-anniversary/index.html');
 assertIncludes(sharedAnniversaryThreadHtml, '../../assets/threads/shared-anniversary/main.jpg', 'threads/shared-anniversary/index.html');
-assertIncludes(sharedAnniversaryThreadHtml, '부모님도 서로 결혼 기념일 같은 경우가 많더라구요', 'threads/shared-anniversary/index.html');
-assertIncludes(sharedAnniversaryThreadHtml, 'id="reply-20"', 'threads/shared-anniversary/index.html');
+assertIncludes(sharedAnniversaryThreadHtml, '저희 자녀들 부모님의 결혼기념일이', 'threads/shared-anniversary/index.html');
+assertIncludes(sharedAnniversaryThreadHtml, 'id="reply-100"', 'threads/shared-anniversary/index.html');
 
 const firstReplyIndex = threadHtml.indexOf('id="reply-1"');
 const topLikedIndex = threadHtml.indexOf('minij0min');
@@ -254,6 +256,8 @@ for (const path of [
     'assets/poor-fish.png',
     'assets/threads/handsome-men-healing/media-01.jpg',
     'assets/threads/handsome-men-healing/media-12.jpg',
+    'assets/threads/handsome-men-healing/reply-001-Dap3jJUD_ue-01.jpg',
+    'assets/threads/professional-irony/reply-022-DaiBdkWj3tz.webp',
     'assets/threads/shared-anniversary/main.jpg',
     'design-previews/index.html',
     'play/mind/index.html',

@@ -5,20 +5,18 @@
   "author": {
     "username": "jojo_gold_experience_requiem"
   },
-  "description": "당연한 사실을 신기한 발견처럼 말하는 댓글 놀이 Threads 아카이브입니다.",
-  "capture": {
-    "generatedAt": "2026-07-10",
-    "screenshotCount": 80,
-    "mediaCount": 1,
-    "note": "로그인된 Threads 세션에서 Playwright로 스크롤 캡처해 본문과 공개 답글 일부를 정리했습니다.",
-    "summaryText": "결혼기념일이 같다는 농담에서 시작해 생일, 가족관계, 친구관계까지 당연한 사실을 새삼스럽게 말하는 댓글 놀이입니다.",
-    "itemLabel": "로그인 캡처 답글"
-  },
+  "description": "같은 결혼기념일이라는 당연한 말을 기묘하게 반복하며 웃기는 Threads 아카이브입니다.",
   "stats": {
     "replyCount": 426,
     "repostCount": 69,
     "shareCount": 268
   },
+  "capture": {
+    "generatedAt": "2026-07-13",
+    "itemLabel": "댓글",
+    "summaryText": "Threads ?? 100?? ??? ???????. ?? ??? ???????."
+  },
+  "category": "funny",
   "main": {
     "code": "Dak4QnZGqFX",
     "username": "jojo_gold_experience_requiem",
@@ -36,164 +34,804 @@
   },
   "replies": [
     {
-      "code": "Dak4QnZGqFX-r1",
-      "username": "jjunnyinsta",
-      "text": "보통 그런 집은 부모님도 서로 결혼 기념일 같은 경우가 많더라구요. 유전인 듯",
-      "likeCount": 3900,
-      "relativeTime": "19시간",
+      "code": "DaoA4wTjvSF",
+      "username": "stclogic",
+      "text": "최소한 오전과 오후겠죠?\n시간마져 같다면 당신들은 정말……\n서로에게 엮인것입니다.\n잘때 항상 허리띠를 다시 맵시다.",
+      "likeCount": 1,
+      "takenAt": 1783714099,
       "originalIndex": 1
     },
     {
-      "code": "Dak4QnZGqFX-r2",
-      "username": "spacemarine_peter",
-      "text": "고교 동창회에 갔는데 신기하게도 모두 나이가 같았습니다",
-      "likeCount": 800,
-      "relativeTime": "17시간",
+      "code": "DanO34KmpUW",
+      "username": "cameron__eee",
+      "text": "저는 희한하게도 고3 동창들과 띠가 똑같습니다.",
+      "likeCount": 1,
+      "takenAt": 1783687877,
       "originalIndex": 2
     },
     {
-      "code": "Dak4QnZGqFX-r3",
-      "username": "tuzagaboneup",
-      "text": "제가 출산한 날이랑 제 딸 생일이랑 똑같습니다.",
-      "likeCount": 613,
-      "relativeTime": "19시간",
+      "code": "DamTnX7kTR0",
+      "username": "haso_mall",
+      "text": "저는 시댁이랑 친정 부모님 결혼기념일 똑같아요ㅋ",
+      "likeCount": 1,
+      "takenAt": 1783656809,
       "originalIndex": 3
     },
     {
-      "code": "Dak4QnZGqFX-r4",
-      "username": "jollypong50g",
-      "text": "그거 아세요? 우리 모두는 생일에 태어났습니다",
-      "likeCount": 439,
-      "relativeTime": "19시간",
+      "code": "Damsdh2FEqc",
+      "username": "vibe_hyuk",
+      "text": "제 친구들은 신기하게도 다 닭띠더라구요",
+      "likeCount": 1,
+      "takenAt": 1783669835,
       "originalIndex": 4
     },
     {
-      "code": "Dak4QnZGqFX-r5",
-      "username": "countryman_pyo",
-      "text": "저와 아내는 신기하게도 딸 한명 아들 한명씩 있는데 생일도 똑같고 이름도 똑같습니다",
-      "likeCount": 277,
-      "relativeTime": "19시간",
+      "code": "Dam0-WUk1Ef",
+      "username": "hatzling",
+      "text": "감사하게도 저희 아내는 저희 부부의 결혼기념일을 같은 날짜에 맞추는걸 동의해 주었습니다.",
+      "likeCount": 2,
+      "takenAt": 1783674299,
       "originalIndex": 5
     },
     {
-      "code": "Dak4QnZGqFX-r6",
-      "username": "pruviny",
-      "text": "제 친구들은 신기하게도 전부 저랑 아는 사이입니다",
-      "likeCount": 160,
-      "relativeTime": "15시간",
+      "code": "DanJtzOGtQK",
+      "username": "motif.aesthetic_",
+      "text": "그것이 바로 부부니까.",
+      "likeCount": 1,
+      "takenAt": 1783685173,
       "originalIndex": 6
     },
     {
-      "code": "Dak4QnZGqFX-r7",
-      "username": "seungmin2181",
-      "text": "저와 제 여동생은 신기하게도 부모님은 물론이고 친조부모와 외조부모님까지 똑같습니다",
-      "likeCount": 130,
-      "relativeTime": "19시간",
+      "code": "DamHj_GDzWB",
+      "username": "moonseohyeon_artist",
+      "text": "저와 남편은 신기하게도 생일이 똑같습니다.",
+      "likeCount": 1,
+      "takenAt": 1783650490,
       "originalIndex": 7
     },
     {
-      "code": "Dak4QnZGqFX-r8",
-      "username": "jojo_gold_experience_requiem",
-      "text": "어떻게 그렇게까지 똑같죠\n무서워서 눈물이 다 납니다",
-      "likeCount": 35,
-      "relativeTime": "작성자",
+      "code": "Damrq2iklhi",
+      "username": "anxiety_girly_diarys2",
+      "text": "ㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+      "likeCount": 1,
+      "takenAt": 1783669420,
       "originalIndex": 8
     },
     {
-      "code": "Dak4QnZGqFX-r9",
-      "username": "mujindon_jm",
-      "text": "그거 아십니까? 다이어트에 성공한 사람들의 공통점은 모두 살을 뺐습니다.",
-      "likeCount": 106,
-      "relativeTime": "9시간",
+      "code": "DameU4NE7mK",
+      "username": "eugene_b611",
+      "text": "학회에서 직장 동료를 만났는데 신기하게도 같은 부서에서 일하고 있었습니다.",
+      "likeCount": 1,
+      "takenAt": 1783662425,
       "originalIndex": 9
     },
     {
-      "code": "Dak4QnZGqFX-r10",
-      "username": "fm_guk",
-      "text": "제가결혼한날이랑 와이프가 결혼한날이랑 똑같음",
-      "likeCount": 43,
-      "relativeTime": "13시간",
+      "code": "DamFqugEl-G",
+      "username": "corrnsoupp",
+      "text": "너희가 올해 고1이라고? 그럼 작년에는 중3이었겠구나",
+      "likeCount": 1,
+      "takenAt": 1783649496,
       "originalIndex": 10
     },
     {
-      "code": "Dak4QnZGqFX-r11",
-      "username": "zonzon_sangwan_chae",
-      "text": "울 엄마가 내 생일을 어떻게 아는지 모르갰다 누니 생일도 알던데",
-      "likeCount": 50,
-      "relativeTime": "19시간",
+      "code": "DanHI1hEilm",
+      "username": "love_peaceb",
+      "text": "그것이 결혼기념일이니까.",
+      "likeCount": 1,
+      "takenAt": 1783683822,
       "originalIndex": 11
     },
     {
-      "code": "Dak4QnZGqFX-r12",
-      "username": "jun0043",
-      "text": "아들과 나는 성이 같습니다\n신기하게도 생일도 같고요 양력 음력도\n눈물이 나올 정도로 소름 돋습니다",
-      "likeCount": 6,
-      "relativeTime": "14시간",
+      "code": "DanKGbWE4XT",
+      "username": "slewlsxn",
+      "text": "그정도면 결혼하셔야하는 운명인듯;;",
+      "likeCount": 1,
+      "takenAt": 1783685375,
       "originalIndex": 12
     },
     {
-      "code": "Dak4QnZGqFX-r13",
-      "username": "siyo_hs",
-      "text": "다들 시시하다. 그 정도 가지고…\n내꺼 얘기해? 다 기절할건데……………\n내 와이프 여자다. 비밀이다!",
-      "likeCount": 52,
-      "relativeTime": "19시간",
+      "code": "DamSN_PE_k4",
+      "username": "6318.12",
+      "text": "저와 아내는 결혼기념일 하나만 같고 두개는 틀리니 평범하죠.",
+      "likeCount": 1,
+      "takenAt": 1783656077,
       "originalIndex": 13
     },
     {
-      "code": "Dak4QnZGqFX-r14",
-      "username": "taek.d.kim",
-      "text": "그런데 잠깐! 그럼 누구 결혼기념일을 먼저 챙겨야 해? 가위바위보로 결정하나? 전쟁나는거 아녀?",
-      "likeCount": 0,
-      "relativeTime": "2시간",
+      "code": "DamcAaDm6ND",
+      "username": "sagittarius1117",
+      "text": "소오름",
+      "likeCount": 1,
+      "takenAt": 1783661208,
       "originalIndex": 14
     },
     {
-      "code": "Dak4QnZGqFX-r15",
-      "username": "drg_k88",
-      "text": "신기하게 저희 부모님 처음 출산일과\n장남 생일과 같습니다",
-      "likeCount": 16,
-      "relativeTime": "19시간",
+      "code": "DamQR99EQ3B",
+      "username": "xxunxub",
+      "text": "ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+      "likeCount": 2,
+      "takenAt": 1783655061,
       "originalIndex": 15
     },
     {
-      "code": "Dak4QnZGqFX-r16",
-      "username": "thazmania6699",
-      "text": "그러고보니 저랑 남편하고도 같네요. ㅋㅋㅋㅋ 😆",
-      "likeCount": 19,
-      "relativeTime": "19시간",
+      "code": "Dak82m8E1ca",
+      "username": "mingmingcongming",
+      "text": "펀쿨섹좌ㅋㅋㅋㅋㄱㄱ이사람 어제부터 자꾸뜨네\n넘욱겨",
+      "likeCount": 7,
+      "takenAt": 1783611321,
       "originalIndex": 16
     },
     {
-      "code": "Dak4QnZGqFX-r17",
-      "username": "cubic_art2021",
-      "text": "기념일은 fun하고 Cool하고 sexy하게 챙겨야합니다.\n그것이 부부니까....☆☆☆",
-      "likeCount": 0,
-      "relativeTime": "19시간",
+      "code": "Damf0oomU46",
+      "username": "woojupick",
+      "text": "맙소사",
+      "likeCount": 1,
+      "takenAt": 1783663209,
       "originalIndex": 17
     },
     {
-      "code": "Dak4QnZGqFX-r18",
-      "username": "mooinchoo",
-      "text": "왜냐면 그것이 결혼기념일이니까. 😉",
-      "likeCount": 0,
-      "relativeTime": "8시간",
+      "code": "DalFSGiE7bT",
+      "username": "yolo_rance_jeju",
+      "text": "그래서 결혼기념일 까먹으면 맞는거죠.",
+      "likeCount": 2,
+      "takenAt": 1783615740,
       "originalIndex": 18
     },
     {
-      "code": "Dak4QnZGqFX-r19",
-      "username": "jerts_8714",
-      "text": "당연히 부부니까",
-      "likeCount": 0,
-      "relativeTime": "19시간",
+      "code": "DamrYoqkq3x",
+      "username": "likey8417",
+      "text": "우리둘째가 초등학교때 우리반애들 모두 쥐띠라고 신기방기해하던 생각이난다ㅋㅋ",
+      "likeCount": 1,
+      "takenAt": 1783669271,
       "originalIndex": 19
     },
     {
-      "code": "Dak4QnZGqFX-r20",
-      "username": "gaecom_e",
-      "text": "그것이 결혼기념일이니까요 (끄덕)",
-      "likeCount": 0,
-      "relativeTime": "3시간",
+      "code": "DamzSRDkaio",
+      "username": "178.ccnw",
+      "text": "잊고살았는데 펀쿨섹좌..",
+      "likeCount": 1,
+      "takenAt": 1783673413,
       "originalIndex": 20
+    },
+    {
+      "code": "Damp_vHCbDP",
+      "username": "myjean_h",
+      "text": "그거아세요 제 친구들은 저랑 띠가 같더라구요!!!",
+      "likeCount": 3,
+      "takenAt": 1783668543,
+      "originalIndex": 21
+    },
+    {
+      "code": "DamvOFukXGs",
+      "username": "yun_young_0524",
+      "text": "내 아이의 삼촌은 내 오빠이자, 엄마의 아들이다.",
+      "likeCount": 1,
+      "takenAt": 1783671282,
+      "originalIndex": 22
+    },
+    {
+      "code": "Dal5w49E1-K",
+      "username": "ihasi48",
+      "text": "내 자식 이름하고, 배우자 자식 이름하고 \n생일도 똑같고 이름도 똑같고 혈액형도 똑같고 집주소도 똑같음;;;\n개소름",
+      "likeCount": 7,
+      "takenAt": 1783643255,
+      "originalIndex": 23
+    },
+    {
+      "code": "DanEEcREc0L",
+      "username": "dowlverine",
+      "text": "그것이 바로 결혼이니까(끄덕)",
+      "likeCount": 3,
+      "takenAt": 1783682213,
+      "originalIndex": 24
+    },
+    {
+      "code": "DanVLm2FGy3",
+      "username": "nogi_saku_hina_48_luv",
+      "text": "그거 아십니까? 우리는 모두 저녁을 먹었다는 사실을",
+      "likeCount": 1,
+      "takenAt": 1783691184,
+      "originalIndex": 25
+    },
+    {
+      "code": "DamDEPMGV8h",
+      "username": "catfrien",
+      "text": "난..내가 난독증인줄 알았어~.~ ㅋㅋㅋ 우리집도 그래..",
+      "likeCount": 1,
+      "takenAt": 1783648133,
+      "originalIndex": 26
+    },
+    {
+      "code": "DalAOyEiXmb",
+      "username": "jouoi_",
+      "text": "완전 천생연분이잖아?",
+      "likeCount": 3,
+      "takenAt": 1783613092,
+      "originalIndex": 27
+    },
+    {
+      "code": "DamRN6MmNm_",
+      "username": "hwangpunk",
+      "text": "어쩐지 요즘 기온이 올라가서 덥더군요.",
+      "likeCount": 2,
+      "takenAt": 1783655552,
+      "originalIndex": 28
+    },
+    {
+      "code": "DalthK9EoSb",
+      "username": "seoulsokcho",
+      "text": "나참 가족인데 왜 아이들은 기념일에 안껴주시는건가요!!!",
+      "likeCount": 2,
+      "takenAt": 1783636835,
+      "originalIndex": 29
+    },
+    {
+      "code": "DamOcRLE_4j",
+      "username": "jamong_toon",
+      "text": "신기하게도 저랑 제 동생들은 부모님 같아요",
+      "likeCount": 1,
+      "takenAt": 1783654097,
+      "originalIndex": 30
+    },
+    {
+      "code": "Dalj0mRkgc8",
+      "username": "buildup_kyo",
+      "text": "신기하게도 몸의 여러 구멍 중 밥은 오로지 입구멍으로만 먹습니다.",
+      "likeCount": 2,
+      "takenAt": 1783631751,
+      "originalIndex": 31
+    },
+    {
+      "code": "Damzp1hj5SK",
+      "username": "kokoleo2026",
+      "text": "앜ㅋㅋㅋㅋㅋ 나 이런 개그 좋아",
+      "likeCount": 1,
+      "takenAt": 1783673606,
+      "originalIndex": 32
+    },
+    {
+      "code": "DamLWA8j2cz",
+      "username": "im.g.o",
+      "text": "기억난다..나는 양띠라고 했는데 반 친구들이 나도 나도 양띠라면서..온몸에 소름이...",
+      "likeCount": 1,
+      "takenAt": 1783652472,
+      "originalIndex": 33
+    },
+    {
+      "code": "DamxLiJkni0",
+      "username": "85_h_la",
+      "text": "ㅋㅋㅋㄱㄱㄱ댓글ㅋㅋㅋ당연한걸 담담하게 쓴게 왤케 웃기냐들ㅋㅋㅋㅋㅋㄱ",
+      "likeCount": 2,
+      "takenAt": 1783672310,
+      "originalIndex": 34
+    },
+    {
+      "code": "DamR415CeLA",
+      "username": "chcorhfksl55",
+      "text": "우리엄마는 내 이름을 알고있어요",
+      "likeCount": 1,
+      "takenAt": 1783655903,
+      "originalIndex": 35
+    },
+    {
+      "code": "DalmFiSk1-S",
+      "username": "satisfied_life_vv",
+      "text": "인연일세 결혼기념일이 똑같은거보니🤣🤣🤣🤣🤣🤣",
+      "likeCount": 2,
+      "takenAt": 1783632939,
+      "originalIndex": 36
+    },
+    {
+      "code": "DalrLXbkj-J",
+      "username": "us_z_w_83",
+      "text": "저희 자녀들 부모님의 결혼기념일이 \n저희 부부의 결혼기념일과 같습니다",
+      "likeCount": 3,
+      "takenAt": 1783635608,
+      "originalIndex": 37
+    },
+    {
+      "code": "Dal15IOkr7E",
+      "username": "main.castle_k",
+      "text": "결혼식에 같이 갔던 여자랑 제 부인이랑 같습니다.",
+      "likeCount": 2,
+      "takenAt": 1783641226,
+      "originalIndex": 38
+    },
+    {
+      "code": "DalypRrEp4g",
+      "username": "csm5238719",
+      "text": "당연한거 아녀?",
+      "likeCount": 1,
+      "takenAt": 1783639523,
+      "originalIndex": 39
+    },
+    {
+      "code": "DamVI20DyTl",
+      "username": "donaldd30",
+      "text": "식구끼리 그래도 되나여?\nㅎㅎㅎ",
+      "likeCount": 1,
+      "takenAt": 1783657608,
+      "originalIndex": 40
+    },
+    {
+      "code": "DaluVeLkzUi",
+      "username": "antaeyoung.photo",
+      "text": "ㅋㅋㅋㅋㅋㅋ\n심지어 눈.코.입 갯수도 같습니다.\n대단한 인연이죠",
+      "likeCount": 1,
+      "takenAt": 1783637264,
+      "originalIndex": 41
+    },
+    {
+      "code": "DampvgcmBeG",
+      "username": "yed.studio",
+      "text": "역시 부부는 부분가벼, 잘 맞네.",
+      "likeCount": 1,
+      "takenAt": 1783668410,
+      "originalIndex": 42
+    },
+    {
+      "code": "DamWumjmcne",
+      "username": "made.by.kindness",
+      "text": "저랑 같은반 친구들은 모두 저와 똑같은 옷을 두벌씩 갖고있습니다",
+      "likeCount": 1,
+      "takenAt": 1783658441,
+      "originalIndex": 43
+    },
+    {
+      "code": "Damb4Iek0tT",
+      "username": "91.su_bin",
+      "text": "우린 지금 스레드에서 이 게시글을 보고있어",
+      "likeCount": 1,
+      "takenAt": 1783661141,
+      "originalIndex": 44
+    },
+    {
+      "code": "DamBRH3k7NL",
+      "username": "hyundai_ys.song",
+      "text": "제가 출고한 날이랑 고객님이 인도한 날이랑 똑같음 소오름...",
+      "likeCount": 1,
+      "takenAt": 1783647189,
+      "originalIndex": 45
+    },
+    {
+      "code": "DanLahfjZIA",
+      "username": "bon_heur_vie",
+      "text": "옛날 집주인 주소와 저희 주소가 같더라고요",
+      "likeCount": 1,
+      "takenAt": 1783686064,
+      "originalIndex": 46
+    },
+    {
+      "code": "Dao0aEqgbXW",
+      "username": "jei78622",
+      "text": "오마낫~~~\n세상에 이런일이 신청하세요.\n참 말로 신기한 일이네요.\n전 살면서 생일같은사람 만나도\n기분이 묘하던데~\n심지어 결기가 같다니~\n천생연분입니다.\n절대!!\n절대!!!!\n놓치지말고 함께하세요.",
+      "likeCount": 1,
+      "takenAt": 1783741110,
+      "originalIndex": 47
+    },
+    {
+      "code": "DamebMkkcoo",
+      "username": "gimbyeonghag21",
+      "text": "그런확율이 \n다있어..\n\n천생연분이네.",
+      "likeCount": 1,
+      "takenAt": 1783662476,
+      "originalIndex": 48
+    },
+    {
+      "code": "Dal4h98gUcd",
+      "username": "stepbymi",
+      "text": "동창들이 다 같은 띠인거있죠?",
+      "likeCount": 2,
+      "takenAt": 1783642609,
+      "originalIndex": 49
+    },
+    {
+      "code": "Dam8cSdoNSP",
+      "username": "jw_miri",
+      "text": "이런 글을 스레드에서 보다닛 😱😱😱",
+      "likeCount": 1,
+      "takenAt": 1783678214,
+      "originalIndex": 50
+    },
+    {
+      "code": "DalsGa5E719",
+      "username": "art_wyler",
+      "text": "다들 중요한걸 놓치고 있는게 있어\n오늘 날짜에서 살아온 날짜를 빼면\n그날이 치니들 생일 이야",
+      "likeCount": 3,
+      "takenAt": 1783636092,
+      "originalIndex": 51
+    },
+    {
+      "code": "DansxN7EzkF",
+      "username": "y_s_rin_",
+      "text": "왠지 자식이 생기면 자식 생일이랑 와이프 출산일이 같을거 같은 느낌𓂃𓂂𓏸",
+      "likeCount": 1,
+      "takenAt": 1783703551,
+      "originalIndex": 52
+    },
+    {
+      "code": "DalxzFqE9vG",
+      "username": "eka_citta",
+      "text": "세상에 그런 일이?!🤣🤣🤣",
+      "likeCount": 2,
+      "takenAt": 1783639079,
+      "originalIndex": 53
+    },
+    {
+      "code": "DamwHedEWZY",
+      "username": "ssunybongii",
+      "text": "유치원 같은 반 애기들이 띠에 대해서 배우고 서로 똑같은 띠인거 알고 난리났었다는 글이 생각나 ㅋㅋㅋ",
+      "likeCount": 1,
+      "takenAt": 1783671752,
+      "originalIndex": 54
+    },
+    {
+      "code": "DaloU0Bk7Ki",
+      "username": "ribbontie_9",
+      "text": "저희집 쌍둥이도 나이가 똑같아요 \n심지어 학교 친구들도 똑같은 나이더라구요",
+      "likeCount": 2,
+      "takenAt": 1783634113,
+      "originalIndex": 55
+    },
+    {
+      "code": "DameN0VD_kQ",
+      "username": "kang_bless",
+      "text": "제 이름의 성씨가 신기하게도 아버지와 같습니다.",
+      "likeCount": 1,
+      "takenAt": 1783662367,
+      "originalIndex": 56
+    },
+    {
+      "code": "DameHKmGvxm",
+      "username": "ioioi777777",
+      "text": "시나몬 가루를 뿌렸더니 계피맛이 나요\n ㅠ.ㅠ",
+      "likeCount": 1,
+      "takenAt": 1783662312,
+      "originalIndex": 57
+    },
+    {
+      "code": "Dali5OcE9Da",
+      "username": "_oldboy_j",
+      "text": "저와 아내는 신기하게도 아침에 출근하면 저녁에 꼭 한집에서 만납니다",
+      "likeCount": 2,
+      "takenAt": 1783631265,
+      "originalIndex": 58
+    },
+    {
+      "code": "DalypzIE8lJ",
+      "username": "alita_violet_yang",
+      "text": "ㅋㅋ 와이프가 아나운서 크리스텔인줄은 몰랐네 ㅋㅋㅋㅋㅋ",
+      "likeCount": 2,
+      "takenAt": 1783639527,
+      "originalIndex": 59
+    },
+    {
+      "code": "DanLC74jUs4",
+      "username": "bon_heur_vie",
+      "text": "로또 딴 사람들은 신기하게도 모두 로또를 해 봤더라고요",
+      "likeCount": 1,
+      "takenAt": 1783685871,
+      "originalIndex": 60
+    },
+    {
+      "code": "Damh0xREXNJ",
+      "username": "dam2_0124",
+      "text": "ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+      "likeCount": 1,
+      "takenAt": 1783664259,
+      "originalIndex": 61
+    },
+    {
+      "code": "DamjiyIjpW5",
+      "username": "yoon_ho_sung",
+      "text": "그것이 부부니까",
+      "likeCount": 1,
+      "takenAt": 1783665160,
+      "originalIndex": 62
+    },
+    {
+      "code": "DanBUuygZmD",
+      "username": "twoasone86",
+      "text": "진짜 미친 컨셉이다",
+      "likeCount": 1,
+      "takenAt": 1783680773,
+      "originalIndex": 63
+    },
+    {
+      "code": "DanFvj6E7Ww",
+      "username": "dardar_flower",
+      "text": "저와 남편은 아들 둘만 있습니다",
+      "likeCount": 1,
+      "takenAt": 1783683090,
+      "originalIndex": 64
+    },
+    {
+      "code": "Dal4umDmNP1",
+      "username": "glenjkim",
+      "text": "결혼 기념일이 달라야\n1년에 두 번 기념하지.\n으이그. 날을 왜 똑같이 잡아서리...",
+      "likeCount": 2,
+      "takenAt": 1783642712,
+      "originalIndex": 65
+    },
+    {
+      "code": "DalsYWVkulu",
+      "username": "heedongyi12",
+      "text": "저와 아내는 신기하게도 같은 곳에서 결혼했습니다",
+      "likeCount": 1,
+      "takenAt": 1783636239,
+      "originalIndex": 66
+    },
+    {
+      "code": "DalrgnxE9H6",
+      "username": "sokieeee187",
+      "text": "일본에선 아주 흔한일인데 \n뭐이리 놀라고 그래 촌스럽게",
+      "likeCount": 2,
+      "takenAt": 1783635782,
+      "originalIndex": 67
+    },
+    {
+      "code": "Damb_v5gXJw",
+      "username": "poohout",
+      "text": "요즘 유머는 이렇군요 😂",
+      "likeCount": 1,
+      "takenAt": 1783661203,
+      "originalIndex": 68
+    },
+    {
+      "code": "DamVYouiaHp",
+      "username": "happylucy610",
+      "text": "천생연분이네여",
+      "likeCount": 1,
+      "takenAt": 1783657737,
+      "originalIndex": 69
+    },
+    {
+      "code": "DalxraFkslq",
+      "username": "lara___papa",
+      "text": "명불허전! 펀쿨섹좌 ㅋㅋ",
+      "likeCount": 1,
+      "takenAt": 1783639016,
+      "originalIndex": 70
+    },
+    {
+      "code": "Dal16yoAb1x",
+      "username": "jinoo_chu",
+      "text": "천생연분이네",
+      "likeCount": 3,
+      "takenAt": 1783641239,
+      "originalIndex": 71
+    },
+    {
+      "code": "Dal1PAqgevm",
+      "username": "grr867319045",
+      "text": "순간 와이프 박칼린인 줄 알았네",
+      "likeCount": 2,
+      "takenAt": 1783640881,
+      "originalIndex": 72
+    },
+    {
+      "code": "DamiYY4H-XZ",
+      "username": "najin.an",
+      "text": "내 여동생과 남동생 부모님이 내 부모님과 같습니다.",
+      "likeCount": 1,
+      "takenAt": 1783664551,
+      "originalIndex": 73
+    },
+    {
+      "code": "Dal0mewkzxV",
+      "username": "selfsaleman",
+      "text": "천생연분이라는 말이 괜히 있는게 아님",
+      "likeCount": 2,
+      "takenAt": 1783640549,
+      "originalIndex": 74
+    },
+    {
+      "code": "DalM4EJEtpS",
+      "username": "undo15612",
+      "text": "이런..친구들 와이프들 공통점이 다들 여자라는거...",
+      "likeCount": 3,
+      "takenAt": 1783619721,
+      "originalIndex": 75
+    },
+    {
+      "code": "DamD1lyElI3",
+      "username": "p1zzzzzzzzzzzzzzza",
+      "text": "이런 걸 보면 진짜 운명이란 게 있는 듯",
+      "likeCount": 1,
+      "takenAt": 1783648537,
+      "originalIndex": 76
+    },
+    {
+      "code": "Dal7bKvn82i",
+      "username": "eur_seventeen",
+      "text": "맙소사...심지어 우리 아들들은 결혼식도 안옴요...",
+      "likeCount": 5,
+      "takenAt": 1783644126,
+      "originalIndex": 77
+    },
+    {
+      "code": "Dal3F5aE3_W",
+      "username": "settler",
+      "text": "천생연분이네 그러기 쉽지 않아",
+      "likeCount": 3,
+      "takenAt": 1783641855,
+      "originalIndex": 78
+    },
+    {
+      "code": "DamQi1gE4Wt",
+      "username": "ohayo_katsusoba",
+      "text": "와이프의 전남친은 저랑 이름 키 나이 직업 생일까지 모든게 똑같습니다",
+      "likeCount": 1,
+      "takenAt": 1783655199,
+      "originalIndex": 79
+    },
+    {
+      "code": "DalxrnUkx8V",
+      "username": "2_sunghee.1224",
+      "text": "난 내 동생이랑\n부모님이 같더라구.",
+      "likeCount": 2,
+      "takenAt": 1783639018,
+      "originalIndex": 80
+    },
+    {
+      "code": "DamlKxCkpDD",
+      "username": "makaidev",
+      "text": "이거 결혼 안해보면 모른다.",
+      "likeCount": 1,
+      "takenAt": 1783666012,
+      "originalIndex": 81
+    },
+    {
+      "code": "DalwdUiEony",
+      "username": "seon_young_0530",
+      "text": "댓글 개웃겨 ㅋㅋㅋㅋㅋ",
+      "likeCount": 15,
+      "takenAt": 1783638377,
+      "originalIndex": 82
+    },
+    {
+      "code": "DamXVVgkwxq",
+      "username": "miru73",
+      "text": "엄청 신기하네. 나도 결혼기념일이 같은데",
+      "likeCount": 1,
+      "takenAt": 1783658758,
+      "originalIndex": 83
+    },
+    {
+      "code": "DalxfVUE5dJ",
+      "username": "kimu.teyon",
+      "text": "저 고이즈미 작은 아들이 그렇게도 멍청하다고 소문이 났던데 ㅋㅋ 정말로!!",
+      "likeCount": 1,
+      "takenAt": 1783638917,
+      "originalIndex": 84
+    },
+    {
+      "code": "DalxVNAkvz-",
+      "username": "miji_0128",
+      "text": "거참 신기하넹",
+      "likeCount": 2,
+      "takenAt": 1783638834,
+      "originalIndex": 85
+    },
+    {
+      "code": "Damvg0cEVRm",
+      "username": "attykjw",
+      "text": "에에? 스고이네~",
+      "likeCount": 1,
+      "takenAt": 1783671435,
+      "originalIndex": 86
+    },
+    {
+      "code": "DamjjqTIFVg",
+      "username": "vvvvlnbboaascct",
+      "text": "우리 딸이 호랑이띠인데 반 애들도 다 호랑이띠래요. 너무 신기하죵?",
+      "likeCount": 1,
+      "takenAt": 1783665167,
+      "originalIndex": 87
+    },
+    {
+      "code": "Dama1wBkWb_",
+      "username": "heezuzuzu",
+      "text": "제 오른쪽발과 왼쪽발의  신발 사이즈가 꼭 맞지뭡니까!!!! 게다가 양쪽이 같은 디자인을 고수하는 취향까지 정확합니다.",
+      "likeCount": 2,
+      "takenAt": 1783660597,
+      "originalIndex": 88
+    },
+    {
+      "code": "DamZnLpkvHE",
+      "username": "moods2miles",
+      "text": "저와 동생은 엄마 아빠가 같아요!",
+      "likeCount": 1,
+      "takenAt": 1783659953,
+      "originalIndex": 89
+    },
+    {
+      "code": "DalvCoAkiDL",
+      "username": "liillillillilliii",
+      "text": "민주당 지지하는 지능같은 소리하고있네",
+      "likeCount": 1,
+      "takenAt": 1783637634,
+      "originalIndex": 90
+    },
+    {
+      "code": "DanMnkYmmtS",
+      "username": "oyj5804",
+      "text": "이런 집은 처음 만난 날도 같더라",
+      "likeCount": 1,
+      "takenAt": 1783686695,
+      "originalIndex": 91
+    },
+    {
+      "code": "Dal0DOREsYF",
+      "username": "sheherazade6007",
+      "text": "신기해...",
+      "likeCount": 1,
+      "takenAt": 1783640260,
+      "originalIndex": 92
+    },
+    {
+      "code": "DamZ6oKGH4J",
+      "username": "spintsumugi",
+      "text": "세상에 그런 일도 다 있군요. 인연이신가봅니다 ㅋㅋㅋ",
+      "likeCount": 2,
+      "takenAt": 1783660112,
+      "originalIndex": 93
+    },
+    {
+      "code": "DamiUaklL0A",
+      "username": "perpetually_on_diet",
+      "text": "나와 아내의 신기허게도 같은 결혼기념일이 바로 오늘이고 38주년이다. 나 축하해주려고 이거 올린 거 맞지? 또 신기한 건 우리 딸 생일도 오늘이다.",
+      "likeCount": 3,
+      "takenAt": 1783664518,
+      "originalIndex": 94
+    },
+    {
+      "code": "Dam5GSOE1Mw",
+      "username": "qkenrdldhqqk",
+      "text": "주말의 전 날을 저는, 금요일이라고 부르곤 합니다.",
+      "likeCount": 2,
+      "takenAt": 1783676461,
+      "originalIndex": 95
+    },
+    {
+      "code": "Dal2M0jE6_o",
+      "username": "angel_in_heaven07",
+      "text": "그런게 사람들이 말 하는 운명,인연인듯",
+      "likeCount": 1,
+      "takenAt": 1783641387,
+      "originalIndex": 96
+    },
+    {
+      "code": "DamLMs6mOQy",
+      "username": "iloveadelie",
+      "text": "저와 쏘니는 생일이 같습니다만 쌍둥이는 아닙니다",
+      "likeCount": 1,
+      "takenAt": 1783652396,
+      "originalIndex": 97
+    },
+    {
+      "code": "Dal46tOktMh",
+      "username": "yong_yong_e",
+      "text": "제 와이프와 마지막 연애한 여자친구의 부모님은 모두 같은 분입니다.",
+      "likeCount": 2,
+      "takenAt": 1783642812,
+      "originalIndex": 98
+    },
+    {
+      "code": "DamHJZQgSV4",
+      "username": "monandbun",
+      "text": "천생연분이시네요",
+      "likeCount": 7,
+      "takenAt": 1783650272,
+      "originalIndex": 99
+    },
+    {
+      "code": "DamdScOkaqv",
+      "username": "seonghyi662",
+      "text": "그렇군요 ㄷㄷ 무섭네요 ㅎ",
+      "likeCount": 1,
+      "takenAt": 1783661880,
+      "originalIndex": 100
     }
   ]
 }

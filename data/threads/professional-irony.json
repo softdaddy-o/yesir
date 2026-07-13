@@ -5,20 +5,18 @@
   "author": {
     "username": "dr.salbbaeja"
   },
-  "description": "직업과 실제 생활 사이의 반전 댓글을 모은 Threads 아카이브입니다.",
-  "capture": {
-    "generatedAt": "2026-07-10",
-    "screenshotCount": 80,
-    "mediaCount": 2,
-    "note": "로그인된 Threads 세션에서 Playwright로 다시 스크롤 캡처해 본문과 공개 답글 일부를 정리했습니다.",
-    "summaryText": "전문직, 전공, 업장과 반대로 사는 현실 고백 댓글들이 이어지는 Threads 아카이브입니다.",
-    "itemLabel": "로그인 캡처 답글"
-  },
+  "description": "직업과 실제 생활의 아이러니를 댓글로 이어 간 유머형 Threads 아카이브입니다.",
   "stats": {
     "replyCount": 1200,
     "repostCount": 158,
     "shareCount": 400
   },
+  "capture": {
+    "generatedAt": "2026-07-13",
+    "itemLabel": "댓글",
+    "summaryText": "Threads ?? 100?? ??? ???????. ?? ??? ???????."
+  },
+  "category": "funny",
   "main": {
     "code": "Dae7P-RE4LR",
     "username": "dr.salbbaeja",
@@ -28,164 +26,831 @@
   },
   "replies": [
     {
-      "code": "Dae7P-RE4LR-r1",
-      "username": "dan___flower",
-      "text": "플로리스트입니다.\n집에 있는 화분 다죽었습니다.",
-      "likeCount": 1000,
-      "relativeTime": "2일",
+      "code": "DahK-sAD87W",
+      "username": "hwibeomoh",
+      "text": "저는 와이프가 없어서 엄마한테 물어봅니다",
+      "likeCount": 41,
+      "takenAt": 1783484509,
       "originalIndex": 1
     },
     {
-      "code": "Dae7P-RE4LR-r2",
-      "username": "pink20222",
-      "text": "웨딩플래너입니다.\n결혼못했습니다.",
-      "likeCount": 1800,
-      "relativeTime": "3일",
+      "code": "DahPVHqExu2",
+      "username": "hyundai_ys.song",
+      "text": "앜ㅋㅋㅋㅋㅋㅋㅋㅋ",
+      "likeCount": 1,
+      "takenAt": 1783486790,
       "originalIndex": 2
     },
     {
-      "code": "Dae7P-RE4LR-r3",
-      "username": "keepcalmandstaythankful",
-      "text": "미국간호산데\n알츠하이머 스펠링 못 외워서 맨날 구글 돌리는데\n옆자리 미국인 동료도 그러고 있음 ㅋㅋ",
-      "likeCount": 2400,
-      "relativeTime": "1일",
+      "code": "Dak0qYZn9CD",
+      "username": "porong_soopia",
+      "text": "영어 강사입니다. 20년 경력 중 최악의 아웃풋은 제 아들입니다. 학원 보내기로 했습니다",
+      "likeCount": 180,
+      "takenAt": 1783607026,
       "originalIndex": 3
     },
     {
-      "code": "Dae7P-RE4LR-r4",
-      "username": "bookwave_official",
-      "text": "출판사합니다. 비속어 없이 글쓰기 어렵습니다.",
-      "likeCount": 859,
-      "relativeTime": "3일",
+      "code": "DamolXqkbVv",
+      "username": "if_rown_",
+      "text": "암...자기자식은 못 가르친데요..🤣",
+      "likeCount": 2,
+      "takenAt": 1783667803,
       "originalIndex": 4
     },
     {
-      "code": "Dae7P-RE4LR-r5",
-      "username": "ko.somi.9",
-      "text": "타코야끼가게 사장입니다 문어 오징어 낙지 무서워합니다",
-      "likeCount": 617,
-      "relativeTime": "3일",
+      "code": "DajsqWKD3yS",
+      "username": "1213yum",
+      "text": "애 셋 엄마입니다. 내 애들인데 항상 이름 잘못 부릅니다.",
+      "likeCount": 105,
+      "takenAt": 1783569277,
       "originalIndex": 5
     },
     {
-      "code": "Dae7P-RE4LR-r6",
-      "username": "do_it63",
-      "text": "지나가는 무용과 발레강사입니다. 회원님께 몸관리 필수라면서 저는 비오면 시큰거리고 사지에서 뚝 뚝 소리납니다ㅋㅋ",
-      "likeCount": 377,
-      "relativeTime": "3일",
+      "code": "Dal3_JTjxie",
+      "username": "robellalove",
+      "text": "우간다 사람입니다. \n우간다 말 못합니다.",
+      "likeCount": 131,
+      "takenAt": 1783642324,
       "originalIndex": 6
     },
     {
-      "code": "Dae7P-RE4LR-r7",
-      "username": "ohse.jin",
-      "text": "치과 직원입니다.\n치아에 구멍났는데 무서워서\n3년째 치료 안받고 버티고 있습니다.",
-      "likeCount": 447,
-      "relativeTime": "3일",
+      "code": "Daml9-gH2Vp",
+      "username": "oseoxeon",
+      "text": "필라테스 강사입니다.\n90kg입니다.",
+      "likeCount": 50,
+      "takenAt": 1783666431,
       "originalIndex": 7
     },
     {
-      "code": "Dae7P-RE4LR-r8",
-      "username": "book_kingkong",
-      "text": "기계공학 전공입니다\n뭐 고장나면 힘으로 해결합니다",
-      "likeCount": 486,
-      "relativeTime": "3일",
+      "code": "DajvVzeD4Pr",
+      "username": "jay.vina",
+      "text": "지나가는 건축사입니다.\n\n제 집 설계 못했습니다. ㅜㅜ",
+      "likeCount": 216,
+      "takenAt": 1783570682,
       "originalIndex": 8
     },
     {
-      "code": "Dae7P-RE4LR-r9",
-      "username": "jh_the_pilot",
-      "text": "헬기 조종사입니다. 높은데 싫어해요.",
-      "likeCount": 374,
-      "relativeTime": "3일",
+      "code": "DamKNROj4Kx",
+      "username": "pybl_1253",
+      "text": "중도 제머리는 못깍습니다ㅎ",
+      "likeCount": 1,
+      "takenAt": 1783651876,
       "originalIndex": 9
     },
     {
-      "code": "Dae7P-RE4LR-r10",
-      "username": "skytreesea",
-      "text": "좀 심하군요. 지나가는 지리학 박사입니다. 가나 수도 모릅니다.",
-      "likeCount": 391,
-      "relativeTime": "3일",
+      "code": "DakvLicGHKk",
+      "username": "i.am.makorin",
+      "text": "변호사입니다. 맨날 음란 만화 보고 있어요.",
+      "likeCount": 63,
+      "takenAt": 1783604152,
       "originalIndex": 10
     },
     {
-      "code": "Dae7P-RE4LR-r11",
-      "username": "lim_h.sssss",
-      "text": "중고차합니다 자가용 헤이딜러에 팔아요",
-      "likeCount": 362,
-      "relativeTime": "3일",
+      "code": "Dak1Z8dgesS",
+      "username": "artspace_you",
+      "text": "피아노전공\n악보 세마디도 못외웁니다",
+      "likeCount": 75,
+      "takenAt": 1783607416,
       "originalIndex": 11
     },
     {
-      "code": "Dae7P-RE4LR-r12",
-      "username": "hyo.sister",
-      "text": "기독교인입니다\n절에가면 마음이진정되고 교회가면 시끄럽습니다",
-      "likeCount": 241,
-      "relativeTime": "20시간",
+      "code": "DahOXnjEQ3t",
+      "username": "cutey_gwidu",
+      "text": "Uro에 있습니다..\n희소정자증과,정자운동성저하 그나마 있는 애들보면 직진성도 떨어져 제자리에서 빙빙돕니다...",
+      "likeCount": 22,
+      "takenAt": 1783486286,
       "originalIndex": 12
     },
     {
-      "code": "Dae7P-RE4LR-r13",
-      "username": "yeongseog8071",
-      "text": "삼겹살집 사장입니다 고기잘 못굽습니다\n고깃집가면 와이프가 다구워줍니다",
-      "likeCount": 255,
-      "relativeTime": "3일",
+      "code": "DamzF3YkxWC",
+      "username": "kkamjjak.today",
+      "text": "애 셋 엄마입니다.\n노키즈존 좋아합니다.",
+      "likeCount": 75,
+      "takenAt": 1783673312,
       "originalIndex": 13
     },
     {
-      "code": "Dae7P-RE4LR-r14",
-      "username": "isuyeong9057",
-      "text": "30년 은향원입니다.계산기 없으면 합이 두자리부터 계산못합나다",
-      "likeCount": 214,
-      "relativeTime": "3일",
+      "code": "DanIbasH0Bk",
+      "username": "_____________kkk1",
+      "text": "애넷엄마도 좋아합니다ㅋㅋㅋ",
+      "likeCount": 14,
+      "takenAt": 1783684498,
       "originalIndex": 14
     },
     {
-      "code": "Dae7P-RE4LR-r15",
-      "username": "pd.psycho",
-      "text": "중국에서 중문과 졸업했습니다.\n덕질중이라 일본어만 쓰고 있습니다.",
-      "likeCount": 171,
-      "relativeTime": "3일",
+      "code": "DajUHTVoJEO",
+      "username": "intzzzero",
+      "text": "개발자입니다. AI 없이 개발 못 합니다.",
+      "likeCount": 88,
+      "takenAt": 1783556407,
       "originalIndex": 15
     },
     {
-      "code": "Dae7P-RE4LR-r16",
-      "username": "son.yeojeong",
-      "text": "무역학 전공입니다.\n당근이 최고입니다.",
-      "likeCount": 192,
-      "relativeTime": "3일",
+      "code": "Dam2emiEypg",
+      "username": "suchaguyyy",
+      "text": "건물주입니다. 월세 살아요.",
+      "likeCount": 87,
+      "takenAt": 1783675087,
       "originalIndex": 16
     },
     {
-      "code": "Dae7P-RE4LR-r17",
-      "username": "_soohwan.kim",
-      "text": "생물학 박사입니다.\n공룡 만들수 있냐고 그만 물어보세요",
-      "likeCount": 216,
-      "relativeTime": "3일",
+      "code": "DakokOwEpuF",
+      "username": "interior___lab",
+      "text": "인테리어 디자이너 입니다.\n저희집은 정작 초토화입니다.",
+      "likeCount": 31,
+      "takenAt": 1783600684,
       "originalIndex": 17
     },
     {
-      "code": "Dae7P-RE4LR-r18",
-      "username": "refined_mv3_cpa",
-      "text": "연세대 출신 회계사입니다. 저도 못해요 ㅠㅠ",
-      "likeCount": 108,
-      "relativeTime": "3일",
+      "code": "DaksV0Mkhf8",
+      "username": "blue__berrryy",
+      "text": "영어강사입니다. 아직도 웬즈데이 영어로 쓸때마다 철자검색합니다.",
+      "likeCount": 86,
+      "takenAt": 1783602663,
       "originalIndex": 18
     },
     {
-      "code": "Dae7P-RE4LR-r19",
-      "username": "somsomi32",
-      "text": "남편이 소방관입니다. 우리집 완강기도 없고 소화기는 오조오억년 되었습니다. 지 아들 열경기로 기절했는데 지가 더소리 지르며 어떻게!!!어떻게!! 외치는 남편이라 제가 119에 신고해 응급실 댕겨왔습니다ㅠㅠ",
-      "likeCount": 96,
-      "relativeTime": "7시간",
+      "code": "Dams-D5kjZQ",
+      "username": "_0bottle_",
+      "text": "마라톤을 즐기는 마라토너입니다.\n2km 거리 택시 탑니다.",
+      "likeCount": 50,
+      "takenAt": 1783670102,
       "originalIndex": 19
     },
     {
-      "code": "Dae7P-RE4LR-r20",
+      "code": "DamvSLempdA",
+      "username": "yoonfor11412",
+      "text": "이키로 택시타고 에너지아껴서 20키로러닝에 쏟아붓는분ㄷㄷ",
+      "likeCount": 1,
+      "takenAt": 1783671315,
+      "originalIndex": 20
+    },
+    {
+      "code": "DampxatoFX3",
+      "username": "_horizon16_",
+      "text": "파티쉐입니다.\n케이크? 디저트? 사먹습니다,,\n남의것이 졸라맛있습니다,,",
+      "likeCount": 92,
+      "takenAt": 1783668426,
+      "originalIndex": 21
+    },
+    {
+      "code": "DaiBdkWj3tz",
       "username": "coffee.25kmall",
       "text": "커피로스터예요\n12년차 카페운영 해요\n라떼아트....몬해용 ㅋㅋㅋㅋ",
-      "likeCount": 83,
-      "relativeTime": "3일",
-      "originalIndex": 20
+      "likeCount": 107,
+      "takenAt": 1783513074,
+      "originalIndex": 22,
+      "image": "../../assets/threads/professional-irony/reply-022-DaiBdkWj3tz.webp",
+      "imageAlt": "coffee.25kmall image",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/professional-irony/reply-022-DaiBdkWj3tz.webp",
+          "alt": "coffee.25kmall image"
+        }
+      ]
+    },
+    {
+      "code": "DamihG_j8CY",
+      "username": "tw_wtooo",
+      "text": "중국집 직원입니다. 짱깨싫어합니다. 멸공",
+      "likeCount": 61,
+      "takenAt": 1783664622,
+      "originalIndex": 23
+    },
+    {
+      "code": "Dao3glNE6el",
+      "username": "oneuljjoo",
+      "text": "👍👍👍🇰🇷🇺🇲👍🇺🇲🇰🇷🇺🇲🤣🤣🤣",
+      "likeCount": 0,
+      "takenAt": 1783742737,
+      "originalIndex": 24
+    },
+    {
+      "code": "DakDDPAk3EX",
+      "username": "boxplus.co.kr",
+      "text": "인테리어 전문가입니다.\n아파트 그냥 그대로 13년째 살고 있습니다.",
+      "likeCount": 57,
+      "takenAt": 1783581015,
+      "originalIndex": 25
+    },
+    {
+      "code": "DafQOiQk2Kj",
+      "username": "seongeunsin98",
+      "text": "0이 많아서?",
+      "likeCount": 6,
+      "takenAt": 1783420152,
+      "originalIndex": 26
+    },
+    {
+      "code": "DafQh_dE5JC",
+      "username": "dr.salbbaeja",
+      "text": "그러면 좋겠다",
+      "likeCount": 2,
+      "takenAt": 1783420311,
+      "originalIndex": 27
+    },
+    {
+      "code": "DaiDI7ZE5GH",
+      "username": "seongeunsin98",
+      "text": "하나으ㅏ방법 비보험",
+      "likeCount": 0,
+      "takenAt": 1783513953,
+      "originalIndex": 28
+    },
+    {
+      "code": "DakQgaVEzVD",
+      "username": "parkmikyong7797",
+      "text": "과일팝니다 \n수박맛있냐? 그만물어보세요.. \n장마철에.. \n사실 과일은 안쪼개보면 몰라요🙄",
+      "likeCount": 32,
+      "takenAt": 1783588070,
+      "originalIndex": 29
+    },
+    {
+      "code": "DakbgFyCavz",
+      "username": "leemilim8449",
+      "text": "20년차 주부입니다",
+      "likeCount": 139,
+      "takenAt": 1783593835,
+      "originalIndex": 30,
+      "image": "../../assets/threads/professional-irony/reply-030-DakbgFyCavz.webp",
+      "imageAlt": "leemilim8449 image",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/professional-irony/reply-030-DakbgFyCavz.webp",
+          "alt": "leemilim8449 image"
+        }
+      ]
+    },
+    {
+      "code": "Dajzj8GGuXW",
+      "username": "bonapark2026",
+      "text": "원예 전공자입니다. 저한테 들어온 화분은 다 죽어나갑니다. 🙄",
+      "likeCount": 38,
+      "takenAt": 1783572895,
+      "originalIndex": 31
+    },
+    {
+      "code": "DalNcuej8OQ",
+      "username": "yeonnam_sura",
+      "text": "한식당 사장입니다.\n애들 밥 배달시켜줍니다ㅠ",
+      "likeCount": 6,
+      "takenAt": 1783620022,
+      "originalIndex": 32
+    },
+    {
+      "code": "Dal5Qd-k3Ri",
+      "username": "tiefesmeerflower",
+      "text": "플로리스트입니다. 꽃알러지 있어요.",
+      "likeCount": 20,
+      "takenAt": 1783642990,
+      "originalIndex": 33
+    },
+    {
+      "code": "DakBLmEgVZj",
+      "username": "ryu.in.motion",
+      "text": "4년차 스타트업 대표입니다.\n브랜딩 못합니다.",
+      "likeCount": 10,
+      "takenAt": 1783580035,
+      "originalIndex": 34
+    },
+    {
+      "code": "DakLKdFkx6y",
+      "username": "dr.salbbaeja",
+      "text": "켘ㅋㅋㅋㅋㅋ",
+      "likeCount": 1,
+      "takenAt": 1783585269,
+      "originalIndex": 35
+    },
+    {
+      "code": "Dajy2Kmkrsa",
+      "username": "o.g_maker",
+      "text": "경영학 석사입니다\n장사 못합니다",
+      "likeCount": 106,
+      "takenAt": 1783572520,
+      "originalIndex": 36
+    },
+    {
+      "code": "Dajz7fCibTR",
+      "username": "beom_wee",
+      "text": "오지 고학력자?",
+      "likeCount": 0,
+      "takenAt": 1783573088,
+      "originalIndex": 37
+    },
+    {
+      "code": "Dami8OCicoD",
+      "username": "nevermind_52",
+      "text": "필라테스강삽니다\n목디스크있어요",
+      "likeCount": 64,
+      "takenAt": 1783664844,
+      "originalIndex": 38
+    },
+    {
+      "code": "DakVhr5iSYr",
+      "username": "eddeurangje2378",
+      "text": "교육학박사요.내 애새까 개판입니다.",
+      "likeCount": 47,
+      "takenAt": 1783590702,
+      "originalIndex": 39
+    },
+    {
+      "code": "Daml1selP2E",
+      "username": "ssae.nha",
+      "text": "ㅋㅋㅋㅋㅋㅋㅋ 사람 사는거 다 똑같제",
+      "likeCount": 0,
+      "takenAt": 1783666363,
+      "originalIndex": 40
+    },
+    {
+      "code": "DamzGUXkbWd",
+      "username": "g.rr_official",
+      "text": "자체제작 애견의류브랜드 사장입니다 집에있는 개 외출시 빨개벗고 나갑니다.",
+      "likeCount": 8,
+      "takenAt": 1783673315,
+      "originalIndex": 41
+    },
+    {
+      "code": "DanH7u6Eoke",
+      "username": "kimss5348",
+      "text": "태권V 입니다\n단증 아직도 못땄어요.",
+      "likeCount": 6,
+      "takenAt": 1783684239,
+      "originalIndex": 42
+    },
+    {
+      "code": "DamiTqLD4_f",
+      "username": "bagjunhyeong120",
+      "text": "코카콜라다닙니다 칠성사이다박힌유니폼입고 경쟁사 롯데자이언츠응원하러다닙니다.",
+      "likeCount": 35,
+      "takenAt": 1783664512,
+      "originalIndex": 43
+    },
+    {
+      "code": "DakwRG1oKmg",
+      "username": "adhd_fullness",
+      "text": "ADHD입니다.",
+      "likeCount": 27,
+      "takenAt": 1783604722,
+      "originalIndex": 44
+    },
+    {
+      "code": "DakwYe9oFIB",
+      "username": "adhd_fullness",
+      "text": "아 쓰다가 또 실수로 보내기 누름..",
+      "likeCount": 24,
+      "takenAt": 1783604783,
+      "originalIndex": 45
+    },
+    {
+      "code": "DamXhL5k5WF",
+      "username": "hi_kids0707",
+      "text": "아기 안고 재우다가 큰소리로 빵 터져버렸… ㅎ 저는 이런 센스가 부럽네요 ㅋ",
+      "likeCount": 1,
+      "takenAt": 1783658855,
+      "originalIndex": 46
+    },
+    {
+      "code": "DanC2TEIBoP",
+      "username": "adhd_fullness",
+      "text": "진짜예요ㅠㅠㅠ ㅋㅋㅋㅋㅋㅋㅋ",
+      "likeCount": 0,
+      "takenAt": 1783681573,
+      "originalIndex": 47
+    },
+    {
+      "code": "DakRH1ZFNue",
+      "username": "bebeange_babycafe",
+      "text": "이대 무용과 나왔습니다.\n얼마전 인스타에 춤추는 영상 올렸다가 몸치인증받았습니다.",
+      "likeCount": 25,
+      "takenAt": 1783588393,
+      "originalIndex": 48
+    },
+    {
+      "code": "Damour5k_fs",
+      "username": "hadvetter",
+      "text": "수의사입니다. 반려동물 양치 중요하다고 강조하면서 저희집 고양이 둘 양치 안시킵.. 아니 못시킵니다. 물어요.",
+      "likeCount": 39,
+      "takenAt": 1783667879,
+      "originalIndex": 49
+    },
+    {
+      "code": "DaoMmHZkmlN",
+      "username": "leenalasimba",
+      "text": "ㅋㅋㅋ ㅋㅋㅋ ㅋㅋㅋ 물기만 하면 다행 ㅜㅜ",
+      "likeCount": 0,
+      "takenAt": 1783720238,
+      "originalIndex": 50
+    },
+    {
+      "code": "Dam8AHmoPMx",
+      "username": "petermsj76",
+      "text": "보험설계사입니다.\n제 보험이 뭔지 잘몰라서 계속 가입합니다",
+      "likeCount": 17,
+      "takenAt": 1783677983,
+      "originalIndex": 51
+    },
+    {
+      "code": "DanIMpTn_JX",
+      "username": "_____________kkk1",
+      "text": "원래 보험가입하려고 다니는곳이 보험회사라 들었습니다?",
+      "likeCount": 1,
+      "takenAt": 1783684377,
+      "originalIndex": 52
+    },
+    {
+      "code": "DanITLUIIbD",
+      "username": "petermsj76",
+      "text": "맞말 ㅎㅎ\n내건 이제 든든해졌거든 ^^",
+      "likeCount": 1,
+      "takenAt": 1783684431,
+      "originalIndex": 53
+    },
+    {
+      "code": "DakasHaDxyD",
+      "username": "aisnl85",
+      "text": "건설공학 전공입니다 \n모래성 못 쌓습니다",
+      "likeCount": 24,
+      "takenAt": 1783593409,
+      "originalIndex": 54
+    },
+    {
+      "code": "Dajtiahk_1L",
+      "username": "cho2_vely",
+      "text": "지나가던 초등학교 교사입니다 애들한텐 바른말 쓰라면서 속으론 애들 유치한 유행어 다 따라합니다 샤갈! 사과해요 당장!",
+      "likeCount": 88,
+      "takenAt": 1783569736,
+      "originalIndex": 55
+    },
+    {
+      "code": "DafFVl4EkcU",
+      "username": "crowooa_03",
+      "text": "계산기가 있어요",
+      "likeCount": 0,
+      "takenAt": 1783414442,
+      "originalIndex": 56
+    },
+    {
+      "code": "DafQhHZk1fX",
+      "username": "dr.salbbaeja",
+      "text": "맞아요",
+      "likeCount": 1,
+      "takenAt": 1783420304,
+      "originalIndex": 57
+    },
+    {
+      "code": "Daky9srkifH",
+      "username": "je0ngwo0_",
+      "text": "탕화쿵푸 직원입니다.\n마라탕 안먹습니다.",
+      "likeCount": 2,
+      "takenAt": 1783606136,
+      "originalIndex": 58
+    },
+    {
+      "code": "Dajq2tZElyM",
+      "username": "ironstar2.kr",
+      "text": "다이어터입니다. 많이 먹습니다.",
+      "likeCount": 111,
+      "takenAt": 1783568330,
+      "originalIndex": 59
+    },
+    {
+      "code": "Dalu9e7E1H4",
+      "username": "2una12",
+      "text": "개웃겨ㅋㅋㅋㄱㄱㄱㄱㄱㅋ ㄱ",
+      "likeCount": 1,
+      "takenAt": 1783637591,
+      "originalIndex": 60
+    },
+    {
+      "code": "DamACxWiR8U",
+      "username": "tymg_official",
+      "text": "한의원 마케터 입니다.\n그냥 맨날 스레드만 합니다",
+      "likeCount": 0,
+      "takenAt": 1783646548,
+      "originalIndex": 61
+    },
+    {
+      "code": "DamCybsk9dF",
+      "username": "dr.salbbaeja",
+      "text": "ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+      "likeCount": 0,
+      "takenAt": 1783647987,
+      "originalIndex": 62
+    },
+    {
+      "code": "Daj_RpnlNPM",
+      "username": "angel_leana_s",
+      "text": "미국 간호사 입니다. 환자한테 건강한 식습관이 얼마나 중요한지 한참 대화해 놓고 휴게실에서 빵과 과자를 맛나게 먹어요 야식도 빼놓지 않고요 🙂‍↕️",
+      "likeCount": 26,
+      "takenAt": 1783579036,
+      "originalIndex": 63
+    },
+    {
+      "code": "Daj7PRqDk_c",
+      "username": "harley_lunix",
+      "text": "의류학과 출신입니다.\n내옷 진짜 못입습니다",
+      "likeCount": 15,
+      "takenAt": 1783576920,
+      "originalIndex": 64
+    },
+    {
+      "code": "DakFU0Xj-Rp",
+      "username": "na.mariae",
+      "text": "오늘 댓글 맛집은 여기인가봄~ ㅋㅋㅋㅋㅋㅋ",
+      "likeCount": 42,
+      "takenAt": 1783582208,
+      "originalIndex": 65
+    },
+    {
+      "code": "DajxYT3kehV",
+      "username": "sujeong7509",
+      "text": "우와 나 서울대 출신의사보다 잘하는거 있다 ㅎㅎ\n쳇 서울대출신 의사 별거없네... 라고 중얼거려 봅니다^^",
+      "likeCount": 8,
+      "takenAt": 1783571751,
+      "originalIndex": 66
+    },
+    {
+      "code": "DajxzK1k-O5",
+      "username": "dr.salbbaeja",
+      "text": "ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+      "likeCount": 1,
+      "takenAt": 1783571971,
+      "originalIndex": 67
+    },
+    {
+      "code": "Dao0k6tibF9",
+      "username": "ss_mokk",
+      "text": "삼겹살집 사장입니다.\n최애음식은 회입니다.",
+      "likeCount": 39,
+      "takenAt": 1783741199,
+      "originalIndex": 68
+    },
+    {
+      "code": "Daln66JEwBV",
+      "username": "ggulelly",
+      "text": "1++ 한우 암소로 만든 원조진언양불고기  3대 대표입니다. 저 돼지고기 좋아해요🤣",
+      "likeCount": 2,
+      "takenAt": 1783633900,
+      "originalIndex": 69
+    },
+    {
+      "code": "Daml-xolAHx",
+      "username": "ssae.nha",
+      "text": "가진 자의 뭐 여유 뭐 그런거에요??",
+      "likeCount": 0,
+      "takenAt": 1783666438,
+      "originalIndex": 70
+    },
+    {
+      "code": "DakHLgYEy5B",
+      "username": "shorts._guy",
+      "text": "전기조명합니다 우리집 안방 조명 깜빡입니다💡💡",
+      "likeCount": 36,
+      "takenAt": 1783583180,
+      "originalIndex": 71
+    },
+    {
+      "code": "DahO4iOEl_a",
+      "username": "jinani__l",
+      "text": "영업 19년째인데 콜포비아 있습니다",
+      "likeCount": 18,
+      "takenAt": 1783486556,
+      "originalIndex": 72
+    },
+    {
+      "code": "DakH1YyEWE6",
+      "username": "heezuzuzu",
+      "text": "미대 출신 엄마입니다.\n애들 그림 그리기 숙제 그냥  빈종이 보냅니다.",
+      "likeCount": 14,
+      "takenAt": 1783583523,
+      "originalIndex": 73
+    },
+    {
+      "code": "Dao0uAGmZH7",
+      "username": "hhoooo___",
+      "text": "반도체 회사 직원입니다.\n컴퓨터에 블루스크린 떠요ㅜㅜ",
+      "likeCount": 89,
+      "takenAt": 1783741274,
+      "originalIndex": 74
+    },
+    {
+      "code": "DapsaMvmEsZ",
+      "username": "ninesixkr",
+      "text": "성과금으로 사",
+      "likeCount": 0,
+      "takenAt": 1783770471,
+      "originalIndex": 75
+    },
+    {
+      "code": "Damsnpfne7L",
+      "username": "mosipapa__",
+      "text": "대한민국 국민입니다\n참정권이 침해되었습니다.",
+      "likeCount": 177,
+      "takenAt": 1783669918,
+      "originalIndex": 76
+    },
+    {
+      "code": "DakfAAuGHZB",
+      "username": "hanpd_music_director",
+      "text": "연대출신 음악감독입니다..\n악보를 아직도 잘..못 봅니다.\n#이 여러개 있거나♭이 여러개면\n😔두통에 어지러워 합니다..\n그리고 친구들과 노래방에 가면 \n노래를 왜 이렇게 못하냐고  매번\n음치소리 듣고 타박 듣습니다😮‍💨",
+      "likeCount": 10,
+      "takenAt": 1783595669,
+      "originalIndex": 77
+    },
+    {
+      "code": "Damqxc8E-UY",
+      "username": "dearme_nail",
+      "text": "네일리스트입니다. 고객님들한테 손톱관리 잘하라고 말해주면서 제 손톱은 항상 담주에해야지 입니다 ㅠ",
+      "likeCount": 3,
+      "takenAt": 1783668950,
+      "originalIndex": 78
+    },
+    {
+      "code": "Dal4NzwgUpm",
+      "username": "nehemiah.s.chang",
+      "text": "보험설계삽니다\n암걸리고 200받았..\n\n흑",
+      "likeCount": 74,
+      "takenAt": 1783642444,
+      "originalIndex": 79
+    },
+    {
+      "code": "DakrDb0EgBI",
+      "username": "ljyl0726",
+      "text": "신학과 출신 입니다. 식사 대표기도 서로 안하려고 합니다.",
+      "likeCount": 14,
+      "takenAt": 1783601989,
+      "originalIndex": 80
+    },
+    {
+      "code": "Daj-otTDt-7",
+      "username": "kor_texan",
+      "text": "연세대 출신 간호사 입니다\n\n한국말을 점점 잊어버리고 영어로 \n미국 간호사 하고 있습니다 ▓▓",
+      "likeCount": 94,
+      "takenAt": 1783578701,
+      "originalIndex": 81,
+      "image": "../../assets/threads/professional-irony/reply-081-Daj-otTDt-7.jpg",
+      "imageAlt": "kor_texan image",
+      "media": [
+        {
+          "type": "image",
+          "src": "../../assets/threads/professional-irony/reply-081-Daj-otTDt-7.jpg",
+          "alt": "kor_texan image"
+        }
+      ]
+    },
+    {
+      "code": "DamcovIkw06",
+      "username": "w_ayne.k",
+      "text": "헤어스타일리스트입니다.\n저는 대머리입니다.",
+      "likeCount": 12,
+      "takenAt": 1783661539,
+      "originalIndex": 82
+    },
+    {
+      "code": "DankMqgEq5y",
+      "username": "mirib_bin",
+      "text": "ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㄱㅋㅋㅋㅋ",
+      "likeCount": 1,
+      "takenAt": 1783699057,
+      "originalIndex": 83
+    },
+    {
+      "code": "DajzctrD4pT",
+      "username": "eunwoo8647",
+      "text": "도자기 작가입니다 전기물레 사용법을 모릅니다",
+      "likeCount": 4,
+      "takenAt": 1783572836,
+      "originalIndex": 84
+    },
+    {
+      "code": "DampHo1D87Y",
+      "username": "_foveo",
+      "text": "키즈카페사장입니다\n애기가 없습니다",
+      "likeCount": 1,
+      "takenAt": 1783668083,
+      "originalIndex": 85
+    },
+    {
+      "code": "DakkiGUCQxv",
+      "username": "bm_____oiltanker",
+      "text": "장례업종사자 입니다...\n쥐죽은거 개무서워 합니다...",
+      "likeCount": 29,
+      "takenAt": 1783598570,
+      "originalIndex": 86
+    },
+    {
+      "code": "Daj2FDpmtTy",
+      "username": "hwang_kyounghee",
+      "text": "저 영어교육과 출신입니다. \n그런데 영어 \n잘 못합니다.\n🤣🤣🤣🤣🤣",
+      "likeCount": 8,
+      "takenAt": 1783574215,
+      "originalIndex": 87
+    },
+    {
+      "code": "Dam2ZxRgRGA",
+      "username": "9wc.roasters_",
+      "text": "로스터리카페사장입니다.\n커피 두잔이상 먹으면 위아파서 병원가요.",
+      "likeCount": 0,
+      "takenAt": 1783675048,
+      "originalIndex": 88
+    },
+    {
+      "code": "Damaietjy18",
+      "username": "vigana_school",
+      "text": "바이올린 36년째 전공인데 오선악보 위쪽 줄4개넘어가면 연필로 음정찾습니다.",
+      "likeCount": 56,
+      "takenAt": 1783660439,
+      "originalIndex": 89
+    },
+    {
+      "code": "DakZ6_7Et9e",
+      "username": "yongwo.on",
+      "text": "언어치료사입니다.\n내가 뮤슨 말읗 하는자 잘 뮤르겠어요‘",
+      "likeCount": 12,
+      "takenAt": 1783593007,
+      "originalIndex": 90
+    },
+    {
+      "code": "DanQqQrGufj",
+      "username": "8836jjy",
+      "text": "고양이 두마리 키웁니다.  고양이 알러지 심해서 15년째 약먹습니다",
+      "likeCount": 1,
+      "takenAt": 1783688814,
+      "originalIndex": 91
+    },
+    {
+      "code": "DamYTNIEktF",
+      "username": "dr.stein518518",
+      "text": "20년된 기타리스트 출신입니다 지판못외웠습니다",
+      "likeCount": 5,
+      "takenAt": 1783659265,
+      "originalIndex": 92
+    },
+    {
+      "code": "DakJ6K5muWa",
+      "username": "geniusdotori",
+      "text": "독문과입니다.\n독일어 그만시켜요",
+      "likeCount": 2,
+      "takenAt": 1783584611,
+      "originalIndex": 93
+    },
+    {
+      "code": "DakMUfAkVf1",
+      "username": "donguk9534",
+      "text": "독일어는 독일 사람이 하는 일본어 맞죠?",
+      "likeCount": 0,
+      "takenAt": 1783585875,
+      "originalIndex": 94
+    },
+    {
+      "code": "DakO4v1Gq5a",
+      "username": "geniusdotori",
+      "text": "어떻게 알았어요?? 🫢🫢",
+      "likeCount": 0,
+      "takenAt": 1783587221,
+      "originalIndex": 95
+    },
+    {
+      "code": "Damm2sHk9t0",
+      "username": "ha_jeans",
+      "text": "이 재밌는걸 이제야 봤네 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+      "likeCount": 6,
+      "takenAt": 1783666896,
+      "originalIndex": 96
+    },
+    {
+      "code": "Dam0s4DmoTB",
+      "username": "_hyejin.p",
+      "text": "언니덕에 나도 이제 봄ㅋㅋ",
+      "likeCount": 0,
+      "takenAt": 1783674156,
+      "originalIndex": 97
+    },
+    {
+      "code": "DaoUYRXknNC",
+      "username": "i.da_lim",
+      "text": "인테리어 하는부부입니다 우리집 화장실 등나간지 2년됬습니다",
+      "likeCount": 6,
+      "takenAt": 1783724318,
+      "originalIndex": 98
+    },
+    {
+      "code": "Damvj_fk8aX",
+      "username": "yunyun_9_8",
+      "text": "미용사입니다 저도 제머리카락 손상된거 아까워서 못잘랐어요",
+      "likeCount": 4,
+      "takenAt": 1783671461,
+      "originalIndex": 99
+    },
+    {
+      "code": "Dam0DZXCbrR",
+      "username": "hansung_0224",
+      "text": "예..저도 장발로 기르는중이요",
+      "likeCount": 0,
+      "takenAt": 1783673816,
+      "originalIndex": 100
     }
   ]
 }
