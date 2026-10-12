@@ -14,7 +14,7 @@
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="../../styles.css">
 </head>
-<body class="thread-page">
+<body class="thread-page thread-story">
     <main class="thread-shell">
         <header class="thread-topbar">
             <a class="back-link" href="../../" aria-label="Back to index">&lsaquo;</a>
@@ -26,11 +26,11 @@
         </header>
 
         <section class="thread-summary" aria-label="Archive summary">
-            <p>@omyohan_cuts가 11개 글로 이어 쓴 이야기를 한 페이지로 모았습니다. 본문 아래에는 댓글 0개를 좋아요순으로 붙였습니다.</p>
+            <p>@omyohan_cuts가 11개 글로 이어 쓴 이야기를 한 페이지로 모았습니다. 본문 아래에는 댓글 0개를 원래 순서대로 붙였습니다.</p>
             <dl>
                 <div><dt>원문</dt><dd>@omyohan_cuts</dd></div>
                 <div><dt>정리</dt><dd>11개 글 · 댓글 0개</dd></div>
-                <div><dt>정렬</dt><dd>댓글 좋아요순</dd></div>
+                <div><dt>정렬</dt><dd>원래순</dd></div>
             </dl>
         </section>
 
@@ -208,44 +208,9 @@
             </div>
         </section>
 
-        <div class="sort-dock" data-thread-sort-toggle data-default-sort="likes" aria-label="댓글 정렬">
-            <button type="button" data-sort-button="likes" aria-pressed="true">좋아요순</button>
-            <button type="button" data-sort-button="original" aria-pressed="false">원래순</button>
-        </div>
+
     </main>
-    <script>
-(() => {
-    const list = document.querySelector('[data-thread-replies]');
-    const dock = document.querySelector('[data-thread-sort-toggle]');
-    if (!list || !dock) return;
 
-    const posts = Array.from(list.querySelectorAll('.thread-post-reply'));
-    const buttons = Array.from(dock.querySelectorAll('[data-sort-button]'));
-
-    function applySort(mode) {
-        const attr = mode === 'original' ? 'originalIndex' : 'likeIndex';
-        posts
-            .slice()
-            .sort((a, b) => Number(a.dataset[attr]) - Number(b.dataset[attr]))
-            .forEach((post, index) => {
-                const number = post.querySelector('.post-number');
-                if (number) number.textContent = '#' + (index + 1);
-                list.appendChild(post);
-            });
-
-        dock.dataset.currentSort = mode;
-        buttons.forEach((button) => {
-            button.setAttribute('aria-pressed', String(button.dataset.sortButton === mode));
-        });
-    }
-
-    buttons.forEach((button) => {
-        button.addEventListener('click', () => applySort(button.dataset.sortButton));
-    });
-
-    applySort(dock.dataset.defaultSort || 'likes');
-})();
-    </script>
     <script>
 (() => {
     const videos = Array.from(document.querySelectorAll('[data-autoplay-video]'));

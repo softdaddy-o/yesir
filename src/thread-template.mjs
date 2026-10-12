@@ -418,11 +418,13 @@ ${renderCategoryCards(categories.filter(other => other.slug !== category.slug), 
 export function renderThreadPage(thread) {
     const title = getThreadTitle(thread);
     const replies = thread.replies || [];
-    const sortedReplies = sortRepliesByLikes(replies);
+    const storyParts = thread.storyParts || [];
+    // Serialized stories read top to bottom, so their comments stay in original order with no sort toggle.
+    const isStory = storyParts.length > 0;
+    const sortedReplies = isStory ? sortRepliesByOriginalOrder(replies) : sortRepliesByLikes(replies);
     const totalReplyCount = replies.length;
     const stats = thread.stats || {};
     const main = thread.main;
-    const storyParts = thread.storyParts || [];
     const storyTotal = storyParts.length + 1;
     const ogImage = thread.ogImage ? `https://yesir.softdaddy-o.com/${thread.ogImage}` : 'https://yesir.softdaddy-o.com/assets/poor-fish.png';
     const authorUsername = thread.author?.username || main.username;
@@ -446,7 +448,7 @@ export function renderThreadPage(thread) {
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="../../styles.css">
 </head>
-<body class="thread-page">
+<body class="thread-page${isStory ? ' thread-story' : ''}">
     <main class="thread-shell">
         <header class="thread-topbar">
             <a class="back-link" href="../../" aria-label="Back to index">&lsaquo;</a>
@@ -462,7 +464,7 @@ export function renderThreadPage(thread) {
             <dl>
                 <div><dt>원문</dt><dd>@${escapeHtml(authorUsername)}</dd></div>
                 <div><dt>정리</dt><dd>${storyParts.length ? `${storyTotal}개 글 · 댓글 ${totalReplyCount}개` : `${totalReplyCount}개 ${escapeHtml(itemLabel)}`}</dd></div>
-                <div><dt>정렬</dt><dd>${storyParts.length ? '댓글 좋아요순' : '좋아요순'}</dd></div>
+                <div><dt>정렬</dt><dd>${isStory ? '원래순' : '좋아요순'}</dd></div>
             </dl>
         </section>
 
@@ -491,9 +493,9 @@ ${sortedReplies.map((reply, index) => renderReply(reply, index, sortedReplies)).
             </div>
         </section>
 
-${renderSortToggle()}
+${isStory ? '' : renderSortToggle()}
     </main>
-${main.embedUrl ? '    <script async src="https://www.threads.net/embed.js"></script>\n' : ''}${renderSortScript()}
+${main.embedUrl ? '    <script async src="https://www.threads.net/embed.js"></script>\n' : ''}${isStory ? '' : renderSortScript()}
 ${renderVideoAutoplayScript()}
 </body>
 </html>

@@ -124,6 +124,10 @@ assertIncludes(nyosThreadHtml, 'id="part-10"', 'threads/lake-nyos-night/index.ht
 assertIncludes(nyosThreadHtml, 'thread-comments-label', 'threads/lake-nyos-night/index.html');
 assertIncludes(nyosThreadHtml, 'https://yesir.softdaddy-o.com/assets/threads/omyohan-cuts/', 'threads/lake-nyos-night/index.html');
 assertIncludes(nyosThreadHtml, 'https://www.threads.com/@omyohan_cuts/post/DeWTE83ExqF', 'threads/lake-nyos-night/index.html');
+assertIncludes(nyosThreadHtml, '<dt>정렬</dt><dd>원래순</dd>', 'threads/lake-nyos-night/index.html');
+assertIncludes(nyosThreadHtml, 'class="thread-page thread-story"', 'threads/lake-nyos-night/index.html');
+assertNotIncludes(nyosThreadHtml, 'data-thread-sort-toggle', 'threads/lake-nyos-night/index.html');
+assertNotIncludes(nyosThreadHtml, '좋아요순', 'threads/lake-nyos-night/index.html');
 for (const word of ['Playwright', '로그인 세션', 'GraphQL', 'scraper']) {
     assertNotIncludes(mysteryHtml, word, 'play/mystery/index.html');
     assertNotIncludes(nyosThreadHtml, word, 'threads/lake-nyos-night/index.html');
