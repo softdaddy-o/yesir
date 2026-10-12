@@ -830,6 +830,14 @@ a:hover {
     overflow-wrap: anywhere;
 }
 
+/* Long serialized stories use the collection summary text style instead of the display face. */
+.thread-story .post-text {
+    font-family: "Gowun Dodum", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    font-size: 16px;
+    line-height: 1.58;
+    word-break: keep-all;
+}
+
 .post-text-large {
     font-size: clamp(26px, 6vw, 40px);
     line-height: 1.24;
