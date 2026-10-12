@@ -184,6 +184,24 @@ function renderReply(reply, index, sortedReplies) {
             </article>`;
 }
 
+function renderStoryPart(part, index, total) {
+    const partNumber = index + 2;
+    const date = formatDate(part.takenAt) || '';
+
+    return `            <article class="thread-post thread-post-part" id="part-${partNumber}">
+                <div class="avatar avatar-author" aria-hidden="true">${escapeHtml(getInitial(part.username))}</div>
+                <div class="post-main">
+                    <div class="post-head">
+                        <span class="username">${escapeHtml(part.username)}</span>
+                        ${date ? `<span class="dot">&middot;</span>
+                        <span>${escapeHtml(date)}</span>` : ''}
+                        <a class="post-number" href="#part-${partNumber}" aria-label="이어쓰기 ${partNumber}번">${partNumber}/${total}</a>
+                    </div>
+                    ${renderText(part.text)}${renderPostMedia(part)}
+                </div>
+            </article>`;
+}
+
 function renderSortToggle() {
     return `        <div class="sort-dock" data-thread-sort-toggle data-default-sort="likes" aria-label="댓글 정렬">
             <button type="button" data-sort-button="likes" aria-pressed="true">좋아요순</button>
@@ -321,7 +339,7 @@ export function renderHomePage({ threads, playground }) {
                 </div>
                 <div class="scrap-note scrap-note-feed">
                     <b>최근 정리</b>
-                    <p>마음, 자기계발, 웃긴 것 위주로 천천히 채워갑니다.</p>
+                    <p>마음, 자기계발, 웃긴 것, 오묘한 이야기 위주로 천천히 채워갑니다.</p>
                     <span>${stats.itemCount} saved posts</span>
                 </div>
             </div>
@@ -404,6 +422,9 @@ export function renderThreadPage(thread) {
     const totalReplyCount = replies.length;
     const stats = thread.stats || {};
     const main = thread.main;
+    const storyParts = thread.storyParts || [];
+    const storyTotal = storyParts.length + 1;
+    const ogImage = thread.ogImage ? `https://yesir.softdaddy-o.com/${thread.ogImage}` : 'https://yesir.softdaddy-o.com/assets/poor-fish.png';
     const authorUsername = thread.author?.username || main.username;
     const itemLabel = thread.mainOnly ? '본문' : '댓글';
     const description = thread.description || `@${authorUsername} Threads 스레드와 ${itemLabel} ${totalReplyCount}개를 yesir 아카이브로 정리한 페이지.`;
@@ -421,7 +442,7 @@ export function renderThreadPage(thread) {
     <meta property="og:description" content="${escapeHtml(main.text.replace(/\s+/g, ' ').trim())}">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://yesir.softdaddy-o.com/threads/${escapeHtml(thread.slug)}/">
-    <meta property="og:image" content="https://yesir.softdaddy-o.com/assets/poor-fish.png">
+    <meta property="og:image" content="${escapeHtml(ogImage)}">
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -440,13 +461,13 @@ export function renderThreadPage(thread) {
             <p>${escapeHtml(summaryText)}</p>
             <dl>
                 <div><dt>원문</dt><dd>@${escapeHtml(authorUsername)}</dd></div>
-                <div><dt>정리</dt><dd>${totalReplyCount}개 ${escapeHtml(itemLabel)}</dd></div>
-                <div><dt>정렬</dt><dd>좋아요순</dd></div>
+                <div><dt>정리</dt><dd>${storyParts.length ? `${storyTotal}개 글 · 댓글 ${totalReplyCount}개` : `${totalReplyCount}개 ${escapeHtml(itemLabel)}`}</dd></div>
+                <div><dt>정렬</dt><dd>${storyParts.length ? '댓글 좋아요순' : '좋아요순'}</dd></div>
             </dl>
         </section>
 
         <section class="thread-feed" aria-label="Threads post and replies">
-            <article class="thread-post thread-post-root">
+            <article class="thread-post thread-post-root${storyParts.length ? ' has-story-parts' : ''}">
                 <div class="avatar avatar-author" aria-hidden="true">${escapeHtml(getInitial(main.username))}</div>
                 <div class="post-main">
                     <div class="post-head">
@@ -454,7 +475,7 @@ export function renderThreadPage(thread) {
                         <span class="dot">&middot;</span>
                         <span>${escapeHtml(formatDate(main.takenAt) || '3일')}</span>
                     </div>
-                    ${renderText(main.text, true)}${renderPostMedia(main)}${renderThreadsEmbed(main.embedUrl)}
+                    ${renderText(main.text, storyParts.length === 0)}${renderPostMedia(main)}${renderThreadsEmbed(main.embedUrl)}
                     <div class="post-actions" aria-label="Post stats">
                         <span>좋아요 ${escapeHtml(formatNumber(main.likeCount) || '0')}</span>
                         <span>댓글 ${escapeHtml(stats.replyCount ?? '')}</span>
@@ -462,7 +483,8 @@ export function renderThreadPage(thread) {
                         <span>공유 ${escapeHtml(stats.shareCount ?? '')}</span>
                     </div>
                 </div>
-            </article>
+            </article>${storyParts.length ? `\n${storyParts.map((part, index) => renderStoryPart(part, index, storyTotal)).join('\n')}` : ''}${storyParts.length && sortedReplies.length ? `
+            <h2 class="thread-comments-label">댓글 ${sortedReplies.length}개</h2>` : ''}
 
             <div class="thread-replies" data-thread-replies>
 ${sortedReplies.map((reply, index) => renderReply(reply, index, sortedReplies)).join('\n')}

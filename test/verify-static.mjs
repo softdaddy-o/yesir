@@ -20,6 +20,8 @@ const previewHtml = await readFile('design-previews/index.html', 'utf8');
 const mindHtml = await readFile('play/mind/index.html', 'utf8');
 const selfGrowthHtml = await readFile('play/self-growth/index.html', 'utf8');
 const funnyHtml = await readFile('play/funny/index.html', 'utf8');
+const mysteryHtml = await readFile('play/mystery/index.html', 'utf8');
+const nyosThreadHtml = await readFile('threads/lake-nyos-night/index.html', 'utf8');
 const packageJson = JSON.parse(await readFile('package.json', 'utf8'));
 
 function assertIncludes(content, expected, path) {
@@ -55,8 +57,8 @@ assertIncludes(homeHtml, 'play/mind/', 'index.html');
 assertIncludes(homeHtml, 'play/self-growth/', 'index.html');
 assertIncludes(homeHtml, 'play/funny/', 'index.html');
 assertIncludes(homeHtml, 'home-scrapbook', 'index.html');
-assertIncludes(homeHtml, '3 rooms / 14 saves', 'index.html');
-assertIncludes(homeHtml, '14 saved posts', 'index.html');
+assertIncludes(homeHtml, '4 rooms / 31 saves', 'index.html');
+assertIncludes(homeHtml, '31 saved posts', 'index.html');
 assertNotIncludes(homeHtml, 'threads/doha-poor-fish/', 'index.html');
 assertNotIncludes(homeHtml, 'play/anxiety/', 'index.html');
 assertNotIncludes(homeHtml, 'play/psychology/', 'index.html');
@@ -112,6 +114,20 @@ assertNotIncludes(funnyHtml, '천하제일 똥글 명언 대회', 'play/funny/in
 assertNotIncludes(funnyHtml, '../../threads/funny-nickname/', 'play/funny/index.html');
 assertNotIncludes(funnyHtml, '../../threads/ajae-joke-contest/', 'play/funny/index.html');
 assertNotIncludes(funnyHtml, '../../threads/bad-writing-quote-contest/', 'play/funny/index.html');
+
+assertIncludes(homeHtml, 'play/mystery/', 'index.html');
+assertIncludes(mysteryHtml, '<title>오묘한 이야기 - 네님 놀이터 - yesir.softdaddy-o.com</title>', 'play/mystery/index.html');
+assertIncludes(mysteryHtml, '../../threads/lake-nyos-night/', 'play/mystery/index.html');
+assertIncludes(mysteryHtml, '../../threads/lake-peigneur/', 'play/mystery/index.html');
+assertIncludes(nyosThreadHtml, 'thread-post-part', 'threads/lake-nyos-night/index.html');
+assertIncludes(nyosThreadHtml, 'id="part-10"', 'threads/lake-nyos-night/index.html');
+assertIncludes(nyosThreadHtml, 'thread-comments-label', 'threads/lake-nyos-night/index.html');
+assertIncludes(nyosThreadHtml, 'https://yesir.softdaddy-o.com/assets/threads/omyohan-cuts/', 'threads/lake-nyos-night/index.html');
+assertIncludes(nyosThreadHtml, 'https://www.threads.com/@omyohan_cuts/post/DeWTE83ExqF', 'threads/lake-nyos-night/index.html');
+for (const word of ['Playwright', '로그인 세션', 'GraphQL', 'scraper']) {
+    assertNotIncludes(mysteryHtml, word, 'play/mystery/index.html');
+    assertNotIncludes(nyosThreadHtml, word, 'threads/lake-nyos-night/index.html');
+}
 
 assertIncludes(previewHtml, '<title>yesir 디자인 프리뷰 - yesir.softdaddy-o.com</title>', 'design-previews/index.html');
 assertIncludes(previewHtml, 'Pop Scrapbook', 'design-previews/index.html');

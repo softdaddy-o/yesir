@@ -430,6 +430,12 @@ a:hover {
         linear-gradient(135deg, rgba(255, 181, 209, 0.78), rgba(255, 255, 255, 0.8));
 }
 
+.playground-card-mystery {
+    background:
+        radial-gradient(circle at 84% 18%, rgba(255, 196, 64, 0.62), transparent 76px),
+        linear-gradient(135deg, rgba(196, 210, 255, 0.78), rgba(255, 255, 255, 0.82));
+}
+
 .index-card em {
     align-self: end;
     width: max-content;
@@ -728,6 +734,25 @@ a:hover {
     bottom: -18px;
     width: 2px;
     background: rgba(20, 18, 13, 0.16);
+}
+
+.thread-post-root.has-story-parts,
+.thread-post-part {
+    border-bottom-color: transparent;
+}
+
+.thread-post-part .post-number {
+    margin-left: auto;
+}
+
+.thread-comments-label {
+    margin: 0;
+    padding: 14px 18px;
+    border-top: 3px solid var(--shadow);
+    border-bottom: 2px solid rgba(20, 18, 13, 0.14);
+    background: #fbfaf8;
+    font-size: 15px;
+    font-weight: 900;
 }
 
 .avatar {
