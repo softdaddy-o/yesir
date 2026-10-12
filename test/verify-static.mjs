@@ -128,6 +128,9 @@ assertIncludes(nyosThreadHtml, '<dt>정렬</dt><dd>원래순</dd>', 'threads/lak
 assertIncludes(nyosThreadHtml, 'class="thread-page thread-story"', 'threads/lake-nyos-night/index.html');
 assertNotIncludes(nyosThreadHtml, 'data-thread-sort-toggle', 'threads/lake-nyos-night/index.html');
 assertNotIncludes(nyosThreadHtml, '좋아요순', 'threads/lake-nyos-night/index.html');
+if (!/href="\.\.\/\.\.\/styles\.css\?v=[0-9a-f]{8}"/.test(nyosThreadHtml)) {
+    throw new Error('threads/lake-nyos-night/index.html does not version its stylesheet link');
+}
 for (const word of ['Playwright', '로그인 세션', 'GraphQL', 'scraper']) {
     assertNotIncludes(mysteryHtml, word, 'play/mystery/index.html');
     assertNotIncludes(nyosThreadHtml, word, 'threads/lake-nyos-night/index.html');

@@ -1,6 +1,7 @@
+import { createHash } from 'node:crypto';
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import { renderCollectionPage, renderHomePage, renderThreadPage } from '../src/thread-template.mjs';
+import { renderCollectionPage, renderHomePage, renderThreadPage, setStylesheetVersion } from '../src/thread-template.mjs';
 
 const THREAD_DATA_DIR = 'data/threads';
 const PLAYGROUND_DATA_PATH = 'data/playground.json';
@@ -25,6 +26,7 @@ if (threads.length === 0) {
 }
 
 const playground = JSON.parse(await readFile(PLAYGROUND_DATA_PATH, 'utf8'));
+setStylesheetVersion(createHash('sha256').update(await readFile('styles.css')).digest('hex').slice(0, 8));
 
 await writeFile('index.html', renderHomePage({ threads, playground }), 'utf8');
 

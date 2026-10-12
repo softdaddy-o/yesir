@@ -1,4 +1,14 @@
 const THREADS_POST_URL_PREFIX = 'https://www.threads.com/';
+// Appended to stylesheet links so browsers drop a cached styles.css as soon as it changes.
+let stylesheetVersion = '';
+
+export function setStylesheetVersion(version) {
+    stylesheetVersion = version;
+}
+
+function stylesheetHref(prefix) {
+    return `${prefix}styles.css${stylesheetVersion ? `?v=${stylesheetVersion}` : ''}`;
+}
 
 export function escapeHtml(value) {
     return String(value ?? '')
@@ -303,7 +313,7 @@ export function renderHomePage({ threads, playground }) {
     <meta property="og:url" content="https://yesir.softdaddy-o.com/">
     <meta property="og:image" content="https://yesir.softdaddy-o.com/assets/poor-fish.png">
     <link rel="icon" href="data:,">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="${stylesheetHref('')}">
 </head>
 <body class="home-page">
     <main class="home-shell">
@@ -378,7 +388,7 @@ export function renderCollectionPage({ category, categories }) {
     <meta property="og:url" content="https://yesir.softdaddy-o.com/play/${escapeHtml(category.slug)}/">
     <meta property="og:image" content="https://yesir.softdaddy-o.com/assets/poor-fish.png">
     <link rel="icon" href="data:,">
-    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="${stylesheetHref('../../')}">
 </head>
 <body class="home-page collection-page">
     <main class="home-shell collection-shell">
@@ -446,7 +456,7 @@ export function renderThreadPage(thread) {
     <meta property="og:url" content="https://yesir.softdaddy-o.com/threads/${escapeHtml(thread.slug)}/">
     <meta property="og:image" content="${escapeHtml(ogImage)}">
     <link rel="icon" href="data:,">
-    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="${stylesheetHref('../../')}">
 </head>
 <body class="thread-page${isStory ? ' thread-story' : ''}">
     <main class="thread-shell">
