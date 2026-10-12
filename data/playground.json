@@ -248,17 +248,32 @@
       "description": "@omyohan_cuts가 이어 쓰는 사건·재난·미스터리 실화. 끊어진 스레드를 이미지와 함께 한 번에 읽을 수 있게 모아둔 곳.",
       "items": [
         {
-          "title": "지하 700m에서 69일, 칠레 광부 33명",
+          "title": "니오스 호수, 1,746명이 상처 없이 숨진 밤",
           "author": "@omyohan_cuts",
           "sourceType": "yesir archive",
-          "url": "https://www.threads.com/@omyohan_cuts/post/DeY_MuMEymQ",
-          "internalUrl": "../../threads/chile-miners-69-days/",
-          "summary": "2010년 칠레 광산 붕괴. 참치 한 숟가락을 72시간마다 나눠 먹으며 버틴 33명이 전원 살아 나오기까지.",
-          "note": "yesir: threads/chile-miners-69-days",
+          "url": "https://www.threads.com/@omyohan_cuts/post/DeWTE83ExqF",
+          "internalUrl": "../../threads/lake-nyos-night/",
+          "summary": "1986년 카메룬. 소리도 냄새도 없이 마을을 덮친 호수의 가스와, 지금 그 호수에서 김을 빼는 방법.",
+          "note": "yesir: threads/lake-nyos-night",
           "tags": [
+            "재난",
+            "미스터리",
+            "자연",
+            "archive",
+            "threads"
+          ]
+        },
+        {
+          "title": "페뇨르 호수가 통째로 사라진 날",
+          "author": "@omyohan_cuts",
+          "sourceType": "yesir archive",
+          "url": "https://www.threads.com/@omyohan_cuts/post/DeJOw-xk_RZ",
+          "internalUrl": "../../threads/lake-peigneur/",
+          "summary": "1980년 루이지애나. 36cm 시추 구멍 하나가 소금 광산을 뚫어 호수를 삼킨 사건.",
+          "note": "yesir: threads/lake-peigneur",
+          "tags": [
+            "재난",
             "실화",
-            "구조",
-            "감동",
             "archive",
             "threads"
           ]
@@ -280,37 +295,6 @@
           ]
         },
         {
-          "title": "니오스 호수, 1,746명이 상처 없이 숨진 밤",
-          "author": "@omyohan_cuts",
-          "sourceType": "yesir archive",
-          "url": "https://www.threads.com/@omyohan_cuts/post/DeWTE83ExqF",
-          "internalUrl": "../../threads/lake-nyos-night/",
-          "summary": "1986년 카메룬. 소리도 냄새도 없이 마을을 덮친 호수의 가스와, 지금 그 호수에서 김을 빼는 방법.",
-          "note": "yesir: threads/lake-nyos-night",
-          "tags": [
-            "재난",
-            "미스터리",
-            "자연",
-            "archive",
-            "threads"
-          ]
-        },
-        {
-          "title": "소머턴 해변의 남자",
-          "author": "@omyohan_cuts",
-          "sourceType": "yesir archive",
-          "url": "https://www.threads.com/@omyohan_cuts/post/DeTjWe0k44E",
-          "internalUrl": "../../threads/somerton-man/",
-          "summary": "1948년 호주 해변에서 발견된 신원 미상의 남자. 쪽지와 책, 그리고 머리카락으로 이어진 70여 년의 추적.",
-          "note": "yesir: threads/somerton-man",
-          "tags": [
-            "미제사건",
-            "미스터리",
-            "archive",
-            "threads"
-          ]
-        },
-        {
           "title": "고도 41,000피트에서 연료가 떨어진 에어캐나다 143편",
           "author": "@omyohan_cuts",
           "sourceType": "yesir archive",
@@ -327,49 +311,17 @@
           ]
         },
         {
-          "title": "리투야만, 역사상 가장 높은 쓰나미",
+          "title": "지하 700m에서 69일, 칠레 광부 33명",
           "author": "@omyohan_cuts",
           "sourceType": "yesir archive",
-          "url": "https://www.threads.com/@omyohan_cuts/post/DeRVg6qE-bb",
-          "internalUrl": "../../threads/lituya-bay-megatsunami/",
-          "summary": "1958년 알래스카. 산 하나가 바다로 무너진 밤 고깃배로 파도를 넘은 아빠와 7살 아들.",
-          "note": "yesir: threads/lituya-bay-megatsunami",
+          "url": "https://www.threads.com/@omyohan_cuts/post/DeY_MuMEymQ",
+          "internalUrl": "../../threads/chile-miners-69-days/",
+          "summary": "2010년 칠레 광산 붕괴. 참치 한 숟가락을 72시간마다 나눠 먹으며 버틴 33명이 전원 살아 나오기까지.",
+          "note": "yesir: threads/chile-miners-69-days",
           "tags": [
-            "재난",
             "실화",
-            "자연",
-            "archive",
-            "threads"
-          ]
-        },
-        {
-          "title": "안티키테라 기계, 난파선에서 나온 고대 컴퓨터",
-          "author": "@omyohan_cuts",
-          "sourceType": "yesir archive",
-          "url": "https://www.threads.com/@omyohan_cuts/post/DeRL4QxE0lv",
-          "internalUrl": "../../threads/antikythera-mechanism/",
-          "summary": "1900년 그리스 난파선에서 건진 녹슨 덩어리가 2천 년 전 하늘을 계산하던 기계였다는 이야기.",
-          "note": "yesir: threads/antikythera-mechanism",
-          "tags": [
-            "역사",
-            "미스터리",
-            "과학",
-            "archive",
-            "threads"
-          ]
-        },
-        {
-          "title": "보이니치 필사본, 600년째 아무도 못 읽은 책",
-          "author": "@omyohan_cuts",
-          "sourceType": "yesir archive",
-          "url": "https://www.threads.com/@omyohan_cuts/post/DeQ9Bq5E_6k",
-          "internalUrl": "../../threads/voynich-manuscript/",
-          "summary": "1912년 고서 수집가 손에 들어온 이상한 책. 암호 해독반도 인공지능도 한 줄을 못 읽은 이유.",
-          "note": "yesir: threads/voynich-manuscript",
-          "tags": [
-            "미스터리",
-            "역사",
-            "암호",
+            "구조",
+            "감동",
             "archive",
             "threads"
           ]
@@ -406,6 +358,116 @@
           ]
         },
         {
+          "title": "소머턴 해변의 남자",
+          "author": "@omyohan_cuts",
+          "sourceType": "yesir archive",
+          "url": "https://www.threads.com/@omyohan_cuts/post/DeTjWe0k44E",
+          "internalUrl": "../../threads/somerton-man/",
+          "summary": "1948년 호주 해변에서 발견된 신원 미상의 남자. 쪽지와 책, 그리고 머리카락으로 이어진 70여 년의 추적.",
+          "note": "yesir: threads/somerton-man",
+          "tags": [
+            "미제사건",
+            "미스터리",
+            "archive",
+            "threads"
+          ]
+        },
+        {
+          "title": "크라카타우, 섬 하나가 터진 뒤 벌어진 일",
+          "author": "@omyohan_cuts",
+          "sourceType": "yesir archive",
+          "url": "https://www.threads.com/@omyohan_cuts/post/DeMJrMbk3x_",
+          "internalUrl": "../../threads/krakatoa-1883/",
+          "summary": "1883년 4,800km 밖에서 들린 폭발음, 파랗게 뜬 달, 내려간 지구 기온.",
+          "note": "yesir: threads/krakatoa-1883",
+          "tags": [
+            "재난",
+            "자연",
+            "역사",
+            "archive",
+            "threads"
+          ]
+        },
+        {
+          "title": "프랭클린 원정대, 169년 뒤 찾은 배 두 척",
+          "author": "@omyohan_cuts",
+          "sourceType": "yesir archive",
+          "url": "https://www.threads.com/@omyohan_cuts/post/DeJ1gnAE53o",
+          "internalUrl": "../../threads/franklin-expedition/",
+          "summary": "1845년 북서항로를 찾아 떠난 에레버스호와 테러호, 그리고 아무도 듣지 않았던 이누이트의 증언.",
+          "note": "yesir: threads/franklin-expedition",
+          "tags": [
+            "역사",
+            "탐험",
+            "미스터리",
+            "archive",
+            "threads"
+          ]
+        },
+        {
+          "title": "디아틀로프 고개, 안에서 찢은 텐트",
+          "author": "@omyohan_cuts",
+          "sourceType": "yesir archive",
+          "url": "https://www.threads.com/@omyohan_cuts/post/DeL3iLdk8-u",
+          "internalUrl": "../../threads/dyatlov-pass/",
+          "summary": "1959년 소련 우랄산맥. 신발도 두고 텐트를 찢고 나간 9명과 끝까지 남은 빈칸.",
+          "note": "yesir: threads/dyatlov-pass",
+          "tags": [
+            "미제사건",
+            "미스터리",
+            "archive",
+            "threads"
+          ]
+        },
+        {
+          "title": "보이니치 필사본, 600년째 아무도 못 읽은 책",
+          "author": "@omyohan_cuts",
+          "sourceType": "yesir archive",
+          "url": "https://www.threads.com/@omyohan_cuts/post/DeQ9Bq5E_6k",
+          "internalUrl": "../../threads/voynich-manuscript/",
+          "summary": "1912년 고서 수집가 손에 들어온 이상한 책. 암호 해독반도 인공지능도 한 줄을 못 읽은 이유.",
+          "note": "yesir: threads/voynich-manuscript",
+          "tags": [
+            "미스터리",
+            "역사",
+            "암호",
+            "archive",
+            "threads"
+          ]
+        },
+        {
+          "title": "안티키테라 기계, 난파선에서 나온 고대 컴퓨터",
+          "author": "@omyohan_cuts",
+          "sourceType": "yesir archive",
+          "url": "https://www.threads.com/@omyohan_cuts/post/DeRL4QxE0lv",
+          "internalUrl": "../../threads/antikythera-mechanism/",
+          "summary": "1900년 그리스 난파선에서 건진 녹슨 덩어리가 2천 년 전 하늘을 계산하던 기계였다는 이야기.",
+          "note": "yesir: threads/antikythera-mechanism",
+          "tags": [
+            "역사",
+            "미스터리",
+            "과학",
+            "archive",
+            "threads"
+          ]
+        },
+        {
+          "title": "리투야만, 역사상 가장 높은 쓰나미",
+          "author": "@omyohan_cuts",
+          "sourceType": "yesir archive",
+          "url": "https://www.threads.com/@omyohan_cuts/post/DeRVg6qE-bb",
+          "internalUrl": "../../threads/lituya-bay-megatsunami/",
+          "summary": "1958년 알래스카. 산 하나가 바다로 무너진 밤 고깃배로 파도를 넘은 아빠와 7살 아들.",
+          "note": "yesir: threads/lituya-bay-megatsunami",
+          "tags": [
+            "재난",
+            "실화",
+            "자연",
+            "archive",
+            "threads"
+          ]
+        },
+        {
           "title": "오크 아일랜드, 200년 판 보물 구덩이",
           "author": "@omyohan_cuts",
           "sourceType": "yesir archive",
@@ -436,53 +498,6 @@
           ]
         },
         {
-          "title": "크라카타우, 섬 하나가 터진 뒤 벌어진 일",
-          "author": "@omyohan_cuts",
-          "sourceType": "yesir archive",
-          "url": "https://www.threads.com/@omyohan_cuts/post/DeMJrMbk3x_",
-          "internalUrl": "../../threads/krakatoa-1883/",
-          "summary": "1883년 4,800km 밖에서 들린 폭발음, 파랗게 뜬 달, 내려간 지구 기온.",
-          "note": "yesir: threads/krakatoa-1883",
-          "tags": [
-            "재난",
-            "자연",
-            "역사",
-            "archive",
-            "threads"
-          ]
-        },
-        {
-          "title": "디아틀로프 고개, 안에서 찢은 텐트",
-          "author": "@omyohan_cuts",
-          "sourceType": "yesir archive",
-          "url": "https://www.threads.com/@omyohan_cuts/post/DeL3iLdk8-u",
-          "internalUrl": "../../threads/dyatlov-pass/",
-          "summary": "1959년 소련 우랄산맥. 신발도 두고 텐트를 찢고 나간 9명과 끝까지 남은 빈칸.",
-          "note": "yesir: threads/dyatlov-pass",
-          "tags": [
-            "미제사건",
-            "미스터리",
-            "archive",
-            "threads"
-          ]
-        },
-        {
-          "title": "프랭클린 원정대, 169년 뒤 찾은 배 두 척",
-          "author": "@omyohan_cuts",
-          "sourceType": "yesir archive",
-          "url": "https://www.threads.com/@omyohan_cuts/post/DeJ1gnAE53o",
-          "internalUrl": "../../threads/franklin-expedition/",
-          "summary": "1845년 북서항로를 찾아 떠난 에레버스호와 테러호, 그리고 아무도 듣지 않았던 이누이트의 증언.",
-          "note": "yesir: threads/franklin-expedition",
-          "tags": [
-            "역사",
-            "탐험",
-            "미스터리",
-            "archive",
-            "threads"
-          ]
-        },
-        {
           "title": "이란 광장의 여성 군사훈련장",
           "author": "@omyohan_cuts",
           "sourceType": "yesir archive",
@@ -492,21 +507,6 @@
           "note": "yesir: threads/iran-women-drill",
           "tags": [
             "시사",
-            "archive",
-            "threads"
-          ]
-        },
-        {
-          "title": "페뇨르 호수가 통째로 사라진 날",
-          "author": "@omyohan_cuts",
-          "sourceType": "yesir archive",
-          "url": "https://www.threads.com/@omyohan_cuts/post/DeJOw-xk_RZ",
-          "internalUrl": "../../threads/lake-peigneur/",
-          "summary": "1980년 루이지애나. 36cm 시추 구멍 하나가 소금 광산을 뚫어 호수를 삼킨 사건.",
-          "note": "yesir: threads/lake-peigneur",
-          "tags": [
-            "재난",
-            "실화",
             "archive",
             "threads"
           ]
