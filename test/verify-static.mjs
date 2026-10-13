@@ -56,7 +56,7 @@ assertIncludes(homeHtml, '<small>방금 들어옴</small>', 'index.html');
 assertIncludes(homeHtml, '<a class="scrap-note scrap-note-main" href="threads/english-word-order/">', 'index.html');
 assertIncludes(homeHtml, '<b>요즘 주워온 것</b>', 'index.html');
 assertIncludes(homeHtml, '<li><a href="threads/lake-nyos-night/">', 'index.html');
-assertIncludes(homeHtml, '<a class="scrap-sticker scrap-sticker-pink" href="play/mind/">마음</a>', 'index.html');
+assertIncludes(homeHtml, '<a class="scrap-sticker scrap-sticker-pink" href="play/funny/">웃긴 것</a>', 'index.html');
 assertIncludes(homeHtml, '<a href="play/funny/">네님 웃기기 도전</a>', 'index.html');
 assertIncludes(homeHtml, '<h2 id="playground-title">방 별로 보기</h2>', 'index.html');
 assertIncludes(homeHtml, '마음이 시끄러울 때 들르는 방. 미남도 있음.', 'index.html');

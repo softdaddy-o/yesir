@@ -37,10 +37,10 @@ function sortItemsNewestFirst(playground, threads) {
     }
 
     playground.recent = (playground.categories || [])
-        .flatMap(category => category.items)
+        .flatMap(category => category.items.map(item => ({ ...item, room: { label: category.label, slug: category.slug } })))
         .sort(newestFirst)
         .slice(0, 4)
-        .map(item => ({ title: item.title, href: item.internalUrl ? item.internalUrl.replace(/^(\.\.\/)+/, '') : item.url }));
+        .map(item => ({ title: item.title, room: item.room, href: item.internalUrl ? item.internalUrl.replace(/^(\.\.\/)+/, '') : item.url }));
 }
 
 const threads = await readThreadData();

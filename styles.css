@@ -175,13 +175,6 @@ a:hover {
     transform: rotate(10deg);
 }
 
-.scrap-sticker-green {
-    right: 22px;
-    bottom: 94px;
-    background: var(--lime);
-    transform: rotate(-8deg);
-}
-
 .scrap-note {
     position: absolute;
     border: 2px solid var(--shadow);
@@ -415,10 +408,6 @@ a.scrap-note:hover strong,
     line-height: 1.4;
     text-overflow: ellipsis;
     white-space: nowrap;
-}
-
-.playground-visual .scrap-sticker-green {
-    bottom: 134px;
 }
 
 .scrap-note-feed li a::before {

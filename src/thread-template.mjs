@@ -305,10 +305,10 @@ export function renderHomePage({ threads, playground }) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>네님 놀이터 - yesir.softdaddy-o.com</title>
-    <meta name="description" content="네님이 필요할 때 다시 보려고 남겨둔 글과 링크를 주제별로 정리한 개인 페이지.">
+    <meta name="description" content="네님 못 웃긴 사람 엎드려. 마음, 자기계발, 웃긴 것, 오묘한 이야기를 쟁여둔 네님 놀이터.">
     <link rel="canonical" href="https://yesir.softdaddy-o.com/">
     <meta property="og:title" content="네님 놀이터">
-    <meta property="og:description" content="마음, 자기계발, 웃긴 것들을 가볍게 모아둔 네님 놀이터.">
+    <meta property="og:description" content="네님 못 웃긴 사람 엎드려. 마음, 자기계발, 웃긴 것, 오묘한 이야기를 쟁여둔 네님 놀이터.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yesir.softdaddy-o.com/">
     <meta property="og:image" content="https://yesir.softdaddy-o.com/assets/poor-fish.png">
@@ -341,9 +341,8 @@ export function renderHomePage({ threads, playground }) {
                     <span>yesir.</span>
                     <span>방 ${stats.categoryCount}개 / 글 ${stats.itemCount}개 쟁여둠</span>
                 </div>
-                <a class="scrap-sticker scrap-sticker-pink" href="play/mind/">마음</a>
-                <a class="scrap-sticker scrap-sticker-green" href="play/funny/">웃긴 것</a>
-${newest ? `                <a class="scrap-note scrap-note-main" href="${escapeHtml(newest.href)}">
+${newest?.room ? `                <a class="scrap-sticker scrap-sticker-pink" href="play/${escapeHtml(newest.room.slug)}/">${escapeHtml(newest.room.label)}</a>
+` : ''}${newest ? `                <a class="scrap-note scrap-note-main" href="${escapeHtml(newest.href)}">
                     <small>방금 들어옴</small>
                     <strong>${escapeHtml(newest.title)}</strong>
                 </a>` : ''}
@@ -397,7 +396,7 @@ export function renderCollectionPage({ category, categories }) {
             <a class="brand" href="../../">yesir.</a>
             <nav class="home-nav" aria-label="Primary">
                 <a href="../../#playground">놀이터로</a>
-                <a href="../../play/funny/">웃긴 것</a>
+                <a href="../../play/funny/">네님 웃기기 도전</a>
             </nav>
         </header>
 
