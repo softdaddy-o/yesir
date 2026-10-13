@@ -329,7 +329,7 @@ export function renderHomePage({ threads, playground }) {
             <div>
                 <p class="eyebrow">Naenim playground</p>
                 <h1 id="page-title"><span>네님</span><span>놀이터</span></h1>
-                <p class="lede">필요할 때 다시 보려고 남겨둔 글과 링크를<br>주제별로 가볍게 모아둔 곳입니다.</p>
+                <p class="lede">네님 못 웃긴 사람 엎드려</p>
                 <div class="hero-actions" aria-label="Playground quick links">
                     <a href="#playground">주제별 보기</a>
                     <a href="play/funny/">웃긴 것 보기</a>

@@ -53,7 +53,7 @@ assertIncludes(homeHtml, '<title>네님 놀이터 - yesir.softdaddy-o.com</title
 assertIncludes(homeHtml, 'Naenim playground', 'index.html');
 assertIncludes(homeHtml, '네님</span><span>놀이터', 'index.html');
 assertIncludes(homeHtml, '다시 볼 것들<br>주제별로 정리', 'index.html');
-assertIncludes(homeHtml, '필요할 때 다시 보려고 남겨둔 글과 링크를', 'index.html');
+assertIncludes(homeHtml, '<p class="lede">네님 못 웃긴 사람 엎드려</p>', 'index.html');
 assertIncludes(homeHtml, 'play/mind/', 'index.html');
 assertIncludes(homeHtml, 'play/self-growth/', 'index.html');
 assertIncludes(homeHtml, 'play/funny/', 'index.html');
