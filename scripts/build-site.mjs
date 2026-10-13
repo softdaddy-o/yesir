@@ -20,12 +20,28 @@ async function readThreadData() {
     return threads;
 }
 
+// Newest addition first; items added on the same day go by the first post's likes.
+function sortItemsNewestFirst(playground, threads) {
+    const likesBySlug = new Map(threads.map(thread => [thread.slug, thread.main?.likeCount || 0]));
+    const likesOf = item => likesBySlug.get((item.internalUrl || '').split('/').filter(Boolean).pop()) || 0;
+
+    for (const category of playground.categories || []) {
+        for (const item of category.items) {
+            if (!/^\d{4}-\d{2}-\d{2}$/.test(item.addedAt || '')) {
+                throw new Error(`Playground item is missing addedAt: ${item.title}`);
+            }
+        }
+        category.items.sort((a, b) => b.addedAt.localeCompare(a.addedAt) || likesOf(b) - likesOf(a));
+    }
+}
+
 const threads = await readThreadData();
 if (threads.length === 0) {
     throw new Error(`No thread data found in ${THREAD_DATA_DIR}`);
 }
 
 const playground = JSON.parse(await readFile(PLAYGROUND_DATA_PATH, 'utf8'));
+sortItemsNewestFirst(playground, threads);
 setStylesheetVersion(createHash('sha256').update(await readFile('styles.css')).digest('hex').slice(0, 8));
 
 await writeFile('index.html', renderHomePage({ threads, playground }), 'utf8');

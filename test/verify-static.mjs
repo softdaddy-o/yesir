@@ -241,6 +241,17 @@ assertIncludes(englishWordOrderThreadHtml, '나는 할것이다 영어식 사고
 assertIncludes(englishWordOrderThreadHtml, '영국 거래처는 놀란다', 'threads/english-word-order/index.html');
 assertIncludes(englishWordOrderThreadHtml, '../../assets/threads/english-word-order/reply-205-DeY9JwlEg4c.jpg', 'threads/english-word-order/index.html');
 
+function assertOrder(content, hrefs, path) {
+    const positions = hrefs.map(href => content.indexOf(`../../threads/${href}/`));
+    if (positions.some((position, index) => position < 0 || (index > 0 && position <= positions[index - 1]))) {
+        throw new Error(`${path} items are not in newest-first order: ${hrefs.join(', ')}`);
+    }
+}
+
+assertOrder(funnyHtml, ['english-word-order', 'shared-anniversary', 'misspelling-jokes', 'professional-irony', 'four-character-wordplay', 'you-are-sorry-video', 'doha-poor-fish'], 'play/funny/index.html');
+assertOrder(mindHtml, ['handsome-men-healing', 'parent-karma-clearing', 'ai-play-self', 'nervous-system-habits', 'anxiety-trigger-people'], 'play/mind/index.html');
+assertOrder(mysteryHtml, ['lake-nyos-night', 'lake-peigneur', 'air-pocket-cook-60-hours', 'iran-women-drill'], 'play/mystery/index.html');
+
 const firstReplyIndex = threadHtml.indexOf('id="reply-1"');
 const topLikedIndex = threadHtml.indexOf('minij0min');
 const previousChronologicalIndex = threadHtml.indexOf('john_and_peter__');
