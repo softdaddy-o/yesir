@@ -15,6 +15,7 @@ const misspellingThreadHtml = await readFile('threads/misspelling-jokes/index.ht
 const fourCharacterThreadHtml = await readFile('threads/four-character-wordplay/index.html', 'utf8');
 const professionalIronyThreadHtml = await readFile('threads/professional-irony/index.html', 'utf8');
 const sharedAnniversaryThreadHtml = await readFile('threads/shared-anniversary/index.html', 'utf8');
+const englishWordOrderThreadHtml = await readFile('threads/english-word-order/index.html', 'utf8');
 const homeHtml = await readFile('index.html', 'utf8');
 const previewHtml = await readFile('design-previews/index.html', 'utf8');
 const mindHtml = await readFile('play/mind/index.html', 'utf8');
@@ -57,8 +58,8 @@ assertIncludes(homeHtml, 'play/mind/', 'index.html');
 assertIncludes(homeHtml, 'play/self-growth/', 'index.html');
 assertIncludes(homeHtml, 'play/funny/', 'index.html');
 assertIncludes(homeHtml, 'home-scrapbook', 'index.html');
-assertIncludes(homeHtml, '4 rooms / 31 saves', 'index.html');
-assertIncludes(homeHtml, '31 saved posts', 'index.html');
+assertIncludes(homeHtml, '4 rooms / 32 saves', 'index.html');
+assertIncludes(homeHtml, '32 saved posts', 'index.html');
 assertNotIncludes(homeHtml, 'threads/doha-poor-fish/', 'index.html');
 assertNotIncludes(homeHtml, 'play/anxiety/', 'index.html');
 assertNotIncludes(homeHtml, 'play/psychology/', 'index.html');
@@ -108,6 +109,8 @@ assertIncludes(funnyHtml, '직업과 현실의 배신', 'play/funny/index.html')
 assertIncludes(funnyHtml, '../../threads/professional-irony/', 'play/funny/index.html');
 assertIncludes(funnyHtml, '결혼기념일이 똑같은 부부', 'play/funny/index.html');
 assertIncludes(funnyHtml, '../../threads/shared-anniversary/', 'play/funny/index.html');
+assertIncludes(funnyHtml, '영국 거래처 오기 전 영어식 사고 훈련', 'play/funny/index.html');
+assertIncludes(funnyHtml, '../../threads/english-word-order/', 'play/funny/index.html');
 assertNotIncludes(funnyHtml, '웃긴 닉네임', 'play/funny/index.html');
 assertNotIncludes(funnyHtml, '아재개그 대회', 'play/funny/index.html');
 assertNotIncludes(funnyHtml, '천하제일 똥글 명언 대회', 'play/funny/index.html');
@@ -233,6 +236,10 @@ assertIncludes(sharedAnniversaryThreadHtml, '저와 아내는 신기하게도 �
 assertIncludes(sharedAnniversaryThreadHtml, '../../assets/threads/shared-anniversary/main.jpg', 'threads/shared-anniversary/index.html');
 assertIncludes(sharedAnniversaryThreadHtml, '저희 자녀들 부모님의 결혼기념일이', 'threads/shared-anniversary/index.html');
 assertIncludes(sharedAnniversaryThreadHtml, 'id="reply-100"', 'threads/shared-anniversary/index.html');
+assertIncludes(englishWordOrderThreadHtml, '<title>영국 거래처 오기 전 영어식 사고 훈련 - yesir.softdaddy-o.com</title>', 'threads/english-word-order/index.html');
+assertIncludes(englishWordOrderThreadHtml, '나는 할것이다 영어식 사고를', 'threads/english-word-order/index.html');
+assertIncludes(englishWordOrderThreadHtml, '영국 거래처는 놀란다', 'threads/english-word-order/index.html');
+assertIncludes(englishWordOrderThreadHtml, '../../assets/threads/english-word-order/reply-205-DeY9JwlEg4c.jpg', 'threads/english-word-order/index.html');
 
 const firstReplyIndex = threadHtml.indexOf('id="reply-1"');
 const topLikedIndex = threadHtml.indexOf('minij0min');
@@ -259,6 +266,7 @@ for (const path of [
     'data/threads/four-character-wordplay.json',
     'data/threads/professional-irony.json',
     'data/threads/shared-anniversary.json',
+    'data/threads/english-word-order.json',
 ]) {
     assertExists(path);
 }
@@ -282,6 +290,7 @@ for (const path of [
     'assets/threads/handsome-men-healing/reply-001-Dap3jJUD_ue-01.jpg',
     'assets/threads/professional-irony/reply-022-DaiBdkWj3tz.webp',
     'assets/threads/shared-anniversary/main.jpg',
+    'assets/threads/english-word-order/reply-205-DeY9JwlEg4c.jpg',
     'design-previews/index.html',
     'play/mind/index.html',
     'play/self-growth/index.html',
