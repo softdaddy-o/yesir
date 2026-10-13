@@ -21,9 +21,11 @@ async function readThreadData() {
 }
 
 // Newest addition first; items added on the same day go by the first post's likes.
+// Also collects the newest items across all rooms for the home page scrapbook.
 function sortItemsNewestFirst(playground, threads) {
     const likesBySlug = new Map(threads.map(thread => [thread.slug, thread.main?.likeCount || 0]));
     const likesOf = item => likesBySlug.get((item.internalUrl || '').split('/').filter(Boolean).pop()) || 0;
+    const newestFirst = (a, b) => b.addedAt.localeCompare(a.addedAt) || likesOf(b) - likesOf(a);
 
     for (const category of playground.categories || []) {
         for (const item of category.items) {
@@ -31,8 +33,14 @@ function sortItemsNewestFirst(playground, threads) {
                 throw new Error(`Playground item is missing addedAt: ${item.title}`);
             }
         }
-        category.items.sort((a, b) => b.addedAt.localeCompare(a.addedAt) || likesOf(b) - likesOf(a));
+        category.items.sort(newestFirst);
     }
+
+    playground.recent = (playground.categories || [])
+        .flatMap(category => category.items)
+        .sort(newestFirst)
+        .slice(0, 4)
+        .map(item => ({ title: item.title, href: item.internalUrl ? item.internalUrl.replace(/^(\.\.\/)+/, '') : item.url }));
 }
 
 const threads = await readThreadData();

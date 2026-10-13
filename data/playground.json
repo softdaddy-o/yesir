@@ -5,7 +5,7 @@
       "slug": "mind",
       "label": "마음",
       "kicker": "불안 · 심리",
-      "description": "불안, 관계, 선택, 후킹처럼 마음이 흔들리거나 움직이는 순간을 모아둔 곳.",
+      "description": "마음이 시끄러울 때 들르는 방. 미남도 있음.",
       "items": [
         {
           "title": "신경계를 불안하게 만드는 일상 습관",
@@ -97,7 +97,7 @@
       "slug": "self-growth",
       "label": "자기계발",
       "kicker": "루틴 · 관점",
-      "description": "거창한 각오보다 다음 행동을 작게 만들고, 반복 가능한 삶의 규칙으로 바꿔주는 저장소.",
+      "description": "갓생 말고 덜 망한 생. 작게 하나씩.",
       "items": [
         {
           "title": "행복을 목표로 삼지 말라",
@@ -156,7 +156,7 @@
       "slug": "funny",
       "label": "웃긴 것",
       "kicker": "말장난 · 유머",
-      "description": "기분 전환용 스레드와 말장난을 모아둔 곳.",
+      "description": "여기서 못 웃으면 진짜 피곤한 거임.",
       "items": [
         {
           "title": "가난한 물고기",

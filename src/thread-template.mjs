@@ -271,13 +271,13 @@ function renderCategoryCards(categories, rootPrefix = '') {
                     <span class="card-type">${escapeHtml(category.kicker)}</span>
                     <strong>${escapeHtml(category.label)}</strong>
                     <span>${escapeHtml(category.description)}</span>
-                    <em>${category.items.length}개 저장됨</em>
+                    <em>${category.items.length}개 쟁여둠</em>
                 </a>`).join('\n');
 }
 
 function renderCollectionItem(item) {
     const href = item.internalUrl || item.url || THREADS_POST_URL_PREFIX;
-    const sourceLabel = item.internalUrl ? '아카이브 보기' : 'Threads 열기';
+    const sourceLabel = item.internalUrl ? '읽으러 가기' : 'Threads 열기';
     const tags = (item.tags || []).map(tag => `<span>${escapeHtml(tag)}</span>`).join('');
 
     return `                <article class="collection-item">
@@ -289,7 +289,6 @@ function renderCollectionItem(item) {
                     <p>${escapeHtml(item.summary)}</p>
                     <div class="tag-row">${tags}</div>
                     <div class="collection-item-bottom">
-                        <span>${escapeHtml(item.sourceType || 'saved')}</span>
                         <a href="${escapeHtml(href)}">${sourceLabel}</a>
                     </div>
                 </article>`;
@@ -298,6 +297,7 @@ function renderCollectionItem(item) {
 export function renderHomePage({ threads, playground }) {
     const categories = playground?.categories || [];
     const stats = getPlaygroundStats(categories);
+    const [newest, ...recent] = playground?.recent || [];
 
     return `<!doctype html>
 <html lang="ko">
@@ -320,8 +320,8 @@ export function renderHomePage({ threads, playground }) {
         <header class="home-topbar">
             <a class="brand" href="/">yesir.</a>
             <nav class="home-nav" aria-label="Primary">
-                <a href="#playground">방 보기</a>
-                <a href="play/funny/">웃긴 것</a>
+                <a href="#playground">방 별로 보기</a>
+                <a href="play/funny/">네님 웃기기 도전</a>
             </nav>
         </header>
 
@@ -331,26 +331,27 @@ export function renderHomePage({ threads, playground }) {
                 <h1 id="page-title"><span>네님</span><span>놀이터</span></h1>
                 <p class="lede">네님 못 웃긴 사람 엎드려</p>
                 <div class="hero-actions" aria-label="Playground quick links">
-                    <a href="#playground">주제별 보기</a>
-                    <a href="play/funny/">웃긴 것 보기</a>
+                    <a href="#playground">방 별로 보기</a>
+                    <a href="play/funny/">네님 웃기기 도전</a>
                 </div>
             </div>
 
             <div class="home-visual home-scrapbook playground-visual" aria-label="네님 놀이터 미리보기">
                 <div class="scrapbook-bar">
                     <span>yesir.</span>
-                    <span>${stats.categoryCount} rooms / ${stats.itemCount} saves</span>
+                    <span>방 ${stats.categoryCount}개 / 글 ${stats.itemCount}개 쟁여둠</span>
                 </div>
-                <span class="scrap-sticker scrap-sticker-pink">마음</span>
-                <span class="scrap-sticker scrap-sticker-green">웃긴 것</span>
-                <div class="scrap-note scrap-note-main">
-                    <small>Saved notes</small>
-                    <strong>다시 볼 것들<br>주제별로 정리</strong>
-                </div>
+                <a class="scrap-sticker scrap-sticker-pink" href="play/mind/">마음</a>
+                <a class="scrap-sticker scrap-sticker-green" href="play/funny/">웃긴 것</a>
+${newest ? `                <a class="scrap-note scrap-note-main" href="${escapeHtml(newest.href)}">
+                    <small>방금 들어옴</small>
+                    <strong>${escapeHtml(newest.title)}</strong>
+                </a>` : ''}
                 <div class="scrap-note scrap-note-feed">
-                    <b>최근 정리</b>
-                    <p>마음, 자기계발, 웃긴 것, 오묘한 이야기 위주로 천천히 채워갑니다.</p>
-                    <span>${stats.itemCount} saved posts</span>
+                    <b>요즘 주워온 것</b>
+                    <ul>
+${recent.map(item => `                        <li><a href="${escapeHtml(item.href)}">${escapeHtml(item.title)}</a></li>`).join('\n')}
+                    </ul>
                 </div>
             </div>
         </section>
@@ -358,7 +359,7 @@ export function renderHomePage({ threads, playground }) {
         <section class="index-section" id="playground" aria-labelledby="playground-title">
             <div class="section-heading">
                 <p class="eyebrow">Play rooms</p>
-                <h2 id="playground-title">주제별 보기</h2>
+                <h2 id="playground-title">방 별로 보기</h2>
             </div>
 
             <div class="index-list playground-grid" aria-label="Playground categories">
@@ -395,7 +396,7 @@ export function renderCollectionPage({ category, categories }) {
         <header class="home-topbar">
             <a class="brand" href="../../">yesir.</a>
             <nav class="home-nav" aria-label="Primary">
-                <a href="../../#playground">놀이터</a>
+                <a href="../../#playground">놀이터로</a>
                 <a href="../../play/funny/">웃긴 것</a>
             </nav>
         </header>
@@ -413,7 +414,7 @@ ${category.items.map(renderCollectionItem).join('\n')}
         <section class="index-section related-rooms" aria-labelledby="related-title">
             <div class="section-heading">
                 <p class="eyebrow">Other rooms</p>
-                <h2 id="related-title">다른 방도 보기</h2>
+                <h2 id="related-title">옆방도 구경</h2>
             </div>
             <div class="index-list playground-grid">
 ${renderCategoryCards(categories.filter(other => other.slug !== category.slug), '../../')}
