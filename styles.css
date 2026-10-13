@@ -1685,7 +1685,7 @@ a.scrap-note:hover strong,
 
     .collection-hero p:last-child {
         font-size: 17px;
-        word-break: break-all;
+        word-break: keep-all;
         overflow-wrap: anywhere;
     }
 
